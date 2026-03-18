@@ -66,7 +66,7 @@ export function Footer() {
                 #BR
               </text>
             </svg>
-            <p className="font-body text-sm text-white/80 text-center md:text-left max-w-xs">
+            <p className="font-body text-sm text-white/90 text-center md:text-left max-w-xs">
               {t("tagline")}
             </p>
           </div>
@@ -93,7 +93,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-8 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <p className="font-body text-white/70">{t("copyright")}</p>
+          <p className="font-body text-white/90">{t("copyright")}</p>
           <div className="flex gap-4 font-body">
             <Link
               href={`/${locale}`}

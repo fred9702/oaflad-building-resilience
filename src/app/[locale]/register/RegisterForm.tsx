@@ -115,8 +115,21 @@ export function RegisterForm() {
           <label htmlFor="firstName" className={labelClass}>
             {t("firstName")} *
           </label>
-          <input id="firstName" name="firstName" type="text" required className={inputClass} />
-          {fieldErrors.firstName && <p className={errorClass}>{fieldErrors.firstName}</p>}
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            required
+            aria-required="true"
+            aria-invalid={!!fieldErrors.firstName}
+            aria-describedby={fieldErrors.firstName ? "firstName-error" : undefined}
+            className={inputClass}
+          />
+          {fieldErrors.firstName && (
+            <p id="firstName-error" className={errorClass} role="alert">
+              {fieldErrors.firstName}
+            </p>
+          )}
         </div>
 
         {/* Last name */}
@@ -124,8 +137,21 @@ export function RegisterForm() {
           <label htmlFor="lastName" className={labelClass}>
             {t("lastName")} *
           </label>
-          <input id="lastName" name="lastName" type="text" required className={inputClass} />
-          {fieldErrors.lastName && <p className={errorClass}>{fieldErrors.lastName}</p>}
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            aria-required="true"
+            aria-invalid={!!fieldErrors.lastName}
+            aria-describedby={fieldErrors.lastName ? "lastName-error" : undefined}
+            className={inputClass}
+          />
+          {fieldErrors.lastName && (
+            <p id="lastName-error" className={errorClass} role="alert">
+              {fieldErrors.lastName}
+            </p>
+          )}
         </div>
 
         {/* Email */}
@@ -133,8 +159,21 @@ export function RegisterForm() {
           <label htmlFor="email" className={labelClass}>
             {t("email")} *
           </label>
-          <input id="email" name="email" type="email" required className={inputClass} />
-          {fieldErrors.email && <p className={errorClass}>{fieldErrors.email}</p>}
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            aria-required="true"
+            aria-invalid={!!fieldErrors.email}
+            aria-describedby={fieldErrors.email ? "email-error" : undefined}
+            className={inputClass}
+          />
+          {fieldErrors.email && (
+            <p id="email-error" className={errorClass} role="alert">
+              {fieldErrors.email}
+            </p>
+          )}
         </div>
 
         {/* Phone */}
@@ -166,15 +205,29 @@ export function RegisterForm() {
           <label htmlFor="category" className={labelClass}>
             {t("category")} *
           </label>
-          <select id="category" name="category" required className={inputClass}>
-            <option value="">{t("categoryOptions.placeholder")}</option>
+          <select
+            id="category"
+            name="category"
+            required
+            aria-required="true"
+            aria-invalid={!!fieldErrors.category}
+            aria-describedby={fieldErrors.category ? "category-error" : undefined}
+            className={inputClass}
+          >
+            <option value="" disabled>
+              {t("categoryOptions.placeholder")}
+            </option>
             {CATEGORIES.map((cat) => (
               <option key={cat} value={cat}>
                 {t(`categoryOptions.${cat}`)}
               </option>
             ))}
           </select>
-          {fieldErrors.category && <p className={errorClass}>{fieldErrors.category}</p>}
+          {fieldErrors.category && (
+            <p id="category-error" className={errorClass} role="alert">
+              {fieldErrors.category}
+            </p>
+          )}
         </div>
 
         {/* Language preference */}
@@ -198,17 +251,24 @@ export function RegisterForm() {
 
         {/* GDPR consent */}
         <div className="md:col-span-2">
-          <label className="flex items-start gap-3 cursor-pointer">
+          <label className="flex items-center gap-3 cursor-pointer min-h-[44px]">
             <input
               type="checkbox"
               name="gdprConsent"
               value="true"
               required
-              className="mt-1 h-4 w-4 rounded border-mid-grey text-orange focus:ring-2 focus:ring-orange"
+              aria-required="true"
+              aria-invalid={!!fieldErrors.gdprConsent}
+              aria-describedby={fieldErrors.gdprConsent ? "gdprConsent-error" : undefined}
+              className="h-5 w-5 rounded border-mid-grey text-orange focus:ring-2 focus:ring-orange"
             />
             <span className="font-body text-sm text-near-black">{t("gdprConsent")} *</span>
           </label>
-          {fieldErrors.gdprConsent && <p className={errorClass}>{fieldErrors.gdprConsent}</p>}
+          {fieldErrors.gdprConsent && (
+            <p id="gdprConsent-error" className={errorClass} role="alert">
+              {fieldErrors.gdprConsent}
+            </p>
+          )}
         </div>
       </div>
 

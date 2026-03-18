@@ -18,6 +18,7 @@
     "programme": "Programme"
   },
   "countdown": {
+    "label": "Countdown to the conference",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",

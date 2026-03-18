@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -5,6 +6,12 @@ import Link from "next/link";
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "media" });
+  return { title: `${t("title")} | OAFLAD #BuildingResilience` };
+}
 
 export default async function MediaPage({ params }: Props) {
   const { locale } = await params;

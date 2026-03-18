@@ -18,6 +18,7 @@
     "programme": "Programme"
   },
   "countdown": {
+    "label": "Compte à rebours avant la conférence",
     "days": "Jours",
     "hours": "Heures",
     "minutes": "Minutes",

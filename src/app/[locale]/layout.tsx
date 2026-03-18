@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SetLang } from "@/components/SetLang";
 
 type Props = {
   children: React.ReactNode;
@@ -25,8 +26,15 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <SetLang locale={locale} />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-navy focus:text-white focus:px-4 focus:py-2 focus:rounded focus:font-heading focus:font-semibold focus:text-sm"
+      >
+        Skip to content
+      </a>
       <Navbar locale={locale} />
-      <main id="main-content">{children}</main>
+      <main id="main-content" tabIndex={-1}>{children}</main>
       <Footer />
     </NextIntlClientProvider>
   );
