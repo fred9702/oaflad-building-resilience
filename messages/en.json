@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "About",
+    "programme": "Programme",
+    "speakers": "Speakers",
+    "partners": "Partners",
+    "media": "Media",
+    "contact": "Contact",
+    "register": "Register",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "Building Resilience",
+    "hashtag": "#BuildingResilience",
+    "subtitle": "April 17–18, 2026 · Libreville, Gabon",
+    "register": "Register",
+    "programme": "Programme"
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "cta": {
+    "headline": "Join African leaders in building resilience",
+    "button": "Register now"
+  },
+  "register": {
+    "title": "Registration",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone",
+    "organisation": "Organisation",
+    "role": "Role",
+    "category": "Category",
+    "categoryOptions": {
+      "placeholder": "Select a category",
+      "opdad": "OPDAD",
+      "government": "Government",
+      "partner": "Partner",
+      "civilSociety": "Civil Society",
+      "community": "Community",
+      "other": "Other"
+    },
+    "languagePref": "Preferred language",
+    "gdprConsent": "I consent to my data being processed in accordance with OAFLAD's privacy policy.",
+    "submit": "Submit registration",
+    "success": "Registration successful!",
+    "errorDuplicate": "This email address is already registered.",
+    "errorGeneric": "An error occurred. Please try again.",
+    "required": "This field is required.",
+    "invalidEmail": "Invalid email address.",
+    "consentRequired": "You must accept the privacy policy."
+  },
+  "confirmation": {
+    "title": "Registration Confirmed",
+    "message": "Thank you for registering for the OAFLAD #BuildingResilience conference.",
+    "details": "April 17–18, 2026 · Libreville, Gabon · Organised by OAFLAD",
+    "downloadIcs": "Add to calendar (.ics)",
+    "backHome": "Back to homepage"
+  },
+  "footer": {
+    "copyright": "© 2026 OAFLAD. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "tagline": "Organisation of African First Ladies for Development"
+  },
+  "media": {
+    "title": "Media",
+    "comingSoon": "Media content will be available after the event.",
+    "backHome": "Back to homepage"
+  },
+  "about": {
+    "title": "About",
+    "content": "Page under construction."
+  },
+  "programme": {
+    "title": "Programme",
+    "content": "Programme coming soon."
+  },
+  "speakers": {
+    "title": "Speakers",
+    "content": "Speaker list coming soon."
+  },
+  "partners": {
+    "title": "Partners",
+    "content": "Partners page under construction."
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Contact page under construction."
+  },
+  "lang": {
+    "switchTo": "FR",
+    "current": "EN"
+  }
+}

@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* OAFLAD Brand Colors */
+  --color-orange: #E07B39;
+  --color-crimson: #9B1C37;
+  --color-brown: #6B3417;
+  --color-green: #2D7B3F;
+  --color-navy: #1F4E79;
+  --color-warm-cream: #FBF0E6;
+  --color-light-beige: #F5EDE0;
+  --color-mid-grey: #8A8A8A;
+  --color-near-black: #2D2D2D;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Font families */
+  --font-heading: var(--font-montserrat), "Montserrat", sans-serif;
+  --font-body: var(--font-source-sans), "Source Sans 3", sans-serif;
+  --font-mono: var(--font-source-code), "Source Code Pro", monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-warm-cream);
+  color: var(--color-near-black);
+  font-family: var(--font-body);
 }

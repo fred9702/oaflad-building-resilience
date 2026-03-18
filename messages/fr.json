@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "À propos",
+    "programme": "Programme",
+    "speakers": "Intervenants",
+    "partners": "Partenaires",
+    "media": "Média",
+    "contact": "Contact",
+    "register": "S'inscrire",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "title": "Construire la Résilience",
+    "hashtag": "#BuildingResilience",
+    "subtitle": "17–18 Avril 2026 · Libreville, Gabon",
+    "register": "S'inscrire",
+    "programme": "Programme"
+  },
+  "countdown": {
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes"
+  },
+  "cta": {
+    "headline": "Rejoignez les leaders africains pour construire la résilience",
+    "button": "S'inscrire maintenant"
+  },
+  "register": {
+    "title": "Inscription",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "phone": "Téléphone",
+    "organisation": "Organisation",
+    "role": "Fonction",
+    "category": "Catégorie",
+    "categoryOptions": {
+      "placeholder": "Sélectionner une catégorie",
+      "opdad": "OPDAD",
+      "government": "Gouvernement",
+      "partner": "Partenaire",
+      "civilSociety": "Société civile",
+      "community": "Communauté",
+      "other": "Autre"
+    },
+    "languagePref": "Langue préférée",
+    "gdprConsent": "J'accepte que mes données soient traitées conformément à la politique de confidentialité de l'OAFLAD.",
+    "submit": "Soumettre l'inscription",
+    "success": "Inscription réussie !",
+    "errorDuplicate": "Cette adresse e-mail est déjà inscrite.",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+    "required": "Ce champ est requis.",
+    "invalidEmail": "Adresse e-mail invalide.",
+    "consentRequired": "Vous devez accepter la politique de confidentialité."
+  },
+  "confirmation": {
+    "title": "Inscription confirmée",
+    "message": "Merci pour votre inscription à la conférence #BuildingResilience de l'OAFLAD.",
+    "details": "17–18 Avril 2026 · Libreville, Gabon · Organisé par l'OAFLAD",
+    "downloadIcs": "Ajouter au calendrier (.ics)",
+    "backHome": "Retour à l'accueil"
+  },
+  "footer": {
+    "copyright": "© 2026 OAFLAD. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "tagline": "Organisation des Premières Dames d'Afrique pour le Développement"
+  },
+  "media": {
+    "title": "Média",
+    "comingSoon": "Les contenus média seront disponibles après l'événement.",
+    "backHome": "Retour à l'accueil"
+  },
+  "about": {
+    "title": "À propos",
+    "content": "Page en cours de construction."
+  },
+  "programme": {
+    "title": "Programme",
+    "content": "Programme à venir."
+  },
+  "speakers": {
+    "title": "Intervenants",
+    "content": "Liste des intervenants à venir."
+  },
+  "partners": {
+    "title": "Partenaires",
+    "content": "Page partenaires en construction."
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Page de contact en construction."
+  },
+  "lang": {
+    "switchTo": "EN",
+    "current": "FR"
+  }
+}
