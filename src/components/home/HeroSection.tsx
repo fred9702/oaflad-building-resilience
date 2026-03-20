@@ -7,7 +7,7 @@ import type { Transition } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 
 const HERO_LOGOS: Record<string, string> = {
-  fr: "/images/fr/campaign-logo.svg",
+  fr: "/images/fr/campaign-logo-full.svg",
 };
 const HERO_LOGO_FALLBACK = "/images/common/mark.svg";
 
@@ -58,15 +58,15 @@ export function HeroSection() {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Left column — campaign logo */}
           <motion.div
-            className="flex justify-center md:justify-start md:w-1/3 shrink-0"
+            className="flex justify-center md:justify-start md:w-2/5 shrink-0"
             {...logoAnim}
           >
             <Image
               src={heroLogo}
               alt="OAFLAD #BuildingResilience"
-              width={360}
-              height={180}
-              className="h-auto w-[240px] md:w-[320px] lg:w-[360px]"
+              width={480}
+              height={240}
+              className="h-auto w-[300px] md:w-[400px] lg:w-[480px]"
               priority
             />
           </motion.div>

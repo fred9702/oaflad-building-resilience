@@ -35,11 +35,9 @@ export const metadata: Metadata = {
     title: "OAFLAD #BuildingResilience",
     description:
       "Conférence panafricaine des Premières Dames — 17-18 Avril 2026, Libreville, Gabon",
-    images: [{ url: "/images/fr/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/fr/og.png"],
   },
 };
 
