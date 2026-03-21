@@ -13,7 +13,14 @@ const CATEGORIES = [
   "other",
 ] as const;
 
-const LANGUAGES = ["fr", "en", "pt"] as const;
+const LANGUAGES = ["fr", "en", "pt", "es"] as const;
+
+const LANGUAGE_LABELS: Record<(typeof LANGUAGES)[number], string> = {
+  fr: "Français",
+  en: "English",
+  pt: "Português",
+  es: "Español",
+};
 
 export function RegisterForm() {
   const t = useTranslations("register");
@@ -243,7 +250,7 @@ export function RegisterForm() {
           >
             {LANGUAGES.map((lang) => (
               <option key={lang} value={lang}>
-                {lang.toUpperCase()}
+                {LANGUAGE_LABELS[lang]}
               </option>
             ))}
           </select>
