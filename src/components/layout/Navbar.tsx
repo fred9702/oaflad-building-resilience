@@ -9,6 +9,7 @@ import { List, X } from "@phosphor-icons/react";
 
 const NAV_LINKS = [
   { key: "about", href: "/about" },
+  { key: "fondation", href: "/fondation" },
   { key: "cap241", href: "/cap-241" },
   { key: "programme", href: "/programme" },
   { key: "speakers", href: "/speakers" },

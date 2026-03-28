@@ -1,0 +1,53 @@
+Project: Registration confirmation email flow
+Stack: Next.js, Vercel, Supabase, Resend
+
+Context: A registration form already exists and saves data to a Supabase table called registrations (fields include email, first_name, last_name).
+
+Build the following:
+
+1. Resend domain setup (instructions only — no code)
+
+	∙	Verify send.resilience241.com as the sending subdomain in Resend (use a subdomain to keep root domain MX free for email forwarding)
+	∙	Add the DKIM CNAME records, SPF TXT record, and MX record that Resend provides to Namecheap DNS
+
+2. Namecheap email forwarding (instructions only — no code)
+
+	∙	Set up free email forwarding in Namecheap: alias info → forwards to cadidi@chomei.store
+	∙	This keeps info@resilience241.com working without paid email hosting
+
+3. Supabase Edge Function
+
+	∙	Create supabase/functions/send-confirmation/index.ts
+	∙	Triggered by a Supabase Database Webhook on INSERT to registrations
+	∙	Validate requests using a x-webhook-secret header
+	∙	Call the Resend API to send a confirmation email from noreply@send.resilience241.com
+	∙	Use the email, first_name fields from the webhook payload
+
+4. Email template
+
+	∙	HTML email with a dark, branded design
+	∙	Greeting using first_name
+	∙	Two CTAs: Go to Dashboard (/dashboard) and Getting Started (/getting-started)
+	∙	Social links for Twitter/X, Instagram, LinkedIn, GitHub
+	∙	Plain text fallback
+	∙	All URLs built from an APP_URL env var
+
+5. Supabase Database Webhook
+
+	∙	Create a webhook on the registrations table, INSERT event
+	∙	Point it to the deployed Edge Function URL
+	∙	Pass x-webhook-secret header
+
+6. Environment variables
+Set the following in Supabase Edge Function secrets:
+
+RESEND_API_KEY
+FROM_EMAIL=noreply@send.resilience241.com
+APP_URL=https://resilience241.com
+WEBHOOK_SECRET
+
+
+7. Deploy
+
+	∙	supabase functions deploy send-confirmation
+	∙	Confirm the webhook is wired and test by inserting a row into registrations
