@@ -23,8 +23,8 @@ export function Footer() {
 
   const quickLinks = [
     { key: "about", href: "/about" },
+    { key: "cap241", href: "/cap-241" },
     { key: "programme", href: "/programme" },
-    { key: "speakers", href: "/speakers" },
     { key: "contact", href: "/contact" },
   ];
 

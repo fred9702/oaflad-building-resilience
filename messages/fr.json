@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "À propos",
+    "cap241": "CAP 241",
     "programme": "Programme",
     "speakers": "Intervenants",
     "partners": "Partenaires",
@@ -81,11 +82,179 @@
   },
   "about": {
     "title": "À propos",
-    "content": "Page en cours de construction."
+    "campaignBadge": "Campagne continentale",
+    "campaignTitle": "Une initiative africaine pour renforcer la résilience",
+    "campaignIntro": "La campagne continentale #BuildingResilience, portée par l'Organisation des Premières Dames d'Afrique pour le Développement (OPDAD / OAFLAD), s'inscrit dans une dynamique collective visant à répondre aux fragilités croissantes auxquelles sont confrontées les sociétés africaines.",
+    "campaignContext": "Dans un contexte marqué par :",
+    "campaignContextItems": {
+      "climate": "les effets du changement climatique,",
+      "tensions": "les tensions sociales et les situations de conflit,",
+      "health": "la vulnérabilité des systèmes de santé,"
+    },
+    "campaignWomen": "Les femmes et les jeunes filles apparaissent à la fois comme les premières exposées et les principales actrices de la résilience des communautés.",
+    "campaignConviction": "Cette initiative repose sur une conviction forte :",
+    "campaignConvictionText": "La résilience ne peut être durable que si elle est structurée, accompagnée et portée collectivement.",
+    "campaignGoalsIntro": "À travers cette campagne, l'OPDAD appelle à :",
+    "campaignGoals": {
+      "systems": "renforcer les systèmes de protection sociale et sanitaire,",
+      "women": "soutenir les femmes dans leur rôle central,",
+      "responses": "développer des réponses coordonnées et adaptées aux réalités locales."
+    },
+    "campaignFramework": "La campagne #BuildingResilience constitue ainsi un cadre de mobilisation continentale favorisant le partage d'expériences, la coordination des actions et l'émergence de solutions durables.",
+    "gabonBadge": "L'engagement du Gabon",
+    "gabonTitle": "Le choix stratégique du Gabon",
+    "gabonIntro": "Face aux défis contemporains, le Gabon a fait un choix clair :",
+    "gabonChoice": "Contribuer à la dynamique continentale #BuildingResilience en plaçant la santé et la stabilité des familles au cœur de son engagement.",
+    "gabonConviction": "Ce choix repose sur une conviction simple :",
+    "gabonConvictionText": "La résilience ne se décrète pas. Elle se construit.",
+    "gabonBuilt": "Elle se construit par la prévention, la continuité des soins et la reconstruction des trajectoires de vie fragilisées.",
+    "gabonProgramme": "Le programme ÉQUILIBRES 2026–2029 constitue la contribution du Gabon à cette initiative africaine.",
+    "gabonCommitmentIntro": "Il traduit une volonté :",
+    "gabonCommitments": {
+      "national": "structurer une réponse nationale cohérente",
+      "root": "agir sur les causes profondes des fragilités",
+      "social": "renforcer durablement les équilibres sociaux"
+    },
+    "gabonPosition": "Le Gabon affirme ainsi une position claire :",
+    "gabonHealth": "La santé n'est pas une politique sectorielle.",
+    "gabonStability": "Elle est une condition de stabilité.",
+    "gabonLever": "Elle est un levier de résilience durable.",
+    "zonBadge": "Message",
+    "zonTitle": "Message de ZON",
+    "zonQuote": "En ce jour du 17 avril, journée nationale de la femme au Gabon, je souhaite m'adresser à chacune d'entre vous. À celles qui sont ici présentes. À celles qui œuvrent dans nos villes, dans nos villages, dans nos foyers. Et à celles dont l'engagement, souvent discret, continue de porter notre société.",
+    "zonQuote2": "Car derrière les équilibres que nous observons, il y a, très souvent, le poids silencieux que portent les femmes. Lorsque les fragilités s'installent, qu'elles soient sociales, économiques ou sanitaires, ce sont elles qui absorbent, organisent, maintiennent. Mais la résilience d'une Nation ne peut pas reposer uniquement sur cette force silencieuse. Elle doit être structurée. Elle doit être accompagnée. Elle doit être organisée.",
+    "zonQuote3": "À travers le programme ÉQUILIBRES 2026–2029, que je lance officiellement ce jour, nous faisons le choix d'agir sur ce qui fonde durablement la stabilité : la continuité des soins, la prise en compte des fragilités, et la reconstruction des trajectoires.",
+    "fondationBadge": "Fondation",
+    "fondationTitle": "Fondation Ma Bannière",
+    "fondationSubtitle": "Une fondation au service de la cohésion sociale",
+    "fondationIntro": "La Fondation Ma Bannière s'inscrit dans une vision claire :",
+    "fondationVision": "Contribuer à la stabilité sociale en apportant des réponses structurées aux fragilités humaines, sanitaires et communautaires.",
+    "fondationCatalyst": "Elle agit comme un catalyseur de solutions, en mobilisant des initiatives à fort impact dans les domaines de la santé, de l'autonomisation des femmes et des jeunes, et du développement communautaire.",
+    "fondationOaflad": "Dans le cadre de la dynamique continentale portée par l'OPDAD, la Fondation contribue à la mise en œuvre d'initiatives structurantes au niveau national.",
+    "fondationPrinciplesIntro": "Sa mission repose sur trois principes fondamentaux :",
+    "fondationPrinciples": {
+      "sustainable": "structurer des réponses durables",
+      "resilience": "renforcer la résilience des populations",
+      "partnerships": "mobiliser des partenariats stratégiques"
+    },
+    "fondationKeyMessage": "La Fondation agit comme catalyseur de solutions sociales, sanitaires et communautaires.",
+    "closingQuote": "Sous Ma Bannière, nous soignons, nous partageons, nous protégeons."
+  },
+  "cap241": {
+    "title": "CAP 241",
+    "badge": "Cadre stratégique",
+    "heroTitle": "CAP 241 : un cadre structurant",
+    "heroIntro": "L'action de la Fondation Ma Bannière s'inscrit dans un cadre structuré : CAP 241. Ce cadre repose sur une logique simple :",
+    "heroLinks": {
+      "social": "Relier l'impact social,",
+      "national": "la stabilité nationale",
+      "international": "et le rayonnement international."
+    },
+    "pillarsBadge": "Quatre piliers",
+    "pillarsTitle": "Quatre piliers complémentaires",
+    "pillarsIntro": "Ces piliers ne fonctionnent pas de manière isolée. Ils s'inscrivent dans une logique d'interdépendance :",
+    "pillarsInterdependence": {
+      "health": "la stabilité sanitaire protège les femmes",
+      "family": "la stabilité familiale sécurise l'enfance",
+      "prevention": "la prévention renforce l'éducation",
+      "skills": "le transfert de compétences soutient la résilience économique"
+    },
+    "pillarsArchitecture": "Cette architecture évite la fragmentation des interventions. Elle favorise une approche transversale, cohérente et durable.",
+    "pillar1": {
+      "name": "CAP Santé",
+      "programme": "ÉQUILIBRES",
+      "description": "La santé constitue le socle de toute stabilité durable. Lorsqu'un parcours de soins se fragmente, ce sont des trajectoires qui se rompent.",
+      "items": {
+        "care": "la continuité des soins",
+        "mental": "la santé mentale",
+        "social": "l'accompagnement des vulnérabilités sociales",
+        "family": "la protection des équilibres familiaux"
+      }
+    },
+    "pillar2": {
+      "name": "CAP Femmes",
+      "programme": "TRANSFERT",
+      "description": "Soutenir les femmes dans leur rôle central au sein des familles et des communautés par le transfert de compétences et l'autonomisation."
+    },
+    "pillar3": {
+      "name": "CAP Jeunesse",
+      "programme": "TRAJECTOIRES",
+      "description": "Reconstruire les parcours de vie des jeunes à travers la formation, le mentorat et les parcours de réinsertion."
+    },
+    "pillar4": {
+      "name": "CAP Éducation",
+      "programme": "SAVOIRS",
+      "description": "Renforcer les fondations éducatives pour construire une résilience durable par la prévention et la sensibilisation."
+    },
+    "equilibriumBadge": "Programme",
+    "equilibriumTitle": "Le programme ÉQUILIBRES",
+    "equilibriumSubtitle": "Prévenir, soutenir, reconstruire",
+    "equilibriumIntro": "Le programme ÉQUILIBRES constitue la traduction opérationnelle du pilier Santé. Dans de nombreuses situations, le poids des fragilités repose en grande partie sur les femmes.",
+    "equilibriumActions": {
+      "prevent": "Prévenir les ruptures",
+      "support": "Soutenir la continuité des soins",
+      "rebuild": "Reconstruire les trajectoires"
+    },
+    "equilibriumAmbition": "Une ambition claire : Transformer des fragilités en trajectoires stabilisées. Passer du silence à l'accompagnement. Construire des réponses durables.",
+    "trajectoriesBadge": "Le défi",
+    "trajectoriesTitle": "Des trajectoires fragilisées",
+    "trajectoriesIntro": "Nos sociétés sont confrontées à des fragilités multiples :",
+    "trajectoriesIssues": {
+      "psychosocial": "Fragilités psychosociales",
+      "family": "Ruptures familiales",
+      "paths": "Désorientation des parcours"
+    },
+    "trajectoriesResponse": "ÉQUILIBRES répond à cette exigence :",
+    "trajectoriesActions": {
+      "recognising": "reconnaître",
+      "preventing": "prévenir",
+      "supporting": "accompagner"
+    },
+    "nkokBadge": "Action concrète",
+    "nkokTitle": "Vers une réponse structurante",
+    "nkokIntro": "Face aux fragilités identifiées, la réponse ne peut être ponctuelle. Elle doit être structurée, cohérente et inscrite dans la durée.",
+    "nkokCenter": "C'est dans cette perspective que s'inscrit le projet de création du Centre de désintoxication, de formation et de réinsertion de Nkok.",
+    "nkokDescription": "Ce centre propose :",
+    "nkokServices": {
+      "reception": "un accueil adapté,",
+      "psychosocial": "un accompagnement psychosocial,",
+      "training": "des dispositifs de formation et de réinsertion,",
+      "followup": "un suivi des parcours."
+    },
+    "nkokApproach": "Il incarne une approche globale :",
+    "nkokApproachItems": {
+      "recognizing": "reconnaître,",
+      "supporting": "accompagner,",
+      "restoring": "restaurer."
+    },
+    "nkokAmbition": "Passer du silence à l'accompagnement."
   },
   "programme": {
     "title": "Programme",
-    "content": "Programme à venir."
+    "badge": "Jour de l'événement",
+    "milestoneBadge": "17 avril 2026",
+    "milestoneTitle": "Une étape fondatrice",
+    "milestoneIntro": "Le 17 avril 2026 marque :",
+    "milestoneItems": {
+      "launch": "le lancement du programme ÉQUILIBRES",
+      "partners": "la mobilisation des partenaires",
+      "cooperation": "le début d'une dynamique de coopération"
+    },
+    "panelsBadge": "Panels et échanges",
+    "panelsTitle": "Panels et échanges",
+    "panelsIntro": "Les échanges organisés visent à approfondir les enjeux liés à la résilience sociale et sanitaire. Ils permettront de croiser les expériences, d'identifier les défis communs, de partager des solutions adaptées.",
+    "panel1": {
+      "title": "Panel 1",
+      "topic": "Résilience des femmes face aux crises"
+    },
+    "panel2": {
+      "title": "Panel 2",
+      "topic": "Santé et stabilité familiale"
+    },
+    "panel3": {
+      "title": "Panel 3",
+      "topic": "Partenariats et réponses durables"
+    }
   },
   "speakers": {
     "title": "Intervenants",

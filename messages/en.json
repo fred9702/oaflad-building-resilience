@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "About",
+    "cap241": "CAP 241",
     "programme": "Programme",
     "speakers": "Speakers",
     "partners": "Partners",
@@ -81,11 +82,179 @@
   },
   "about": {
     "title": "About",
-    "content": "Page under construction."
+    "campaignBadge": "Continental Campaign",
+    "campaignTitle": "An African Initiative to Strengthen Resilience",
+    "campaignIntro": "The continental campaign #BuildingResilience, led by the Organization of African First Ladies for Development (OAFLAD), reflects a collective effort to address the growing vulnerabilities facing African societies.",
+    "campaignContext": "In a context marked by:",
+    "campaignContextItems": {
+      "climate": "the impact of climate change,",
+      "tensions": "social tensions and conflict situations,",
+      "health": "the fragility of health systems,"
+    },
+    "campaignWomen": "women and girls emerge as both the most exposed and the central drivers of resilience within families and communities.",
+    "campaignConviction": "This continental initiative is grounded in a strong conviction:",
+    "campaignConvictionText": "resilience cannot be sustainable unless it is structured, supported, and collectively driven.",
+    "campaignGoalsIntro": "Through this campaign, OAFLAD calls for:",
+    "campaignGoals": {
+      "systems": "strengthening social and health protection systems,",
+      "women": "supporting women in their central role within families and communities,",
+      "responses": "developing coordinated responses tailored to local realities."
+    },
+    "campaignFramework": "The #BuildingResilience campaign therefore provides a continental framework for mobilization, fostering the exchange of experiences, coordination of actions, and the development of sustainable solutions.",
+    "gabonBadge": "Gabon's Commitment",
+    "gabonTitle": "Gabon's Strategic Choice",
+    "gabonIntro": "Faced with the challenges of our time, Gabon has made a clear choice:",
+    "gabonChoice": "To contribute to the continental #BuildingResilience initiative by placing health and family stability at the core of its commitment.",
+    "gabonConviction": "This choice is based on a simple conviction:",
+    "gabonConvictionText": "Resilience cannot be declared. It must be built.",
+    "gabonBuilt": "It is built through prevention, continuity of care, and the reconstruction of fragile life trajectories.",
+    "gabonProgramme": "The EQUILIBRIUM Programme 2026–2029 represents Gabon's contribution to this African initiative.",
+    "gabonCommitmentIntro": "It reflects a strong commitment:",
+    "gabonCommitments": {
+      "national": "to structure a coherent national response",
+      "root": "to address the root causes of vulnerability",
+      "social": "to sustainably strengthen social stability"
+    },
+    "gabonPosition": "Gabon affirms a clear position:",
+    "gabonHealth": "Health is not a sectoral policy.",
+    "gabonStability": "It is a condition for stability.",
+    "gabonLever": "It is a lever for sustainable resilience.",
+    "zonBadge": "Message",
+    "zonTitle": "Message from ZON",
+    "zonQuote": "On this day of April 17, National Women's Day in Gabon, I wish to address each and every one of you. To those present here. To those working in our cities, in our villages, in our homes. And to those whose commitment, often unseen, continues to sustain our society.",
+    "zonQuote2": "Because behind the balances we observe, there is, very often, the silent burden carried by women. When fragilities emerge — social, economic or health-related — they are the ones who absorb, organize, and sustain. But the resilience of a Nation cannot rely solely on this silent strength. It must be structured. It must be supported. It must be organized.",
+    "zonQuote3": "Through the EQUILIBRIUM Programme 2026–2029, which I officially launch today, we choose to act on what sustainably underpins stability: continuity of care, recognition of vulnerabilities, and the rebuilding of life trajectories.",
+    "fondationBadge": "Foundation",
+    "fondationTitle": "Fondation Ma Banniere",
+    "fondationSubtitle": "A Foundation Serving Social Cohesion",
+    "fondationIntro": "The Fondation Ma Banniere is guided by a clear vision:",
+    "fondationVision": "to contribute to social stability by delivering structured responses to human, health, and community vulnerabilities.",
+    "fondationCatalyst": "It acts as a catalyst for solutions, mobilizing high-impact initiatives in health, women's empowerment, youth development, and community resilience.",
+    "fondationOaflad": "Within the framework of the continental dynamic led by OAFLAD, the Foundation contributes to the implementation of structured initiatives at the national level.",
+    "fondationPrinciplesIntro": "Its mission is based on three key principles:",
+    "fondationPrinciples": {
+      "sustainable": "structuring sustainable responses",
+      "resilience": "strengthening resilience among populations",
+      "partnerships": "mobilizing strategic partnerships"
+    },
+    "fondationKeyMessage": "The Foundation acts as a catalyst for social, health, and community solutions.",
+    "closingQuote": "Under Ma Banniere, we care, we share, we protect."
+  },
+  "cap241": {
+    "title": "CAP 241",
+    "badge": "Strategic Framework",
+    "heroTitle": "CAP 241: A Framework for Social Action",
+    "heroIntro": "CAP 241 provides a structured framework linking:",
+    "heroLinks": {
+      "social": "social impact",
+      "national": "national stability",
+      "international": "international visibility"
+    },
+    "pillarsBadge": "Four Pillars",
+    "pillarsTitle": "Four Complementary Pillars",
+    "pillarsIntro": "These pillars do not function in isolation. They operate in a logic of interdependence:",
+    "pillarsInterdependence": {
+      "health": "health stability protects women",
+      "family": "family stability safeguards childhood",
+      "prevention": "prevention strengthens education",
+      "skills": "skills transfer supports economic resilience"
+    },
+    "pillarsArchitecture": "This architecture avoids fragmentation of interventions. It fosters a cross-cutting, coherent and sustainable approach.",
+    "pillar1": {
+      "name": "CAP Health",
+      "programme": "EQUILIBRIUM",
+      "description": "Health is the foundation of stability. When care pathways break, life trajectories collapse.",
+      "items": {
+        "care": "continuity of care",
+        "mental": "mental health support",
+        "social": "social vulnerability support",
+        "family": "family stability protection"
+      }
+    },
+    "pillar2": {
+      "name": "CAP Women",
+      "programme": "TRANSFERT",
+      "description": "Supporting women in their central role within families and communities through skills transfer and empowerment."
+    },
+    "pillar3": {
+      "name": "CAP Youth",
+      "programme": "TRAJECTORIES",
+      "description": "Rebuilding life paths for young people through training, mentoring and reintegration pathways."
+    },
+    "pillar4": {
+      "name": "CAP Education",
+      "programme": "KNOWLEDGE",
+      "description": "Strengthening educational foundations to build lasting resilience through prevention and awareness."
+    },
+    "equilibriumBadge": "Programme",
+    "equilibriumTitle": "The EQUILIBRIUM Programme",
+    "equilibriumSubtitle": "Prevent — Support — Rebuild",
+    "equilibriumIntro": "Women often carry the weight of fragility. EQUILIBRIUM provides structured responses:",
+    "equilibriumActions": {
+      "prevent": "preventing disruptions",
+      "support": "supporting care continuity",
+      "rebuild": "rebuilding life trajectories"
+    },
+    "equilibriumAmbition": "A clear ambition: to transform fragilities into stabilized trajectories. To move from silence to support. To build sustainable responses.",
+    "trajectoriesBadge": "The Challenge",
+    "trajectoriesTitle": "Fragile Trajectories Requiring Structured Response",
+    "trajectoriesIntro": "Our societies face:",
+    "trajectoriesIssues": {
+      "psychosocial": "psychosocial fragility",
+      "family": "family breakdown",
+      "paths": "disrupted life paths"
+    },
+    "trajectoriesResponse": "EQUILIBRIUM responds by:",
+    "trajectoriesActions": {
+      "recognising": "recognising",
+      "preventing": "preventing",
+      "supporting": "supporting"
+    },
+    "nkokBadge": "Concrete Action",
+    "nkokTitle": "Towards a Structured Response",
+    "nkokIntro": "In response to the identified vulnerabilities, action cannot be fragmented or temporary. It must be structured, coherent, and sustained over time.",
+    "nkokCenter": "It is within this perspective that the Nkok Integrated Center for Rehabilitation, Training, and Reintegration is being developed.",
+    "nkokDescription": "This center represents a concrete response to fragile life trajectories by providing:",
+    "nkokServices": {
+      "reception": "tailored reception and support for vulnerable individuals,",
+      "psychosocial": "structured psychosocial support,",
+      "training": "training and reintegration pathways,",
+      "followup": "continuous follow-up aimed at rebuilding sustainable life paths."
+    },
+    "nkokApproach": "Beyond its operational function, the center embodies a comprehensive approach:",
+    "nkokApproachItems": {
+      "recognizing": "recognizing vulnerabilities,",
+      "supporting": "supporting life pathways,",
+      "restoring": "restoring balance."
+    },
+    "nkokAmbition": "This initiative reflects a clear ambition: to move from silent vulnerability to structured, visible, and sustainable responses."
   },
   "programme": {
     "title": "Programme",
-    "content": "Programme coming soon."
+    "badge": "Event Day",
+    "milestoneBadge": "April 17, 2026",
+    "milestoneTitle": "A Foundational Milestone",
+    "milestoneIntro": "April 17, 2026 marks:",
+    "milestoneItems": {
+      "launch": "the launch of EQUILIBRIUM",
+      "partners": "partner mobilization",
+      "cooperation": "the start of a structured cooperation dynamic"
+    },
+    "panelsBadge": "Panels & Discussions",
+    "panelsTitle": "Panels and Discussions",
+    "panelsIntro": "The discussions are designed to deepen the issues related to social and health resilience. They will allow sharing experiences, identifying common challenges, and developing tailored solutions.",
+    "panel1": {
+      "title": "Panel 1",
+      "topic": "Women's resilience in the face of climate and social crises"
+    },
+    "panel2": {
+      "title": "Panel 2",
+      "topic": "Health, family stability and resilience"
+    },
+    "panel3": {
+      "title": "Panel 3",
+      "topic": "Partnerships and sustainable responses"
+    }
   },
   "speakers": {
     "title": "Speakers",
