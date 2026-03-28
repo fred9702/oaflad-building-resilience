@@ -17,13 +17,13 @@ const WEBHOOK_SECRET = Deno.env.get("WEBHOOK_SECRET") ?? "";
 /*  Placeholders — replace with real links when available              */
 /* ------------------------------------------------------------------ */
 
-const WHATSAPP_LINK = "https://chat.whatsapp.com/PLACEHOLDER";
+const WHATSAPP_LINK = "https://chat.whatsapp.com/FvnwWW94uVQ0fy7HbUPzYR";
 const CADIDI_OPTIN_LINK = `${APP_URL}/cadidi`;
 
 /* Social links */
-const SOCIAL_X = "https://x.com/OAFLAD";
-const SOCIAL_FB = "https://facebook.com/OAFLAD";
-const SOCIAL_IG = "https://instagram.com/OAFLAD";
+const SOCIAL_X = "https://x.com/resilience241";
+const SOCIAL_FB = "https://facebook.com/resilience241";
+const SOCIAL_IG = "https://instagram.com/resilience_241";
 
 /* ------------------------------------------------------------------ */
 /*  Brand tokens (from VISUAL-GUIDELINE.md warm theme)                 */
