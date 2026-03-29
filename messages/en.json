@@ -13,6 +13,7 @@
     "closeMenu": "Close menu"
   },
   "hero": {
+    "metaDescription": "Pan-African First Ladies conference on resilience — April 17–18, 2026, Libreville, Gabon. Register now for #BuildingResilience.",
     "title": "Building Resilience",
     "hashtag": "#BuildingResilience",
     "subtitle": "April 17–18, 2026 · Libreville, Gabon",
@@ -35,6 +36,7 @@
     "badge": "Coming Soon"
   },
   "register": {
+    "metaDescription": "Register for the #BuildingResilience campaign — a continental initiative strengthening resilience for women and girls across Africa.",
     "title": "Registration",
     "firstName": "First name",
     "lastName": "Last name",
@@ -76,12 +78,14 @@
     "tagline": "Organisation of African First Ladies for Development"
   },
   "media": {
+    "metaDescription": "Media resources and coverage from the OAFLAD #BuildingResilience campaign — photos, press releases, and event highlights.",
     "title": "Media",
     "content": "Media content will be available after the event.",
     "comingSoon": "Media content will be available after the event.",
     "backHome": "Back to homepage"
   },
   "about": {
+    "metaDescription": "About the #BuildingResilience campaign led by OAFLAD — strengthening resilience for women and girls facing climate change and conflict across Africa.",
     "title": "About",
     "campaignBadge": "Continental Campaign",
     "campaignTitle": "An African Initiative to Strengthen Resilience",
@@ -143,6 +147,7 @@
     "closingQuote": "Under Ma Banniere, we care, we share, we protect."
   },
   "cap241": {
+    "metaDescription": "CAP 241 — Gabon's strategic framework for social action under the #BuildingResilience campaign, linking health, family stability, prevention, and skills transfer.",
     "title": "CAP 241",
     "badge": "Strategic Framework",
     "heroTitle": "CAP 241: A Framework for Social Action",
@@ -232,6 +237,7 @@
     "nkokAmbition": "This initiative reflects a clear ambition: to move from silent vulnerability to structured, visible, and sustainable responses."
   },
   "programme": {
+    "metaDescription": "Programme for the #BuildingResilience conference — panels on women's resilience, health, family stability, and sustainable partnerships. April 17, 2026.",
     "title": "Programme",
     "badge": "Event Day",
     "milestoneBadge": "April 17, 2026",
@@ -263,14 +269,17 @@
     "cap241Cta": "Explore CAP 241"
   },
   "speakers": {
+    "metaDescription": "Speakers at the OAFLAD #BuildingResilience conference — African leaders, experts, and advocates for women's resilience.",
     "title": "Speakers",
     "content": "Speaker list coming soon."
   },
   "partners": {
+    "metaDescription": "Partners of the OAFLAD #BuildingResilience campaign — organizations working together to strengthen resilience across Africa.",
     "title": "Partners",
     "content": "Partners page under construction."
   },
   "contact": {
+    "metaDescription": "Contact the OAFLAD #BuildingResilience campaign team — inquiries, partnerships, and press.",
     "title": "Contact",
     "content": "Contact page under construction."
   },

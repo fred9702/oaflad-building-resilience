@@ -13,6 +13,7 @@
     "closeMenu": "Fermer le menu"
   },
   "hero": {
+    "metaDescription": "Conférence panafricaine des Premières Dames sur la résilience — 17-18 avril 2026, Libreville, Gabon. Inscrivez-vous à #BuildingResilience.",
     "title": "Renforcer la Résilience",
     "hashtag": "#BuildingResilience",
     "subtitle": "17–18 Avril 2026 · Libreville, Gabon",
@@ -35,6 +36,7 @@
     "badge": "Bientôt disponible"
   },
   "register": {
+    "metaDescription": "Inscrivez-vous à la campagne #BuildingResilience — une initiative continentale pour renforcer la résilience des femmes et des filles en Afrique.",
     "title": "Inscription",
     "firstName": "Prénom",
     "lastName": "Nom",
@@ -76,12 +78,14 @@
     "tagline": "Organisation des Premières Dames d'Afrique pour le Développement"
   },
   "media": {
+    "metaDescription": "Ressources médiatiques de la campagne OPDAD #BuildingResilience — photos, communiqués de presse et moments forts.",
     "title": "Média",
     "content": "Les contenus média seront disponibles après l'événement.",
     "comingSoon": "Les contenus média seront disponibles après l'événement.",
     "backHome": "Retour à l'accueil"
   },
   "about": {
+    "metaDescription": "À propos de la campagne #BuildingResilience portée par l'OPDAD — renforcer la résilience des femmes et des filles face aux changements climatiques et aux conflits.",
     "title": "À propos",
     "campaignBadge": "Campagne continentale",
     "campaignTitle": "Une initiative africaine pour renforcer la résilience",
@@ -143,6 +147,7 @@
     "closingQuote": "Sous Ma Bannière, nous soignons, nous partageons, nous protégeons."
   },
   "cap241": {
+    "metaDescription": "CAP 241 — le cadre stratégique d'action sociale du Gabon dans la campagne #BuildingResilience, articulant santé, stabilité familiale, prévention et transfert de compétences.",
     "title": "CAP 241",
     "badge": "Cadre stratégique",
     "heroTitle": "CAP 241 : un cadre structurant",
@@ -232,6 +237,7 @@
     "nkokAmbition": "Passer du silence à l'accompagnement."
   },
   "programme": {
+    "metaDescription": "Programme de la conférence #BuildingResilience — panels sur la résilience des femmes, la santé, la stabilité familiale et les partenariats durables. 17 avril 2026.",
     "title": "Programme",
     "badge": "Jour de l'événement",
     "milestoneBadge": "17 avril 2026",
@@ -263,14 +269,17 @@
     "cap241Cta": "Explorer CAP 241"
   },
   "speakers": {
+    "metaDescription": "Intervenants de la conférence OPDAD #BuildingResilience — leaders africains, experts et défenseurs de la résilience des femmes.",
     "title": "Intervenants",
     "content": "Liste des intervenants à venir."
   },
   "partners": {
+    "metaDescription": "Partenaires de la campagne OPDAD #BuildingResilience — organisations engagées pour renforcer la résilience à travers l'Afrique.",
     "title": "Partenaires",
     "content": "Page partenaires en construction."
   },
   "contact": {
+    "metaDescription": "Contactez l'équipe de la campagne OPDAD #BuildingResilience — demandes, partenariats et presse.",
     "title": "Contact",
     "content": "Page de contact en construction."
   },
