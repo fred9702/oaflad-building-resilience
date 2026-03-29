@@ -13,10 +13,10 @@
     "closeMenu": "Fermer le menu"
   },
   "hero": {
-    "metaDescription": "Conférence panafricaine des Premières Dames sur la résilience — 17-18 avril 2026, Libreville, Gabon. Inscrivez-vous à #BuildingResilience.",
+    "metaDescription": "Conférence panafricaine des Premières Dames sur la résilience — 17 avril 2026, Libreville, Gabon. Inscrivez-vous à #BuildingResilience.",
     "title": "Renforcer la Résilience",
     "hashtag": "#BuildingResilience",
-    "subtitle": "17–18 Avril 2026 · Libreville, Gabon",
+    "subtitle": "17 Avril 2026 · Libreville, Gabon",
     "register": "S'inscrire",
     "programme": "Programme",
     "cap241": "CAP 241"
@@ -31,7 +31,7 @@
   "cta": {
     "headline": "Rejoignez les leaders africains pour renforcer la résilience",
     "button": "S'inscrire maintenant",
-    "date": "17–18 Avril 2026 · Libreville, Gabon"
+    "date": "17 Avril 2026 · Libreville, Gabon"
   },
   "comingSoon": {
     "badge": "Bientôt disponible"
@@ -68,7 +68,7 @@
   "confirmation": {
     "title": "Inscription confirmée",
     "message": "Merci pour votre inscription à la conférence #BuildingResilience de l'OPDAD.",
-    "details": "17–18 Avril 2026 · Libreville, Gabon · Organisé par l'OPDAD",
+    "details": "17 Avril 2026 · Libreville, Gabon · Organisé par l'OPDAD",
     "downloadIcs": "Ajouter au calendrier (.ics)",
     "backHome": "Retour à l'accueil"
   },

@@ -13,10 +13,10 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "metaDescription": "Pan-African First Ladies conference on resilience — April 17–18, 2026, Libreville, Gabon. Register now for #BuildingResilience.",
+    "metaDescription": "Pan-African First Ladies conference on resilience — April 17, 2026, Libreville, Gabon. Register now for #BuildingResilience.",
     "title": "Building Resilience",
     "hashtag": "#BuildingResilience",
-    "subtitle": "April 17–18, 2026 · Libreville, Gabon",
+    "subtitle": "April 17, 2026 · Libreville, Gabon",
     "register": "Register",
     "programme": "Programme",
     "cap241": "CAP 241"
@@ -31,7 +31,7 @@
   "cta": {
     "headline": "Join African leaders in building resilience",
     "button": "Register now",
-    "date": "17–18 April 2026 · Libreville, Gabon"
+    "date": "17 April 2026 · Libreville, Gabon"
   },
   "comingSoon": {
     "badge": "Coming Soon"
@@ -68,7 +68,7 @@
   "confirmation": {
     "title": "Registration Confirmed",
     "message": "Thank you for registering for the OAFLAD #BuildingResilience conference.",
-    "details": "April 17–18, 2026 · Libreville, Gabon · Organised by OAFLAD",
+    "details": "April 17, 2026 · Libreville, Gabon · Organised by OAFLAD",
     "downloadIcs": "Add to calendar (.ics)",
     "backHome": "Back to homepage"
   },

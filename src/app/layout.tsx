@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.resilience241.com"),
   title: "OAFLAD #BuildingResilience",
   description:
-    "Conférence panafricaine des Premières Dames — 17-18 Avril 2026, Libreville, Gabon",
+    "Conférence panafricaine des Premières Dames — 17 Avril 2026, Libreville, Gabon",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OAFLAD #BuildingResilience",
     description:
-      "Conférence panafricaine des Premières Dames — 17-18 Avril 2026, Libreville, Gabon",
+      "Conférence panafricaine des Premières Dames — 17 Avril 2026, Libreville, Gabon",
     type: "website",
     siteName: "OAFLAD #BuildingResilience",
   },
