@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function ProgrammeMilestone() {
   const t = useTranslations("programme");
@@ -52,7 +53,7 @@ export function ProgrammeMilestone() {
                   {i + 1}
                 </span>
                 <span className="font-body text-near-black/85 font-medium">
-                  {t(`milestoneItems.${key}`)}
+                  <HighlightKeywords>{t(`milestoneItems.${key}`)}</HighlightKeywords>
                 </span>
               </div>
             ))}

@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 import { Button } from "@/components/ui/Button";
 
 export function ProgrammeCap241Cta() {
@@ -29,7 +30,7 @@ export function ProgrammeCap241Cta() {
             {t("cap241Title")}
           </h2>
           <p className="font-body text-lg text-white/85 max-w-2xl mx-auto mb-10">
-            {t("cap241Intro")}
+            <HighlightKeywords>{t("cap241Intro")}</HighlightKeywords>
           </p>
           <Button href={`/${locale}/cap-241`} variant="secondary">
             {t("cap241Cta")}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function AboutCampaign() {
   const t = useTranslations("about");
@@ -40,7 +41,7 @@ export function AboutCampaign() {
 
         <ScrollReveal delay={0.1}>
           <p className="mt-8 font-body text-lg md:text-xl text-near-black/80 max-w-3xl leading-relaxed">
-            {t("campaignIntro")}
+            <HighlightKeywords>{t("campaignIntro")}</HighlightKeywords>
           </p>
         </ScrollReveal>
 
@@ -101,7 +102,7 @@ export function AboutCampaign() {
 
         <ScrollReveal delay={0.45}>
           <p className="mt-10 font-body text-near-black/70 leading-relaxed max-w-3xl">
-            {t("campaignFramework")}
+            <HighlightKeywords>{t("campaignFramework")}</HighlightKeywords>
           </p>
         </ScrollReveal>
       </div>

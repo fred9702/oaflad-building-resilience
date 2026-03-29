@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Transition } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 const HERO_LOGOS: Record<string, string> = {
   fr: "/images/fr/campaign-logo-full.svg",
@@ -85,7 +86,7 @@ export function HeroSection() {
               className="mt-4 font-heading text-2xl md:text-3xl font-bold text-orange"
               {...fadeUp(0.8)}
             >
-              {t("hashtag")}
+              <HighlightKeywords>{t("hashtag")}</HighlightKeywords>
             </motion.p>
 
             <motion.p
@@ -104,6 +105,9 @@ export function HeroSection() {
               </Button>
               <Button href={`/${locale}/programme`} variant="secondary-dark">
                 {t("programme")}
+              </Button>
+              <Button href={`/${locale}/cap-241`} variant="secondary-dark">
+                {t("cap241")}
               </Button>
             </motion.div>
           </div>
