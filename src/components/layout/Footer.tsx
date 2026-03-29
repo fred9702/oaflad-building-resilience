@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
@@ -9,6 +10,7 @@ import {
   InstagramLogo,
   YoutubeLogo,
 } from "@phosphor-icons/react";
+import { LegalModal } from "@/components/ui/LegalModal";
 
 const FOOTER_LOGOS: Record<string, string> = {
   fr: "/images/fr/navbar-logo.png",
@@ -20,6 +22,7 @@ export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const locale = useLocale();
+  const [legalModal, setLegalModal] = useState<"privacy" | "terms" | null>(null);
   const footerLogo = FOOTER_LOGOS[locale] ?? FOOTER_LOGO_FALLBACK;
 
   const quickLinks = [
@@ -114,21 +117,27 @@ export function Footer() {
         <div className="mt-12 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <p className="font-body text-white/90">{t("copyright")}</p>
           <div className="flex gap-4 font-body">
-            <Link
-              href={`/${locale}`}
+            <button
+              onClick={() => setLegalModal("privacy")}
               className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
             >
               {t("privacy")}
-            </Link>
-            <Link
-              href={`/${locale}`}
+            </button>
+            <button
+              onClick={() => setLegalModal("terms")}
               className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
             >
               {t("terms")}
-            </Link>
+            </button>
           </div>
         </div>
       </div>
+
+      <LegalModal
+        type={legalModal ?? "privacy"}
+        isOpen={legalModal !== null}
+        onClose={() => setLegalModal(null)}
+      />
     </footer>
   );
 }

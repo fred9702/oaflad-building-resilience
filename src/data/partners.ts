@@ -14,7 +14,7 @@ export const partners: Partner[] = [
   },
   {
     id: "fondation",
-    website: "https://fondationmabanniere.org",
+    website: "https://mabanniere.ga/",
     color: "brown",
   },
   {
