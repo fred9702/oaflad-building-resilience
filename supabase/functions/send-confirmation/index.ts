@@ -22,7 +22,7 @@ const CADIDI_OPTIN_LINK = `${APP_URL}/cadidi`;
 
 /* Social links */
 const SOCIAL_X = "https://x.com/resilience241";
-const SOCIAL_FB = "https://facebook.com/resilience241";
+const SOCIAL_FB = "https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr";
 const SOCIAL_IG = "https://instagram.com/resilience_241";
 
 /* ------------------------------------------------------------------ */

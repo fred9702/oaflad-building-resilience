@@ -92,7 +92,7 @@ export function Footer() {
             </h3>
             <div className="flex gap-4">
               {[
-                { icon: FacebookLogo, label: "Facebook", href: "https://facebook.com/resilience241" },
+                { icon: FacebookLogo, label: "Facebook", href: "https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr" },
                 { icon: TwitterLogo, label: "Twitter / X", href: "https://x.com/resilience241" },
                 { icon: InstagramLogo, label: "Instagram", href: "https://instagram.com/resilience_241" },
                 { icon: YoutubeLogo, label: "YouTube", href: "#" },
