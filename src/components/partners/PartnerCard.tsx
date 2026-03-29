@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
-import { CaretDown } from "@phosphor-icons/react";
 import type { Partner } from "@/data/partners";
 import { FirstLadiesPanel } from "./FirstLadiesPanel";
 
@@ -40,69 +38,53 @@ const COLOR_MAP = {
 
 export function PartnerCard({ partner }: { partner: Partner }) {
   const t = useTranslations("partners");
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const colors = COLOR_MAP[partner.color];
 
   return (
-    <div
-      className={`relative rounded-2xl p-8 border ${colors.border} ${colors.bg} backdrop-blur-sm transition-all duration-300 ${
-        partner.expandable && isExpanded ? "md:col-span-2" : ""
-      }`}
-    >
-      {/* Partner name */}
-      <h3 className="font-heading text-xl font-bold text-near-black mb-3">
-        {t(`${partner.id}.name`)}
-      </h3>
+    <>
+      <div
+        className={`relative rounded-2xl p-8 border ${colors.border} ${colors.bg} backdrop-blur-sm transition-all duration-300`}
+      >
+        {/* Partner name */}
+        <h3 className="font-heading text-xl font-bold text-near-black mb-3">
+          {t(`${partner.id}.name`)}
+        </h3>
 
-      {/* Description */}
-      <p className="font-body text-near-black/70 leading-relaxed mb-5">
-        {t(`${partner.id}.description`)}
-      </p>
+        {/* Description */}
+        <p className="font-body text-near-black/70 leading-relaxed mb-5">
+          {t(`${partner.id}.description`)}
+        </p>
 
-      {/* Actions */}
-      <div className="flex flex-wrap items-center gap-3">
-        <a
-          href={partner.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`font-heading text-sm font-semibold ${colors.link} underline underline-offset-4 transition-colors`}
-        >
-          {t("visitWebsite")} &rarr;
-        </a>
-
-        {partner.expandable && (
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className={`inline-flex items-center gap-2 font-heading text-sm font-semibold px-4 py-2 rounded-full ${colors.button} transition-all duration-200`}
+        {/* Actions */}
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href={partner.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`font-heading text-sm font-semibold ${colors.link} underline underline-offset-4 transition-colors`}
           >
-            {isExpanded ? t("collapseFirstLadies") : t("expandFirstLadies")}
-            <motion.span
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-              className="inline-flex"
+            {t("visitWebsite")} &rarr;
+          </a>
+
+          {partner.expandable && (
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className={`inline-flex items-center gap-2 font-heading text-sm font-semibold px-4 py-2 rounded-full ${colors.button} transition-all duration-200`}
             >
-              <CaretDown size={16} weight="bold" />
-            </motion.span>
-          </button>
-        )}
+              {t("expandFirstLadies")}
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* Expandable First Ladies panel */}
+      {/* First Ladies modal */}
       {partner.expandable && (
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
-              <FirstLadiesPanel />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <FirstLadiesPanel
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
       )}
-    </div>
+    </>
   );
 }
