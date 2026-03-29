@@ -297,7 +297,51 @@
   "partners": {
     "metaDescription": "Partners of the OAFLAD #BuildingResilience campaign — organizations working together to strengthen resilience across Africa.",
     "title": "Partners",
-    "content": "Partners page under construction."
+    "badge": "Our Partners",
+    "intro": "The #BuildingResilience campaign is made possible through the collaboration of organizations committed to strengthening resilience across Africa.",
+    "visitWebsite": "Visit website",
+    "expandFirstLadies": "View attending First Ladies",
+    "collapseFirstLadies": "Hide First Ladies",
+    "hostLabel": "Host",
+    "firstGentlemanLabel": "First Gentleman",
+    "firstLadyLabel": "First Lady",
+    "attendingTitle": "Attending the Conference",
+    "oaflad": {
+      "name": "OAFLAD / OPDAD",
+      "description": "The Organization of African First Ladies for Development brings together First Ladies from across the continent to advocate for health, education, and women's empowerment."
+    },
+    "fondation": {
+      "name": "Ma Banniere Foundation",
+      "description": "Founded by the First Lady of Gabon, the Ma Banniere Foundation works to improve the lives of vulnerable populations through social action and community development."
+    },
+    "cap241": {
+      "name": "Cap241",
+      "description": "Cap241 is the strategic framework for social action linking health, family stability, prevention, and skills transfer under the #BuildingResilience campaign."
+    },
+    "bomalab": {
+      "name": "Bomalab",
+      "description": "Bomalab is a creative technology hub driving innovation and digital transformation in Central Africa."
+    },
+    "firstLadies": {
+      "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
+      "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
+      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone" },
+      "senegal": { "name": "Marie Khone Faye", "country": "Senegal" },
+      "drc": { "name": "Denise Nyakeru Tshisekedi", "country": "DR Congo" },
+      "congo": { "name": "Antoinette Sassou Nguesso", "country": "Congo" },
+      "burundi": { "name": "Angeline Ndayishimiye", "country": "Burundi" },
+      "nigeria": { "name": "Oluremi Tinubu", "country": "Nigeria" },
+      "liberia": { "name": "Kartumu Yarta Boakai", "country": "Liberia" },
+      "coteIvoire": { "name": "Dominique Ouattara", "country": "Côte d'Ivoire" },
+      "rwanda": { "name": "Jeannette Kagame", "country": "Rwanda" },
+      "kenya": { "name": "Rachel Ruto", "country": "Kenya" },
+      "saoTome": { "name": "Maria de Fátima Vila Nova", "country": "São Tomé and Príncipe" },
+      "equatorialGuinea": { "name": "Constancia Mangue de Obiang", "country": "Equatorial Guinea" },
+      "guinea": { "name": "Lauriane Doumbouya", "country": "Guinea" },
+      "car": { "name": "Tina Marguerite Touadéra", "country": "Central African Republic" },
+      "ghana": { "name": "Lordina Mahama", "country": "Ghana" },
+      "namibia": { "name": "Epaphras Denga Ndaitwah", "country": "Namibia" }
+    }
   },
   "contact": {
     "metaDescription": "Contact the OAFLAD #BuildingResilience campaign team — inquiries, partnerships, and press.",

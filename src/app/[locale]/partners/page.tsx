@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { ComingSoonPage } from "@/components/ui/ComingSoonPage";
+import { PartnersHero } from "@/components/partners/PartnersHero";
+import { PartnersGrid } from "@/components/partners/PartnersGrid";
 import { buildMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -14,5 +15,10 @@ export default async function PartnersPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ComingSoonPage namespace="partners" />;
+  return (
+    <>
+      <PartnersHero />
+      <PartnersGrid />
+    </>
+  );
 }

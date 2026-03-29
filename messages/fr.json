@@ -297,7 +297,51 @@
   "partners": {
     "metaDescription": "Partenaires de la campagne OPDAD #BuildingResilience — organisations engagées pour renforcer la résilience à travers l'Afrique.",
     "title": "Partenaires",
-    "content": "Page partenaires en construction."
+    "badge": "Nos Partenaires",
+    "intro": "La campagne #BuildingResilience est rendue possible grâce à la collaboration d'organisations engagées pour renforcer la résilience à travers l'Afrique.",
+    "visitWebsite": "Visiter le site",
+    "expandFirstLadies": "Voir les Premières Dames présentes",
+    "collapseFirstLadies": "Masquer les Premières Dames",
+    "hostLabel": "Hôte",
+    "firstGentlemanLabel": "Premier Gentleman",
+    "firstLadyLabel": "Première Dame",
+    "attendingTitle": "Présentes à la conférence",
+    "oaflad": {
+      "name": "OPDAD / OAFLAD",
+      "description": "L'Organisation des Premières Dames d'Afrique pour le Développement rassemble les Premières Dames du continent pour promouvoir la santé, l'éducation et l'autonomisation des femmes."
+    },
+    "fondation": {
+      "name": "Fondation Ma Bannière",
+      "description": "Fondée par la Première Dame du Gabon, la Fondation Ma Bannière œuvre à l'amélioration des conditions de vie des populations vulnérables par l'action sociale et le développement communautaire."
+    },
+    "cap241": {
+      "name": "Cap241",
+      "description": "Cap241 est le cadre stratégique d'action sociale articulant santé, stabilité familiale, prévention et transfert de compétences dans le cadre de la campagne #BuildingResilience."
+    },
+    "bomalab": {
+      "name": "Bomalab",
+      "description": "Bomalab est un hub technologique créatif au service de l'innovation et de la transformation numérique en Afrique centrale."
+    },
+    "firstLadies": {
+      "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
+      "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
+      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone" },
+      "senegal": { "name": "Marie Khone Faye", "country": "Sénégal" },
+      "drc": { "name": "Denise Nyakeru Tshisekedi", "country": "RD Congo" },
+      "congo": { "name": "Antoinette Sassou Nguesso", "country": "Congo" },
+      "burundi": { "name": "Angeline Ndayishimiye", "country": "Burundi" },
+      "nigeria": { "name": "Oluremi Tinubu", "country": "Nigéria" },
+      "liberia": { "name": "Kartumu Yarta Boakai", "country": "Libéria" },
+      "coteIvoire": { "name": "Dominique Ouattara", "country": "Côte d'Ivoire" },
+      "rwanda": { "name": "Jeannette Kagame", "country": "Rwanda" },
+      "kenya": { "name": "Rachel Ruto", "country": "Kenya" },
+      "saoTome": { "name": "Maria de Fátima Vila Nova", "country": "São Tomé-et-Príncipe" },
+      "equatorialGuinea": { "name": "Constancia Mangue de Obiang", "country": "Guinée équatoriale" },
+      "guinea": { "name": "Lauriane Doumbouya", "country": "Guinée" },
+      "car": { "name": "Tina Marguerite Touadéra", "country": "République centrafricaine" },
+      "ghana": { "name": "Lordina Mahama", "country": "Ghana" },
+      "namibia": { "name": "Epaphras Denga Ndaitwah", "country": "Namibie" }
+    }
   },
   "contact": {
     "metaDescription": "Contactez l'équipe de la campagne OPDAD #BuildingResilience — demandes, partenariats et presse.",
