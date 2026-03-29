@@ -78,7 +78,7 @@ export function LegalModal({ type, isOpen, onClose }: LegalModalProps) {
 
           {/* Modal */}
           <motion.div
-            className="relative z-10 w-full max-w-3xl max-h-[85vh] overflow-y-auto rounded-2xl bg-cream p-8 md:p-10 shadow-2xl"
+            className="relative z-10 w-full max-w-3xl max-h-[85vh] overflow-y-auto rounded-2xl bg-white p-8 md:p-10 shadow-2xl"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
@@ -100,12 +100,12 @@ export function LegalModal({ type, isOpen, onClose }: LegalModalProps) {
             <h2 className="font-heading text-2xl font-bold text-near-black mb-1">
               {title}
             </h2>
-            <p className="font-body text-sm text-near-black/50 mb-6">
+            <p className="font-body text-sm text-near-black/70 mb-6">
               {lastUpdated}
             </p>
 
             {/* Intro */}
-            <p className="font-body text-near-black/80 leading-relaxed mb-8">
+            <p className="font-body text-near-black leading-relaxed mb-8">
               {intro}
             </p>
 
@@ -116,7 +116,7 @@ export function LegalModal({ type, isOpen, onClose }: LegalModalProps) {
                   <h3 className="font-heading text-base font-semibold text-brown mb-2">
                     {section.title}
                   </h3>
-                  <p className="font-body text-near-black/70 leading-relaxed">
+                  <p className="font-body text-near-black/90 leading-relaxed">
                     {section.body}
                   </p>
                 </div>
