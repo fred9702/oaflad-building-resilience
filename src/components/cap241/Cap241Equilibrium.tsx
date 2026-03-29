@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function Cap241Equilibrium() {
   const t = useTranslations("cap241");
@@ -24,7 +25,7 @@ export function Cap241Equilibrium() {
             {t("equilibriumBadge")}
           </span>
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-crimson">
-            {t("equilibriumTitle")}
+            <HighlightKeywords>{t("equilibriumTitle")}</HighlightKeywords>
           </h2>
           <p className="mt-2 font-heading text-lg md:text-xl font-semibold text-orange">
             {t("equilibriumSubtitle")}
@@ -33,7 +34,7 @@ export function Cap241Equilibrium() {
 
         <ScrollReveal delay={0.1}>
           <p className="mt-6 font-body text-lg text-near-black/80 max-w-3xl">
-            {t("equilibriumIntro")}
+            <HighlightKeywords>{t("equilibriumIntro")}</HighlightKeywords>
           </p>
         </ScrollReveal>
 
@@ -93,7 +94,7 @@ export function Cap241Equilibrium() {
 
           <ScrollReveal delay={0.2}>
             <p className="mt-8 font-body text-near-black/80">
-              {t("trajectoriesResponse")}
+              <HighlightKeywords>{t("trajectoriesResponse")}</HighlightKeywords>
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               {(["recognising", "preventing", "supporting"] as const).map((key) => (

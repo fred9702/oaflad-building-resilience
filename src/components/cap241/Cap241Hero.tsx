@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function Cap241Hero() {
   const t = useTranslations("cap241");
@@ -38,7 +39,7 @@ export function Cap241Hero() {
 
         <ScrollReveal delay={0.1}>
           <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-crimson leading-tight max-w-3xl">
-            {t("heroTitle")}
+            <HighlightKeywords>{t("heroTitle")}</HighlightKeywords>
           </h1>
         </ScrollReveal>
 

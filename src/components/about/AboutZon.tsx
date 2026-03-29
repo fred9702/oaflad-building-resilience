@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function AboutZon() {
   const t = useTranslations("about");
@@ -53,7 +54,7 @@ export function AboutZon() {
             <blockquote className="relative">
               <div className="absolute -left-4 top-0 bottom-0 w-1 bg-orange rounded-full" />
               <p className="pl-6 font-body text-lg text-white/90 leading-relaxed italic">
-                {t("zonQuote3")}
+                <HighlightKeywords>{t("zonQuote3")}</HighlightKeywords>
               </p>
             </blockquote>
           </ScrollReveal>

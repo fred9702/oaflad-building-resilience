@@ -18,7 +18,8 @@
     "hashtag": "#BuildingResilience",
     "subtitle": "17–18 Avril 2026 · Libreville, Gabon",
     "register": "S'inscrire",
-    "programme": "Programme"
+    "programme": "Programme",
+    "cap241": "CAP 241"
   },
   "countdown": {
     "label": "Compte à rebours avant la conférence",
@@ -113,7 +114,7 @@
     "gabonConviction": "Ce choix repose sur une conviction simple :",
     "gabonConvictionText": "La résilience ne se décrète pas. Elle se construit.",
     "gabonBuilt": "Elle se construit par la prévention, la continuité des soins et la reconstruction des trajectoires de vie fragilisées.",
-    "gabonProgramme": "Le programme ÉQUILIBRES 2026–2029 constitue la contribution du Gabon à cette initiative africaine.",
+    "gabonProgramme": "Le programme ÉQUILIBRES 2026–2029, inscrit dans le cadre national CAP 241, constitue la contribution du Gabon à cette initiative africaine.",
     "gabonCommitmentIntro": "Il traduit une volonté :",
     "gabonCommitments": {
       "national": "structurer une réponse nationale cohérente",
@@ -130,6 +131,7 @@
     "zonQuote2": "Car derrière les équilibres que nous observons, il y a, très souvent, le poids silencieux que portent les femmes. Lorsque les fragilités s'installent, qu'elles soient sociales, économiques ou sanitaires, ce sont elles qui absorbent, organisent, maintiennent. Mais la résilience d'une Nation ne peut pas reposer uniquement sur cette force silencieuse. Elle doit être structurée. Elle doit être accompagnée. Elle doit être organisée.",
     "zonQuote3": "À travers le programme ÉQUILIBRES 2026–2029, que je lance officiellement ce jour, nous faisons le choix d'agir sur ce qui fonde durablement la stabilité : la continuité des soins, la prise en compte des fragilités, et la reconstruction des trajectoires.",
     "zonAuthor": "Son Excellence Zita Oligui Nguema",
+    "zonCta": "Découvrir CAP 241",
     "fondationBadge": "Fondation",
     "fondationTitle": "Fondation Ma Bannière",
     "fondationSubtitle": "Une fondation au service de la cohésion sociale",
@@ -248,9 +250,28 @@
       "partners": "la mobilisation des partenaires",
       "cooperation": "le début d'une dynamique de coopération"
     },
+    "talkBadge": "Journée Nationale de la Femme",
+    "talkTitle": "Talk — Journée Nationale de la Femme",
+    "talkDescription": "Un dialogue national sur la résilience des femmes et des familles autour des addictions.",
+    "talkLocationLabel": "Lieu",
+    "talkLocation": "Cité de la Démocratie",
+    "talkRoom": "Lounge",
+    "talkTimeLabel": "Horaire",
+    "talkWelcome": "Accueil à 10h",
+    "talkStart": "Début à 11h",
+    "talkDurationLabel": "Durée",
+    "talkDuration": "2 heures maximum",
+    "talkParticipantsLabel": "Participants",
+    "talkParticipants": "225 participants",
+    "talkAudience1": "Experts (modérateurs et intervenants)",
+    "talkAudience2": "Femmes gabonaises",
     "panelsBadge": "Panels et échanges",
     "panelsTitle": "Panels et échanges",
     "panelsIntro": "Les échanges organisés visent à approfondir les enjeux liés à la résilience sociale et sanitaire. Ils permettront de croiser les expériences, d'identifier les défis communs, de partager des solutions adaptées.",
+    "panelModeratorLabel": "Modérateur",
+    "panelSpeakersLabel": "Intervenants",
+    "panelTimeLabel": "Horaire",
+    "panelTbc": "À confirmer",
     "panel1": {
       "title": "Panel 1",
       "topic": "Résilience des femmes face aux crises"

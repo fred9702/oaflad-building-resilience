@@ -55,6 +55,21 @@ export function ProgrammePanels() {
                   <p className={`font-heading text-lg font-bold ${accent.text}`}>
                     {t(`panel${num}.topic`)}
                   </p>
+
+                  <div className="mt-5 space-y-2 text-sm font-body text-near-black/60">
+                    <p>
+                      <span className="font-semibold text-near-black/70">{t("panelModeratorLabel")}:</span>{" "}
+                      {t("panelTbc")}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-near-black/70">{t("panelSpeakersLabel")}:</span>{" "}
+                      {t("panelTbc")}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-near-black/70">{t("panelTimeLabel")}:</span>{" "}
+                      {t("panelTbc")}
+                    </p>
+                  </div>
                 </div>
               </ScrollReveal>
             );
