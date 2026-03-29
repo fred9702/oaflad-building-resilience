@@ -55,7 +55,6 @@ interface Strings {
   ctaWhatsapp: string;
   ctaCadidi: string;
   followUs: string;
-  footer: string;
 }
 
 const i18n: Record<Lang, Strings> = {
@@ -68,7 +67,6 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Rejoindre la communauté WhatsApp",
     ctaCadidi: "Découvrir Cadidi — Assistant IA",
     followUs: "Suivez-nous",
-    footer: "Organisation Africaine de Lutte Anti-Drogue",
   },
   en: {
     subject: (name) => `Welcome ${name} — #BuildingResilience`,
@@ -79,7 +77,6 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Join the WhatsApp Community",
     ctaCadidi: "Discover Cadidi — AI Assistant",
     followUs: "Follow us",
-    footer: "African Organisation Against Drugs",
   },
   pt: {
     subject: (name) => `Bem-vindo(a) ${name} — #BuildingResilience`,
@@ -90,7 +87,6 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Juntar-se à comunidade WhatsApp",
     ctaCadidi: "Descobrir Cadidi — Assistente IA",
     followUs: "Siga-nos",
-    footer: "Organização Africana de Luta Contra a Droga",
   },
   es: {
     subject: (name) => `Bienvenido(a) ${name} — #BuildingResilience`,
@@ -242,7 +238,6 @@ function buildHtml(firstName: string, lang: string): string {
   <tr>
     <td align="center" style="padding:16px 32px 32px;">
       <p style="margin:0;font-size:12px;color:#8A8A8A;">
-        OAFLAD — ${t.footer}<br />
         <a href="${APP_URL}" style="color:${BRAND.orange};text-decoration:none;">resilience241.com</a>
       </p>
     </td>
@@ -284,7 +279,6 @@ Facebook    : ${SOCIAL_FB}
 Instagram   : ${SOCIAL_IG}
 
 ---
-OAFLAD — ${t.footer}
 ${APP_URL}`;
 }
 
