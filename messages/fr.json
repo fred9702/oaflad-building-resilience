@@ -256,7 +256,11 @@
     "panel3": {
       "title": "Panel 3",
       "topic": "Partenariats et réponses durables"
-    }
+    },
+    "cap241Badge": "La réponse nationale du Gabon",
+    "cap241Title": "Découvrir CAP 241",
+    "cap241Intro": "Découvrez comment le Gabon traduit la vision continentale #BuildingResilience en un cadre national structuré d'action sociale.",
+    "cap241Cta": "Explorer CAP 241"
   },
   "speakers": {
     "title": "Intervenants",

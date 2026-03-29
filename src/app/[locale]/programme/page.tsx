@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ProgrammeMilestone } from "@/components/programme/ProgrammeMilestone";
 import { ProgrammePanels } from "@/components/programme/ProgrammePanels";
+import { ProgrammeCap241Cta } from "@/components/programme/ProgrammeCap241Cta";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -19,6 +20,7 @@ export default async function ProgrammePage({ params }: Props) {
     <>
       <ProgrammeMilestone />
       <ProgrammePanels />
+      <ProgrammeCap241Cta />
     </>
   );
 }
