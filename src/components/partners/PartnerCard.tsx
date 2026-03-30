@@ -54,7 +54,7 @@ export function PartnerCard({ partner }: { partner: Partner }) {
             alt={t(`${partner.id}.name`)}
             width={180}
             height={60}
-            className="object-contain h-16 w-auto"
+            className="object-contain h-24 w-auto"
           />
         </div>
       )}
