@@ -131,6 +131,11 @@ export function Footer() {
             </button>
           </div>
         </div>
+
+        {/* Credit */}
+        <p className="mt-4 text-center font-body text-xs text-white/50">
+          {t("madeBy")}
+        </p>
       </div>
 
       <LegalModal
