@@ -351,8 +351,33 @@
   },
   "contact": {
     "metaDescription": "Contact the OAFLAD #BuildingResilience campaign team — inquiries, partnerships, and press.",
-    "title": "Contact",
-    "content": "Contact page under construction."
+    "title": "Contact Us",
+    "badge": "Get in Touch",
+    "intro": "Have a question about the #BuildingResilience conference? Looking to partner with us or need press information? We'd love to hear from you.",
+    "infoEmailTitle": "Email",
+    "infoPhoneTitle": "Phone",
+    "infoLocationTitle": "Location",
+    "infoLocationText": "Libreville, Gabon",
+    "nameLabel": "Full name",
+    "emailLabel": "Email address",
+    "organisationLabel": "Organisation",
+    "inquiryTypeLabel": "Inquiry type",
+    "inquiryTypes": {
+      "general": "General inquiry",
+      "partnership": "Partnership",
+      "press": "Press & media",
+      "registration": "Registration",
+      "other": "Other"
+    },
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "submitButton": "Send message",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "errorGeneric": "Something went wrong. Please try again later.",
+    "successBadge": "Message Sent",
+    "successTitle": "Thank you for reaching out",
+    "successMessage": "We've received your message and will get back to you as soon as possible."
   },
   "legal": {
     "close": "Close",
@@ -370,7 +395,7 @@
     "securityTitle": "Data Security",
     "security": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction.",
     "contactTitle": "Contact",
-    "contactText": "For any questions regarding this privacy policy or your personal data, please contact the OAFLAD organising team via the contact page.",
+    "contactText": "For any questions regarding this privacy policy or your personal data, please contact the OAFLAD organising team via the <contactLink>contact page</contactLink>.",
     "termsTitle": "Terms of Use",
     "termsLastUpdated": "Last updated: April 2026",
     "termsIntro": "By accessing and using the resilience241.com website, you agree to the following terms and conditions.",
@@ -385,7 +410,7 @@
     "changesTitle": "Changes to These Terms",
     "changes": "OAFLAD reserves the right to update these terms at any time. Continued use of the website constitutes acceptance of the revised terms.",
     "termsContactTitle": "Contact",
-    "termsContactText": "For any questions regarding these terms, please contact the OAFLAD organising team via the contact page."
+    "termsContactText": "For any questions regarding these terms, please contact the OAFLAD organising team via the <contactLink>contact page</contactLink>."
   },
   "lang": {
     "switchTo": "FR",

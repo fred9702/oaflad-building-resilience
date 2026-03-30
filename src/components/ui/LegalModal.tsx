@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useCallback } from "react";
-import { useTranslations } from "next-intl";
+import { useEffect, useCallback, type ReactNode } from "react";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "@phosphor-icons/react";
 
@@ -13,6 +14,7 @@ interface LegalModalProps {
 
 export function LegalModal({ type, isOpen, onClose }: LegalModalProps) {
   const t = useTranslations("legal");
+  const locale = useLocale();
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -32,22 +34,32 @@ export function LegalModal({ type, isOpen, onClose }: LegalModalProps) {
     };
   }, [isOpen, handleKeyDown]);
 
-  const privacySections = [
+  const contactLinkRenderer = (chunks: ReactNode) => (
+    <Link
+      href={`/${locale}/contact`}
+      onClick={onClose}
+      className="text-orange underline underline-offset-4 hover:text-orange/80 transition-colors"
+    >
+      {chunks}
+    </Link>
+  );
+
+  const privacySections: { title: string; body: ReactNode }[] = [
     { title: t("dataCollectedTitle"), body: t("dataCollected") },
     { title: t("purposeTitle"), body: t("purpose") },
     { title: t("retentionTitle"), body: t("retention") },
     { title: t("rightsTitle"), body: t("rights") },
     { title: t("securityTitle"), body: t("security") },
-    { title: t("contactTitle"), body: t("contactText") },
+    { title: t("contactTitle"), body: t.rich("contactText", { contactLink: contactLinkRenderer }) },
   ];
 
-  const termsSections = [
+  const termsSections: { title: string; body: ReactNode }[] = [
     { title: t("useTitle"), body: t("use") },
     { title: t("ipTitle"), body: t("ip") },
     { title: t("registrationTitle"), body: t("registration") },
     { title: t("liabilityTitle"), body: t("liability") },
     { title: t("changesTitle"), body: t("changes") },
-    { title: t("termsContactTitle"), body: t("termsContactText") },
+    { title: t("termsContactTitle"), body: t.rich("termsContactText", { contactLink: contactLinkRenderer }) },
   ];
 
   const title = type === "privacy" ? t("privacyTitle") : t("termsTitle");

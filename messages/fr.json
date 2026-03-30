@@ -351,8 +351,33 @@
   },
   "contact": {
     "metaDescription": "Contactez l'équipe de la campagne OPDAD #RenforcerLaRésilience — demandes, partenariats et presse.",
-    "title": "Contact",
-    "content": "Page de contact en construction."
+    "title": "Contactez-nous",
+    "badge": "Nous contacter",
+    "intro": "Vous avez une question sur la conférence #RenforcerLaRésilience ? Vous souhaitez devenir partenaire ou obtenir des informations presse ? N'hésitez pas à nous écrire.",
+    "infoEmailTitle": "E-mail",
+    "infoPhoneTitle": "Téléphone",
+    "infoLocationTitle": "Lieu",
+    "infoLocationText": "Libreville, Gabon",
+    "nameLabel": "Nom complet",
+    "emailLabel": "Adresse e-mail",
+    "organisationLabel": "Organisation",
+    "inquiryTypeLabel": "Type de demande",
+    "inquiryTypes": {
+      "general": "Demande générale",
+      "partnership": "Partenariat",
+      "press": "Presse & médias",
+      "registration": "Inscription",
+      "other": "Autre"
+    },
+    "subjectLabel": "Objet",
+    "messageLabel": "Message",
+    "submitButton": "Envoyer le message",
+    "required": "Ce champ est requis",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer plus tard.",
+    "successBadge": "Message envoyé",
+    "successTitle": "Merci pour votre message",
+    "successMessage": "Nous avons bien reçu votre message et reviendrons vers vous dans les meilleurs délais."
   },
   "legal": {
     "close": "Fermer",
@@ -370,7 +395,7 @@
     "securityTitle": "Sécurité des données",
     "security": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, toute modification, divulgation ou destruction.",
     "contactTitle": "Contact",
-    "contactText": "Pour toute question relative à cette politique de confidentialité ou à vos données personnelles, veuillez contacter l'équipe organisatrice de l'OPDAD via la page de contact.",
+    "contactText": "Pour toute question relative à cette politique de confidentialité ou à vos données personnelles, veuillez contacter l'équipe organisatrice de l'OPDAD via la <contactLink>page de contact</contactLink>.",
     "termsTitle": "Conditions d'utilisation",
     "termsLastUpdated": "Dernière mise à jour : avril 2026",
     "termsIntro": "En accédant au site resilience241.com et en l'utilisant, vous acceptez les conditions générales suivantes.",
@@ -385,7 +410,7 @@
     "changesTitle": "Modifications des conditions",
     "changes": "L'OPDAD se réserve le droit de mettre à jour ces conditions à tout moment. L'utilisation continue du site vaut acceptation des conditions révisées.",
     "termsContactTitle": "Contact",
-    "termsContactText": "Pour toute question relative à ces conditions, veuillez contacter l'équipe organisatrice de l'OPDAD via la page de contact."
+    "termsContactText": "Pour toute question relative à ces conditions, veuillez contacter l'équipe organisatrice de l'OPDAD via la <contactLink>page de contact</contactLink>."
   },
   "lang": {
     "switchTo": "EN",
