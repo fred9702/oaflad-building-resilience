@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
-import { CaretDown } from "@phosphor-icons/react";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
+import { ArrowRight } from "@phosphor-icons/react";
 import type { Partner } from "@/data/partners";
-import { FirstLadiesPanel } from "./FirstLadiesPanel";
 
 const COLOR_MAP = {
   crimson: {
@@ -40,14 +38,12 @@ const COLOR_MAP = {
 
 export function PartnerCard({ partner }: { partner: Partner }) {
   const t = useTranslations("partners");
-  const [isExpanded, setIsExpanded] = useState(false);
+  const locale = useLocale();
   const colors = COLOR_MAP[partner.color];
 
   return (
     <div
-      className={`relative rounded-2xl p-8 border ${colors.border} ${colors.bg} backdrop-blur-sm transition-all duration-300 ${
-        partner.expandable && isExpanded ? "md:col-span-2" : ""
-      }`}
+      className={`relative rounded-2xl p-8 border ${colors.border} ${colors.bg} backdrop-blur-sm transition-all duration-300`}
     >
       {/* Partner name */}
       <h3 className="font-heading text-xl font-bold text-near-black mb-3">
@@ -71,38 +67,15 @@ export function PartnerCard({ partner }: { partner: Partner }) {
         </a>
 
         {partner.expandable && (
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
+          <Link
+            href={`/${locale}/speakers#first-ladies`}
             className={`inline-flex items-center gap-2 font-heading text-sm font-semibold px-4 py-2 rounded-full ${colors.button} transition-all duration-200`}
           >
-            {isExpanded ? t("collapseFirstLadies") : t("expandFirstLadies")}
-            <motion.span
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-              className="inline-flex"
-            >
-              <CaretDown size={16} weight="bold" />
-            </motion.span>
-          </button>
+            {t("viewFirstLadies")}
+            <ArrowRight size={16} weight="bold" />
+          </Link>
         )}
       </div>
-
-      {/* Expandable First Ladies panel */}
-      {partner.expandable && (
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
-              <FirstLadiesPanel />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      )}
     </div>
   );
 }

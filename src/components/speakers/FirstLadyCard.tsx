@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import type { FirstLady } from "@/data/first-ladies";
 
 export function FirstLadyCard({ lady }: { lady: FirstLady }) {
-  const t = useTranslations("partners");
+  const t = useTranslations("speakers");
 
   const name = t(`firstLadies.${lady.id}.name`);
   const country = t(`firstLadies.${lady.id}.country`);

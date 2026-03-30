@@ -291,37 +291,17 @@
   },
   "speakers": {
     "metaDescription": "Speakers at the OAFLAD #BuildingResilience conference — African leaders, experts, and advocates for women's resilience.",
-    "title": "Speakers",
-    "content": "Speaker list coming soon."
-  },
-  "partners": {
-    "metaDescription": "Partners of the OAFLAD #BuildingResilience campaign — organizations working together to strengthen resilience across Africa.",
-    "title": "Partners",
-    "badge": "Our Partners",
-    "intro": "The #BuildingResilience campaign is made possible through the collaboration of organizations committed to strengthening resilience across Africa.",
-    "visitWebsite": "Visit website",
-    "expandFirstLadies": "View attending First Ladies",
-    "collapseFirstLadies": "Hide First Ladies",
+    "title": "Speakers & Dignitaries",
+    "badge": "Speakers & Dignitaries",
+    "intro": "Meet the distinguished leaders and dignitaries attending the #BuildingResilience conference in Libreville.",
+    "content": "Speaker list coming soon.",
+    "comingSoonBadge": "Coming Soon",
+    "comingSoonTitle": "Speaker Announcements",
+    "firstLadiesBadge": "First Ladies & Dignitaries",
+    "firstLadiesTitle": "Attending the Conference",
     "hostLabel": "Host",
     "firstGentlemanLabel": "First Gentleman",
     "firstLadyLabel": "First Lady",
-    "attendingTitle": "Attending the Conference",
-    "oaflad": {
-      "name": "OAFLAD / OPDAD",
-      "description": "The Organization of African First Ladies for Development brings together First Ladies from across the continent to advocate for health, education, and women's empowerment."
-    },
-    "fondation": {
-      "name": "Ma Banniere Foundation",
-      "description": "Founded by the First Lady of Gabon, the Ma Banniere Foundation works to improve the lives of vulnerable populations through social action and community development."
-    },
-    "cap241": {
-      "name": "Cap241",
-      "description": "Cap241 is the strategic framework for social action linking health, family stability, prevention, and skills transfer under the #BuildingResilience campaign."
-    },
-    "bomalab": {
-      "name": "Bomalab",
-      "description": "Bomalab is a creative technology hub driving innovation and digital transformation in Central Africa."
-    },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
       "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
@@ -341,6 +321,30 @@
       "car": { "name": "Tina Marguerite Touadéra", "country": "Central African Republic" },
       "ghana": { "name": "Lordina Mahama", "country": "Ghana" },
       "namibia": { "name": "Epaphras Denga Ndaitwah", "country": "Namibia" }
+    }
+  },
+  "partners": {
+    "metaDescription": "Partners of the OAFLAD #BuildingResilience campaign — organizations working together to strengthen resilience across Africa.",
+    "title": "Partners",
+    "badge": "Our Partners",
+    "intro": "The #BuildingResilience campaign is made possible through the collaboration of organizations committed to strengthening resilience across Africa.",
+    "visitWebsite": "Visit website",
+    "viewFirstLadies": "View attending First Ladies",
+    "oaflad": {
+      "name": "OAFLAD / OPDAD",
+      "description": "The Organization of African First Ladies for Development brings together First Ladies from across the continent to advocate for health, education, and women's empowerment."
+    },
+    "fondation": {
+      "name": "Ma Banniere Foundation",
+      "description": "Founded by the First Lady of Gabon, the Ma Banniere Foundation works to improve the lives of vulnerable populations through social action and community development."
+    },
+    "cap241": {
+      "name": "Cap241",
+      "description": "Cap241 is the strategic framework for social action linking health, family stability, prevention, and skills transfer under the #BuildingResilience campaign."
+    },
+    "bomalab": {
+      "name": "Bomalab",
+      "description": "Bomalab is a creative technology hub driving innovation and digital transformation in Central Africa."
     }
   },
   "contact": {

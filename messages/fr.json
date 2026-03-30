@@ -291,37 +291,17 @@
   },
   "speakers": {
     "metaDescription": "Intervenants de la conférence OPDAD #BuildingResilience — leaders africains, experts et défenseurs de la résilience des femmes.",
-    "title": "Intervenants",
-    "content": "Liste des intervenants à venir."
-  },
-  "partners": {
-    "metaDescription": "Partenaires de la campagne OPDAD #BuildingResilience — organisations engagées pour renforcer la résilience à travers l'Afrique.",
-    "title": "Partenaires",
-    "badge": "Nos Partenaires",
-    "intro": "La campagne #BuildingResilience est rendue possible grâce à la collaboration d'organisations engagées pour renforcer la résilience à travers l'Afrique.",
-    "visitWebsite": "Visiter le site",
-    "expandFirstLadies": "Voir les Premières Dames présentes",
-    "collapseFirstLadies": "Masquer les Premières Dames",
+    "title": "Intervenants & Dignitaires",
+    "badge": "Intervenants & Dignitaires",
+    "intro": "Découvrez les leaders et dignitaires distingués qui participent à la conférence #BuildingResilience à Libreville.",
+    "content": "Liste des intervenants à venir.",
+    "comingSoonBadge": "Bientôt disponible",
+    "comingSoonTitle": "Annonces des intervenants",
+    "firstLadiesBadge": "Premières Dames & Dignitaires",
+    "firstLadiesTitle": "Présentes à la conférence",
     "hostLabel": "Hôte",
     "firstGentlemanLabel": "Premier Gentleman",
     "firstLadyLabel": "Première Dame",
-    "attendingTitle": "Présentes à la conférence",
-    "oaflad": {
-      "name": "OPDAD / OAFLAD",
-      "description": "L'Organisation des Premières Dames d'Afrique pour le Développement rassemble les Premières Dames du continent pour promouvoir la santé, l'éducation et l'autonomisation des femmes."
-    },
-    "fondation": {
-      "name": "Fondation Ma Bannière",
-      "description": "Fondée par la Première Dame du Gabon, la Fondation Ma Bannière œuvre à l'amélioration des conditions de vie des populations vulnérables par l'action sociale et le développement communautaire."
-    },
-    "cap241": {
-      "name": "Cap241",
-      "description": "Cap241 est le cadre stratégique d'action sociale articulant santé, stabilité familiale, prévention et transfert de compétences dans le cadre de la campagne #BuildingResilience."
-    },
-    "bomalab": {
-      "name": "Bomalab",
-      "description": "Bomalab est un hub technologique créatif au service de l'innovation et de la transformation numérique en Afrique centrale."
-    },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
       "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
@@ -341,6 +321,30 @@
       "car": { "name": "Tina Marguerite Touadéra", "country": "République centrafricaine" },
       "ghana": { "name": "Lordina Mahama", "country": "Ghana" },
       "namibia": { "name": "Epaphras Denga Ndaitwah", "country": "Namibie" }
+    }
+  },
+  "partners": {
+    "metaDescription": "Partenaires de la campagne OPDAD #BuildingResilience — organisations engagées pour renforcer la résilience à travers l'Afrique.",
+    "title": "Partenaires",
+    "badge": "Nos Partenaires",
+    "intro": "La campagne #BuildingResilience est rendue possible grâce à la collaboration d'organisations engagées pour renforcer la résilience à travers l'Afrique.",
+    "visitWebsite": "Visiter le site",
+    "viewFirstLadies": "Voir les Premières Dames présentes",
+    "oaflad": {
+      "name": "OPDAD / OAFLAD",
+      "description": "L'Organisation des Premières Dames d'Afrique pour le Développement rassemble les Premières Dames du continent pour promouvoir la santé, l'éducation et l'autonomisation des femmes."
+    },
+    "fondation": {
+      "name": "Fondation Ma Bannière",
+      "description": "Fondée par la Première Dame du Gabon, la Fondation Ma Bannière œuvre à l'amélioration des conditions de vie des populations vulnérables par l'action sociale et le développement communautaire."
+    },
+    "cap241": {
+      "name": "Cap241",
+      "description": "Cap241 est le cadre stratégique d'action sociale articulant santé, stabilité familiale, prévention et transfert de compétences dans le cadre de la campagne #BuildingResilience."
+    },
+    "bomalab": {
+      "name": "Bomalab",
+      "description": "Bomalab est un hub technologique créatif au service de l'innovation et de la transformation numérique en Afrique centrale."
     }
   },
   "contact": {
