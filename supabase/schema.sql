@@ -9,6 +9,7 @@ create table if not exists registrations (
   last_name text not null,
   email text unique not null,
   phone text,
+  email_hash text,
   organisation text,
   role text,
   category text not null,
