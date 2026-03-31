@@ -18,7 +18,7 @@ const WEBHOOK_SECRET = Deno.env.get("WEBHOOK_SECRET") ?? "";
 /* ------------------------------------------------------------------ */
 
 const WHATSAPP_LINK = "https://chat.whatsapp.com/FvnwWW94uVQ0fy7HbUPzYR";
-const CADIDI_OPTIN_LINK = `${APP_URL}/cadidi`;
+const WHATSAPP_BOT_NUMBER = "15559434679";
 
 /* Social links */
 const SOCIAL_X = "https://x.com/resilience241";
@@ -55,6 +55,7 @@ interface Strings {
   ctaWhatsapp: string;
   ctaCadidi: string;
   followUs: string;
+  consentWord: string;
 }
 
 const i18n: Record<Lang, Strings> = {
@@ -67,6 +68,7 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Rejoindre la communauté WhatsApp",
     ctaCadidi: "Découvrir Cadidi — Assistant IA",
     followUs: "Suivez-nous",
+    consentWord: "OUI",
   },
   en: {
     subject: (name) => `Welcome ${name} — #BuildingResilience`,
@@ -77,6 +79,7 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Join the WhatsApp Community",
     ctaCadidi: "Discover Cadidi — AI Assistant",
     followUs: "Follow us",
+    consentWord: "YES",
   },
   pt: {
     subject: (name) => `Bem-vindo(a) ${name} — #BuildingResilience`,
@@ -87,6 +90,7 @@ const i18n: Record<Lang, Strings> = {
     ctaWhatsapp: "Juntar-se à comunidade WhatsApp",
     ctaCadidi: "Descobrir Cadidi — Assistente IA",
     followUs: "Siga-nos",
+    consentWord: "SIM",
   },
   es: {
     subject: (name) => `Bienvenido(a) ${name} — #BuildingResilience`,
@@ -98,6 +102,7 @@ const i18n: Record<Lang, Strings> = {
     ctaCadidi: "Descubrir Cadidi — Asistente IA",
     followUs: "Síguenos",
     footer: "Organización Africana de Lucha Contra la Droga",
+    consentWord: "SÍ",
   },
 };
 
@@ -113,11 +118,17 @@ function escapeHtml(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
+function buildCadidiLink(email: string, lang: string): string {
+  const t = getStrings(lang);
+  const text = `${t.consentWord} ${email}`;
+  return `https://wa.me/${WHATSAPP_BOT_NUMBER}?text=${encodeURIComponent(text)}`;
+}
+
 /* ------------------------------------------------------------------ */
 /*  HTML email builder                                                 */
 /* ------------------------------------------------------------------ */
 
-function buildHtml(firstName: string, lang: string): string {
+function buildHtml(firstName: string, lang: string, email: string): string {
   const t = getStrings(lang);
   const safe = escapeHtml(firstName);
   const logoUrl = `${APP_URL}/images/${lang}/campaign-logo.svg`;
@@ -202,7 +213,7 @@ function buildHtml(firstName: string, lang: string): string {
       <table role="presentation" cellpadding="0" cellspacing="0">
         <tr>
           <td align="center" style="border:2px solid ${BRAND.crimson};border-radius:6px;">
-            <a href="${CADIDI_OPTIN_LINK}" target="_blank" style="display:inline-block;padding:14px 32px;font-family:${BRAND.fontHeading};font-size:16px;font-weight:600;color:${BRAND.crimson};text-decoration:none;">
+            <a href="${buildCadidiLink(email, lang)}" target="_blank" style="display:inline-block;padding:14px 32px;font-family:${BRAND.fontHeading};font-size:16px;font-weight:600;color:${BRAND.crimson};text-decoration:none;">
               ${t.ctaCadidi}
             </a>
           </td>
@@ -258,7 +269,7 @@ function buildHtml(firstName: string, lang: string): string {
 /*  Plain-text fallback                                                */
 /* ------------------------------------------------------------------ */
 
-function buildText(firstName: string, lang: string): string {
+function buildText(firstName: string, lang: string, email: string): string {
   const t = getStrings(lang);
 
   return `${t.greeting(firstName)}
@@ -271,7 +282,7 @@ ${t.ctaWhatsapp}:
 ${WHATSAPP_LINK}
 
 ${t.ctaCadidi}:
-${CADIDI_OPTIN_LINK}
+${buildCadidiLink(email, lang)}
 
 ${t.followUs}:
 X (Twitter) : ${SOCIAL_X}
@@ -333,8 +344,8 @@ serve(async (req: Request) => {
         from: `OAFLAD #BuildingResilience <${FROM_EMAIL}>`,
         to: [email],
         subject: t.subject(firstName),
-        html: buildHtml(firstName, lang),
-        text: buildText(firstName, lang),
+        html: buildHtml(firstName, lang, email),
+        text: buildText(firstName, lang, email),
       }),
     });
 
