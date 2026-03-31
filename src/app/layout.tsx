@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Source_Sans_3, Source_Code_Pro } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -55,6 +56,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${sourceSans.variable} ${sourceCode.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
