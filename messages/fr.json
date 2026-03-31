@@ -295,32 +295,32 @@
     "timelineTitle": "La journée en un coup d'œil",
     "timeline": {
       "registration": {
-        "time": "8h00",
+        "time": "TBC",
         "title": "Accueil & Inscription",
-        "description": "Arrivée, accréditation et petit-déjeuner de networking"
+        "description": "Arrivée, accréditation et networking"
       },
       "opening": {
-        "time": "9h00",
-        "title": "Cérémonie d'ouverture",
-        "description": "Allocutions de bienvenue et discours d'ouverture"
+        "time": "10h",
+        "title": "Talk — Journée nationale de la Femme",
+        "description": "Un dialogue national sur la résilience des femmes et des familles"
       },
       "panel1": {
-        "time": "10h30",
+        "time": "TBC",
         "title": "Panel 1 — Résilience climatique et sociale",
         "description": "La résilience des femmes face aux crises climatiques et sociales"
       },
       "panel2": {
-        "time": "12h00",
+        "time": "TBC",
         "title": "Panel 2 — Santé et stabilité familiale",
         "description": "Santé, stabilité familiale et résilience"
       },
       "panel3": {
-        "time": "14h00",
+        "time": "TBC",
         "title": "Panel 3 — Partenariats",
         "description": "Partenariats et réponses durables"
       },
       "closing": {
-        "time": "16h00",
+        "time": "TBC",
         "title": "Lancement du CAP 241 & Clôture",
         "description": "Lancement officiel du CAP 241 et déclarations de clôture"
       }

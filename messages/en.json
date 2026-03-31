@@ -295,32 +295,32 @@
     "timelineTitle": "Day at a Glance",
     "timeline": {
       "registration": {
-        "time": "8:00",
+        "time": "TBC",
         "title": "Registration & Welcome",
-        "description": "Arrival, accreditation, and networking breakfast"
+        "description": "Arrival, accreditation, and networking"
       },
       "opening": {
-        "time": "9:00",
-        "title": "Opening Ceremony",
-        "description": "Welcome addresses and keynote speeches"
+        "time": "10am",
+        "title": "Talk — National Women's Day",
+        "description": "A national dialogue on the resilience of women and families"
       },
       "panel1": {
-        "time": "10:30",
+        "time": "TBC",
         "title": "Panel 1 — Climate & Social Resilience",
         "description": "Women's resilience in the face of climate and social crises"
       },
       "panel2": {
-        "time": "12:00",
+        "time": "TBC",
         "title": "Panel 2 — Health & Family Stability",
         "description": "Health, family stability and resilience"
       },
       "panel3": {
-        "time": "14:00",
+        "time": "TBC",
         "title": "Panel 3 — Partnerships",
         "description": "Partnerships and sustainable responses"
       },
       "closing": {
-        "time": "16:00",
+        "time": "TBC",
         "title": "CAP 241 Launch & Closing",
         "description": "Official launch of CAP 241 and closing declarations"
       }
