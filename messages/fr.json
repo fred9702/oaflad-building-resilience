@@ -67,6 +67,9 @@
     "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
     "required": "Ce champ est requis.",
     "invalidEmail": "Adresse e-mail invalide.",
+    "phoneCountryCode": "Indicatif pays",
+    "phoneLocal": "Numéro de téléphone (sans indicatif)",
+    "invalidPhone": "Numéro de téléphone invalide.",
     "consentRequired": "Vous devez accepter la politique de confidentialité."
   },
   "confirmation": {

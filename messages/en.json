@@ -67,6 +67,9 @@
     "errorGeneric": "An error occurred. Please try again.",
     "required": "This field is required.",
     "invalidEmail": "Invalid email address.",
+    "phoneCountryCode": "Country code",
+    "phoneLocal": "Phone number (without country code)",
+    "invalidPhone": "Invalid phone number.",
     "consentRequired": "You must accept the privacy policy."
   },
   "confirmation": {
