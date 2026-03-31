@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Cap241Hero } from "@/components/cap241/Cap241Hero";
 import { Cap241Pillars } from "@/components/cap241/Cap241Pillars";
-import { Cap241Equilibrium } from "@/components/cap241/Cap241Equilibrium";
+import { Cap241Balance } from "@/components/cap241/Cap241Balance";
 import { Cap241Nkok } from "@/components/cap241/Cap241Nkok";
 import { buildMetadata } from "@/lib/seo";
 
@@ -21,7 +21,7 @@ export default async function Cap241Page({ params }: Props) {
     <>
       <Cap241Hero />
       <Cap241Pillars />
-      <Cap241Equilibrium />
+      <Cap241Balance />
       <Cap241Nkok />
     </>
   );

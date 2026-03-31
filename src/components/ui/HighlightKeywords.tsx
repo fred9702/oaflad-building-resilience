@@ -7,7 +7,7 @@ const KEYWORDS = [
   "#RenforcerLaRésilience",
   "CAP 241",
   "ÉQUILIBRES",
-  "EQUILIBRIUM",
+  "BALANCE",
 ];
 
 const pattern = new RegExp(`(${KEYWORDS.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");

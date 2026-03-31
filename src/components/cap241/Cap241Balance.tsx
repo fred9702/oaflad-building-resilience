@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
-export function Cap241Equilibrium() {
+export function Cap241Balance() {
   const t = useTranslations("cap241");
 
   return (
@@ -21,22 +21,22 @@ export function Cap241Equilibrium() {
       />
 
       <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
-        {/* EQUILIBRIUM Programme */}
+        {/* BALANCE Programme */}
         <ScrollReveal>
           <SectionBadge color="crimson" variant="underline">
-            {t("equilibriumBadge")}
+            {t("balanceBadge")}
           </SectionBadge>
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-crimson">
-            <HighlightKeywords>{t("equilibriumTitle")}</HighlightKeywords>
+            <HighlightKeywords>{t("balanceTitle")}</HighlightKeywords>
           </h2>
           <p className="mt-2 font-heading text-lg md:text-xl font-semibold text-orange">
-            {t("equilibriumSubtitle")}
+            {t("balanceSubtitle")}
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <p className="mt-6 font-body text-lg text-near-black/80 max-w-3xl">
-            <HighlightKeywords>{t("equilibriumIntro")}</HighlightKeywords>
+            <HighlightKeywords>{t("balanceIntro")}</HighlightKeywords>
           </p>
         </ScrollReveal>
 
@@ -54,7 +54,7 @@ export function Cap241Equilibrium() {
                   </span>
                 </div>
                 <p className="font-heading text-base md:text-lg font-bold text-near-black">
-                  {t(`equilibriumActions.${key}`)}
+                  {t(`balanceActions.${key}`)}
                 </p>
               </div>
             ))}
@@ -63,7 +63,7 @@ export function Cap241Equilibrium() {
 
         <ScrollReveal delay={0.3}>
           <p className="mt-10 font-body text-base md:text-lg text-near-black/70 italic max-w-3xl">
-            {t("equilibriumAmbition")}
+            {t("balanceAmbition")}
           </p>
         </ScrollReveal>
 

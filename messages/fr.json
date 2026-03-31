@@ -205,16 +205,16 @@
       "programme": "SAVOIRS",
       "description": "Renforcer les fondations éducatives pour construire une résilience durable par la prévention et la sensibilisation."
     },
-    "equilibriumBadge": "Programme",
-    "equilibriumTitle": "Le programme ÉQUILIBRES",
-    "equilibriumSubtitle": "Prévenir, soutenir, reconstruire",
-    "equilibriumIntro": "Le programme ÉQUILIBRES constitue la traduction opérationnelle du pilier Santé. Dans de nombreuses situations, le poids des fragilités repose en grande partie sur les femmes.",
-    "equilibriumActions": {
+    "balanceBadge": "Programme",
+    "balanceTitle": "Le programme ÉQUILIBRES",
+    "balanceSubtitle": "Prévenir, soutenir, reconstruire",
+    "balanceIntro": "Le programme ÉQUILIBRES constitue la traduction opérationnelle du pilier Santé. Dans de nombreuses situations, le poids des fragilités repose en grande partie sur les femmes.",
+    "balanceActions": {
       "prevent": "Prévenir les ruptures",
       "support": "Soutenir la continuité des soins",
       "rebuild": "Reconstruire les trajectoires"
     },
-    "equilibriumAmbition": "Une ambition claire : Transformer des fragilités en trajectoires stabilisées. Passer du silence à l'accompagnement. Construire des réponses durables.",
+    "balanceAmbition": "Une ambition claire : Transformer des fragilités en trajectoires stabilisées. Passer du silence à l'accompagnement. Construire des réponses durables.",
     "trajectoriesBadge": "Le défi",
     "trajectoriesTitle": "Des trajectoires fragilisées",
     "trajectoriesIntro": "Nos sociétés sont confrontées à des fragilités multiples :",

@@ -124,7 +124,7 @@
     "gabonConviction": "This choice is based on a simple conviction:",
     "gabonConvictionText": "Resilience cannot be declared. It must be built.",
     "gabonBuilt": "It is built through prevention, continuity of care, and the reconstruction of fragile life trajectories.",
-    "gabonProgramme": "The EQUILIBRIUM Programme 2026–2029, part of the national CAP 241 framework, represents Gabon's contribution to this African initiative.",
+    "gabonProgramme": "The BALANCE Programme 2026–2029, part of the national CAP 241 framework, represents Gabon's contribution to this African initiative.",
     "gabonCommitmentIntro": "It reflects a strong commitment:",
     "gabonCommitments": {
       "national": "To structure a coherent national response",
@@ -139,7 +139,7 @@
     "zonTitle": "Message from ZON",
     "zonQuote": "On this day of April 17, National Women's Day in Gabon, I wish to address each and every one of you. To those present here. To those working in our cities, in our villages, in our homes. And to those whose commitment, often unseen, continues to sustain our society.",
     "zonQuote2": "Because behind the balances we observe, there is, very often, the silent burden carried by women. When fragilities emerge — social, economic or health-related — they are the ones who absorb, organize, and sustain. But the resilience of a Nation cannot rely solely on this silent strength. It must be structured. It must be supported. It must be organized.",
-    "zonQuote3": "Through the EQUILIBRIUM Programme 2026–2029, which I officially launch today, we choose to act on what sustainably underpins stability: continuity of care, recognition of vulnerabilities, and the rebuilding of life trajectories.",
+    "zonQuote3": "Through the BALANCE Programme 2026–2029, which I officially launch today, we choose to act on what sustainably underpins stability: continuity of care, recognition of vulnerabilities, and the rebuilding of life trajectories.",
     "zonAuthor": "Her Excellency Mrs Zita Oligui Nguema",
     "zonCta": "Discover CAP 241",
     "fondationBadge": "Foundation",
@@ -181,7 +181,7 @@
     "pillarsArchitecture": "This architecture avoids fragmentation of interventions. It fosters a cross-cutting, coherent and sustainable approach.",
     "pillar1": {
       "name": "CAP Health",
-      "programme": "EQUILIBRIUM",
+      "programme": "BALANCE",
       "description": "Health is the foundation of stability. When care pathways break, life trajectories collapse.",
       "items": {
         "care": "Continuity of care",
@@ -192,7 +192,7 @@
     },
     "pillar2": {
       "name": "CAP Women",
-      "programme": "TRANSFERT",
+      "programme": "TRANSFER",
       "description": "Supporting women in their central role within families and communities through skills transfer and empowerment."
     },
     "pillar3": {
@@ -205,16 +205,16 @@
       "programme": "KNOWLEDGE",
       "description": "Strengthening educational foundations to build lasting resilience through prevention and awareness."
     },
-    "equilibriumBadge": "Programme",
-    "equilibriumTitle": "The EQUILIBRIUM Programme",
-    "equilibriumSubtitle": "Prevent — Support — Rebuild",
-    "equilibriumIntro": "Women often carry the weight of fragility. EQUILIBRIUM provides structured responses:",
-    "equilibriumActions": {
+    "balanceBadge": "Programme",
+    "balanceTitle": "The BALANCE Programme",
+    "balanceSubtitle": "Prevent — Support — Rebuild",
+    "balanceIntro": "Women often carry the weight of fragility. BALANCE provides structured responses:",
+    "balanceActions": {
       "prevent": "Preventing disruptions",
       "support": "Supporting care continuity",
       "rebuild": "Rebuilding life trajectories"
     },
-    "equilibriumAmbition": "A clear ambition: to transform fragilities into stabilized trajectories. To move from silence to support. To build sustainable responses.",
+    "balanceAmbition": "A clear ambition: to transform fragilities into stabilized trajectories. To move from silence to support. To build sustainable responses.",
     "trajectoriesBadge": "The Challenge",
     "trajectoriesTitle": "Fragile Trajectories Requiring Structured Response",
     "trajectoriesIntro": "Our societies face:",
@@ -223,7 +223,7 @@
       "family": "Family breakdown",
       "paths": "Disrupted life paths"
     },
-    "trajectoriesResponse": "EQUILIBRIUM responds by:",
+    "trajectoriesResponse": "BALANCE responds by:",
     "trajectoriesActions": {
       "recognising": "Recognising",
       "preventing": "Preventing",
@@ -256,7 +256,7 @@
     "milestoneTitle": "A Foundational Milestone",
     "milestoneIntro": "April 17, 2026 marks:",
     "milestoneItems": {
-      "launch": "The launch of EQUILIBRIUM",
+      "launch": "The launch of BALANCE",
       "partners": "Partner mobilization",
       "cooperation": "The start of a structured cooperation dynamic"
     },
