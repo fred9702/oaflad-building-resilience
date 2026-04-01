@@ -30,5 +30,6 @@ export const partners: Partner[] = [
     id: "bomalab",
     website: "https://bomalab.com",
     color: "orange",
+    logoPath: "/images/partners/bomalab-logo.png",
   },
 ];
