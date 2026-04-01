@@ -47,18 +47,26 @@ export function Cap241Pillars() {
                 <div
                   className={`relative ${color.bg} border ${color.border} rounded-2xl p-8 h-full transition-transform hover:scale-[1.01]`}
                 >
-                  {/* Pillar logo */}
-                  <div className="mb-5">
+                  {/* Pillar logo + name */}
+                  <div className="flex items-center gap-4 mb-5">
                     <Image
                       src={PILLAR_LOGOS[i]}
                       alt={t(`${key}.name`)}
-                      width={180}
-                      height={72}
-                      className="h-12 md:h-14 w-auto"
+                      width={56}
+                      height={56}
+                      className="h-12 w-auto shrink-0"
                     />
+                    <div>
+                      <h3 className={`font-heading text-xl font-bold ${color.accent}`}>
+                        {t(`${key}.name`)}
+                      </h3>
+                      <p className="font-heading text-sm font-semibold uppercase tracking-wider text-near-black/40">
+                        {t(`${key}.programme`)}
+                      </p>
+                    </div>
                   </div>
 
-                  <p className="mt-4 font-body text-base md:text-lg text-near-black/75 leading-relaxed">
+                  <p className="font-body text-base md:text-lg text-near-black/75 leading-relaxed">
                     {t(`${key}.description`)}
                   </p>
 
