@@ -21,6 +21,9 @@ export function SpeakersClosing() {
       />
       <div className="relative mx-auto max-w-3xl px-6 lg:px-8 text-center">
         <ScrollReveal>
+          <p className="font-heading text-2xl md:text-3xl font-bold text-white leading-relaxed mb-8">
+            {t("partnersClosingText")}
+          </p>
           <Button href={`/${locale}/partners`} variant="primary">
             {t("partnersCta")}
           </Button>

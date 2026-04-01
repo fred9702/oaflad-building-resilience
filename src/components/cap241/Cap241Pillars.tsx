@@ -21,10 +21,10 @@ const PILLAR_LOGOS = [
 ] as const;
 
 const PILLAR_PHOTOS = [
-  "/images/photography/medical-examination.jpg",
-  "/images/photography/artisan-hands.jpg",
-  "/images/photography/cap-femmes-gathering.jpg",
-  "/images/photography/doctor-baby.jpg",
+  { src: "/images/photography/medical-examination.jpg", position: "object-center" },
+  { src: "/images/photography/artisan-hands.jpg", position: "object-center" },
+  { src: "/images/photography/cap-femmes-gathering.jpg", position: "object-center" },
+  { src: "/images/photography/doctor-baby.jpg", position: "object-top" },
 ] as const;
 
 export function Cap241Pillars() {
@@ -57,10 +57,10 @@ export function Cap241Pillars() {
                   {/* Pillar header image */}
                   <div className="relative aspect-[16/9]">
                     <Image
-                      src={PILLAR_PHOTOS[i]}
+                      src={PILLAR_PHOTOS[i].src}
                       alt={t(`${key}.name`)}
                       fill
-                      className="object-cover"
+                      className={`object-cover ${PILLAR_PHOTOS[i].position}`}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className={`absolute inset-0 ${color.dot} opacity-30`} />
