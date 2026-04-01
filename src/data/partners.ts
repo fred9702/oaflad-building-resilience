@@ -24,6 +24,7 @@ export const partners: Partner[] = [
     id: "cap241",
     website: "https://cap241.org",
     color: "green",
+    logoPath: "/images/cap241/cap-241.png",
   },
   {
     id: "bomalab",
