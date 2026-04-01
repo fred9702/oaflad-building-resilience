@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
@@ -73,13 +74,22 @@ export function Countdown() {
 
   return (
     <section
-      className="bg-brown py-12"
+      className="relative bg-brown py-12"
       aria-label={t("label")}
     >
+      <Image
+        src="/images/photography/cap-femmes-gathering.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-brown opacity-75" aria-hidden="true" />
+
       {/* Screen reader announcement — updates only on minute change */}
       <div ref={srRef} className="sr-only" aria-live="polite" role="status" />
 
-      <div className="mx-auto max-w-3xl px-4">
+      <div className="relative mx-auto max-w-3xl px-4">
         {/* Section heading */}
         <p className="text-sm uppercase tracking-widest text-orange text-center mb-6 font-heading">
           {t("label")}
