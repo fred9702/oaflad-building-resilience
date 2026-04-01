@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
@@ -9,18 +10,26 @@ export function AboutCampaign() {
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
+      {/* Full-bleed background photo */}
+      <Image
+        src="/images/photography/cap-femmes-gathering.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-light-beige) 100%)",
+            "linear-gradient(135deg, rgba(251,240,230,0.90) 0%, rgba(245,230,211,0.88) 100%)",
         }}
         aria-hidden="true"
       />
 
       {/* Vertical accent stripe */}
       <div
-        className="absolute left-0 top-0 bottom-0 w-2 md:w-3"
+        className="absolute left-0 top-0 bottom-0 w-2 md:w-3 z-10"
         aria-hidden="true"
       >
         <div className="h-1/4 bg-orange" />

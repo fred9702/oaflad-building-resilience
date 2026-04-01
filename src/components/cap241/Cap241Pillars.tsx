@@ -20,6 +20,13 @@ const PILLAR_LOGOS = [
   "/images/cap241/cap-education.png",
 ] as const;
 
+const PILLAR_PHOTOS = [
+  { src: "/images/photography/medical-examination.jpg", position: "object-center" },
+  { src: "/images/photography/artisan-hands.jpg", position: "object-center" },
+  { src: "/images/photography/cap-femmes-gathering.jpg", position: "object-center" },
+  { src: "/images/photography/doctor-baby.jpg", position: "object-top" },
+] as const;
+
 export function Cap241Pillars() {
   const t = useTranslations("cap241");
 
@@ -45,8 +52,21 @@ export function Cap241Pillars() {
             return (
               <ScrollReveal key={key} delay={i * 0.1}>
                 <div
-                  className={`relative ${color.bg} border ${color.border} rounded-2xl p-8 h-full transition-transform hover:scale-[1.01]`}
+                  className={`relative ${color.bg} border ${color.border} rounded-2xl overflow-hidden h-full transition-transform hover:scale-[1.01]`}
                 >
+                  {/* Pillar header image */}
+                  <div className="relative aspect-[16/9]">
+                    <Image
+                      src={PILLAR_PHOTOS[i].src}
+                      alt={t(`${key}.name`)}
+                      fill
+                      className={`object-cover ${PILLAR_PHOTOS[i].position}`}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                    <div className={`absolute inset-0 ${color.dot} opacity-30`} />
+                  </div>
+
+                  <div className="p-8">
                   {/* Pillar logo + name */}
                   <div className="flex items-center gap-4 mb-5">
                     <Image
@@ -83,6 +103,7 @@ export function Cap241Pillars() {
                       ))}
                     </ul>
                   )}
+                  </div>
                 </div>
               </ScrollReveal>
             );

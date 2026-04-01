@@ -28,9 +28,6 @@ export function CTABanner() {
           <h2 className="font-heading text-2xl md:text-4xl font-extrabold text-white">
             {t("headline")}
           </h2>
-          <p className="mt-3 font-body text-lg text-white/80">
-            {t("date")}
-          </p>
 
           {/* Key stats */}
           <div className="mt-8 flex flex-wrap justify-center gap-4 md:gap-6">
@@ -39,7 +36,7 @@ export function CTABanner() {
                 key={key}
                 className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 min-w-[120px]"
               >
-                <span className="block font-heading text-2xl md:text-3xl font-extrabold text-orange">
+                <span className="block font-heading text-2xl md:text-3xl font-extrabold text-white">
                   {t(`${key}.value`)}
                 </span>
                 <span className="block font-body text-xs md:text-sm text-white/80 uppercase tracking-wider mt-1">
@@ -50,8 +47,8 @@ export function CTABanner() {
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`/${locale}/register`} variant="primary">
-              {t("button")}
+            <Button href={`/${locale}/about`} variant="primary">
+              {t("learnMoreButton")}
             </Button>
             <Button href={`/${locale}/programme`} variant="secondary">
               {t("programmeButton")}

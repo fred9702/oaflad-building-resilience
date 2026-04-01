@@ -1,25 +1,39 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 interface ComingSoonPageProps {
   namespace: string;
+  backgroundImage?: string;
 }
 
-export async function ComingSoonPage({ namespace }: ComingSoonPageProps) {
+export async function ComingSoonPage({ namespace, backgroundImage }: ComingSoonPageProps) {
   const t = await getTranslations(namespace);
   const tBadge = await getTranslations("comingSoon");
 
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
-      {/* Dot grid background */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, var(--color-brown) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }}
-        aria-hidden="true"
-      />
+      {backgroundImage ? (
+        <>
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-warm-cream opacity-90" aria-hidden="true" />
+        </>
+      ) : (
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, var(--color-brown) 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+          }}
+          aria-hidden="true"
+        />
+      )}
 
       <div className="relative mx-auto max-w-3xl px-4 text-center">
         {/* Badge */}

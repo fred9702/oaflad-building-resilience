@@ -1,14 +1,12 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionBadge } from "@/components/ui/SectionBadge";
-import { Button } from "@/components/ui/Button";
 import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
 
 export function AboutGabon() {
   const t = useTranslations("about");
-  const locale = useLocale();
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white">
@@ -96,13 +94,6 @@ export function AboutGabon() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.4}>
-          <div className="mt-10">
-            <Button href={`/${locale}/cap-241`} variant="primary">
-              {t("zonCta")}
-            </Button>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );

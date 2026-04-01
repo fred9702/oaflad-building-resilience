@@ -30,9 +30,8 @@
   },
   "cta": {
     "headline": "Rejoignez les leaders africains pour renforcer la résilience",
-    "button": "S'inscrire maintenant",
-    "date": "17 Avril 2026 · Libreville, Gabon",
     "programmeButton": "Voir le programme",
+    "learnMoreButton": "En savoir plus",
     "stat1": { "value": "19", "label": "Premières Dames" },
     "stat2": { "value": "4", "label": "Piliers" },
     "stat3": { "value": "1", "label": "Jour" }
@@ -156,7 +155,8 @@
       "partnerships": "Mobiliser des partenariats stratégiques"
     },
     "fondationKeyMessage": "La Fondation agit comme catalyseur de solutions sociales, sanitaires et communautaires.",
-    "closingQuote": "Sous Ma Bannière, nous soignons, nous partageons, nous protégeons."
+    "closingQuote": "Sous Ma Bannière, nous soignons, nous partageons, nous protégeons.",
+    "closingCta": "Découvrez le cadre structurant qui porte cette vision."
   },
   "cap241": {
     "metaDescription": "CAP 241 — le cadre stratégique d'action sociale du Gabon dans la campagne #RenforcerLaRésilience, articulant santé, stabilité familiale, prévention et transfert de compétences.",
@@ -331,7 +331,8 @@
     "cap241Badge": "La réponse nationale du Gabon",
     "cap241Title": "Découvrir CAP 241",
     "cap241Intro": "Découvrez comment le Gabon traduit la vision continentale #RenforcerLaRésilience en un cadre national structuré d'action sociale.",
-    "cap241Cta": "Explorer CAP 241"
+    "cap241Cta": "Explorer CAP 241",
+    "speakersCta": "Voir les intervenants"
   },
   "speakers": {
     "metaDescription": "Intervenants de la conférence OPDAD #RenforcerLaRésilience — leaders africains, experts et défenseurs de la résilience des femmes.",
@@ -348,6 +349,17 @@
     "firstLadyLabel": "Première Dame",
     "honorificMrs": "S.E Mme",
     "honorificMr": "S.E M.",
+    "partnersCta": "Voir les partenaires",
+    "partnersClosingText": "Découvrez les partenaires qui ont contribué à rendre cela possible.",
+    "dignitariesBadge": "Dignitaires",
+    "dignitariesTitle": "Dignitaires présent(e)s",
+    "dignitaries": {
+      "drNardos": {
+        "name": "Dr Nardos Berhanu",
+        "title": "Secrétaire Exécutive",
+        "organisation": "OPDAD"
+      }
+    },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
       "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },

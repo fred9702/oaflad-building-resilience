@@ -19,7 +19,7 @@ export default async function MediaPage({ params }: Props) {
 
   return (
     <>
-      <ComingSoonPage namespace="media" />
+      <ComingSoonPage namespace="media" backgroundImage="/images/photography/cap-femmes-gathering.jpg" />
       <MediaSocials />
     </>
   );

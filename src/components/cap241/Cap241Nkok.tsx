@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -8,16 +9,14 @@ export function Cap241Nkok() {
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-brown">
-      {/* Geometric overlay */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='32' viewBox='0 0 40 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='20,0 40,32 0,32' fill='white'/%3E%3C/svg%3E")`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "40px 32px",
-        }}
-        aria-hidden="true"
+      <Image
+        src="/images/photography/artisan-weaving.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
       />
+      <div className="absolute inset-0 bg-brown opacity-80" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
         <ScrollReveal>

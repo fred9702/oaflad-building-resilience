@@ -30,9 +30,8 @@
   },
   "cta": {
     "headline": "Join African leaders in building resilience",
-    "button": "Register now",
-    "date": "17 April 2026 · Libreville, Gabon",
     "programmeButton": "View Programme",
+    "learnMoreButton": "Learn more",
     "stat1": { "value": "19", "label": "First Ladies" },
     "stat2": { "value": "4", "label": "Pillars" },
     "stat3": { "value": "1", "label": "Day" }
@@ -156,7 +155,8 @@
       "partnerships": "Mobilizing strategic partnerships"
     },
     "fondationKeyMessage": "The Foundation acts as a catalyst for social, health, and community solutions.",
-    "closingQuote": "Under Ma Banniere, we care, we share, we protect."
+    "closingQuote": "Under Ma Banniere, we care, we share, we protect.",
+    "closingCta": "Discover the structural framework behind this vision."
   },
   "cap241": {
     "metaDescription": "CAP 241 — Gabon's strategic framework for social action under the #BuildingResilience campaign, linking health, family stability, prevention, and skills transfer.",
@@ -331,7 +331,8 @@
     "cap241Badge": "Gabon's National Response",
     "cap241Title": "Discover CAP 241",
     "cap241Intro": "Learn how Gabon is translating the continental #BuildingResilience vision into a structured national framework for social action.",
-    "cap241Cta": "Explore CAP 241"
+    "cap241Cta": "Explore CAP 241",
+    "speakersCta": "View speakers"
   },
   "speakers": {
     "metaDescription": "Speakers at the OAFLAD #BuildingResilience conference — African leaders, experts, and advocates for women's resilience.",
@@ -348,6 +349,17 @@
     "firstLadyLabel": "First Lady",
     "honorificMrs": "H.E Mrs",
     "honorificMr": "H.E Mr",
+    "partnersCta": "View partners",
+    "partnersClosingText": "See the partners who have helped to make this possible.",
+    "dignitariesBadge": "Dignitaries",
+    "dignitariesTitle": "Dignitaries in attendance",
+    "dignitaries": {
+      "drNardos": {
+        "name": "Dr Nardos Berhanu",
+        "title": "Executive Secretary",
+        "organisation": "OAFLAD"
+      }
+    },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
       "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { SpeakersHero } from "@/components/speakers/SpeakersHero";
 import { FirstLadiesSection } from "@/components/speakers/FirstLadiesSection";
+import { DignitariesSection } from "@/components/speakers/DignitariesSection";
 import { SpeakersComingSoon } from "@/components/speakers/SpeakersComingSoon";
+import { SpeakersClosing } from "@/components/speakers/SpeakersClosing";
 import { buildMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -20,7 +22,9 @@ export default async function SpeakersPage({ params }: Props) {
     <>
       <SpeakersHero />
       <FirstLadiesSection />
+      <DignitariesSection />
       <SpeakersComingSoon />
+      <SpeakersClosing />
     </>
   );
 }

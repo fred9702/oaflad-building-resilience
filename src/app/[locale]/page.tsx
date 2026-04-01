@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { HeroSection } from "@/components/home/HeroSection";
-import { Countdown } from "@/components/home/Countdown";
 import { CTABanner } from "@/components/home/CTABanner";
 import { BASE_URL } from "@/lib/seo";
 
@@ -30,7 +29,6 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <HeroSection />
-      <Countdown />
       <CTABanner />
     </>
   );
