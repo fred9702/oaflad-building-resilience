@@ -28,7 +28,7 @@ function FlipNumber({ value, mounted, shouldReduceMotion }: { value: number; mou
   const display = mounted ? String(value).padStart(2, "0") : "--";
 
   if (shouldReduceMotion) {
-    return <span className="font-heading text-3xl md:text-5xl font-extrabold text-warm-cream tabular-nums">{display}</span>;
+    return <span className="font-heading text-2xl md:text-5xl font-extrabold text-warm-cream tabular-nums">{display}</span>;
   }
 
   return (
@@ -39,7 +39,7 @@ function FlipNumber({ value, mounted, shouldReduceMotion }: { value: number; mou
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 12, opacity: 0 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
-        className="font-heading text-3xl md:text-5xl font-extrabold text-warm-cream tabular-nums inline-block"
+        className="font-heading text-2xl md:text-5xl font-extrabold text-warm-cream tabular-nums inline-block"
       >
         {display}
       </motion.span>
@@ -150,20 +150,20 @@ export function HeroSection() {
           <p className="text-sm uppercase tracking-widest text-brown/60 mb-4 font-heading">
             {tCountdown("label")}
           </p>
-          <div className="flex items-center justify-center gap-3 md:gap-5">
+          <div className="flex items-center justify-center gap-1.5 md:gap-5">
             {boxes.map(({ value, label }, i) => (
-              <div key={label} className="flex items-center gap-3 md:gap-5">
+              <div key={label} className="flex items-center gap-1.5 md:gap-5">
                 <div
-                  className="bg-brown/80 backdrop-blur-sm border border-brown/20 rounded-xl px-4 py-3 md:px-5 md:py-4 flex flex-col items-center"
+                  className="bg-brown/80 backdrop-blur-sm border border-brown/20 rounded-lg md:rounded-xl px-2.5 py-2 md:px-5 md:py-4 flex flex-col items-center min-w-[60px] md:min-w-0"
                   aria-hidden="true"
                 >
                   <FlipNumber value={value} mounted={mounted} shouldReduceMotion={shouldReduceMotion} />
-                  <span className="mt-1 font-body text-xs text-warm-cream/80 uppercase tracking-wider">
+                  <span className="mt-1 font-body text-[10px] md:text-xs text-warm-cream/80 uppercase tracking-wider">
                     {label}
                   </span>
                 </div>
                 {i < boxes.length - 1 && (
-                  <span className="text-brown/40 font-heading text-2xl font-bold" aria-hidden="true">:</span>
+                  <span className="text-brown/40 font-heading text-lg md:text-2xl font-bold" aria-hidden="true">:</span>
                 )}
               </div>
             ))}
