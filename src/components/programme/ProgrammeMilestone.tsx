@@ -10,28 +10,24 @@ export function ProgrammeMilestone() {
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
+      {/* Full-bleed background photo */}
+      <Image
+        src="/images/photography/zita-podium.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-light-beige) 100%)",
+            "linear-gradient(135deg, rgba(251,240,230,0.90) 0%, rgba(245,230,211,0.88) 100%)",
         }}
         aria-hidden="true"
       />
 
-      {/* Vertical accent stripe */}
-      <div
-        className="absolute left-0 top-0 bottom-0 w-2 md:w-3"
-        aria-hidden="true"
-      >
-        <div className="h-1/3 bg-orange" />
-        <div className="h-1/3 bg-crimson" />
-        <div className="h-1/3 bg-green" />
-      </div>
-
-      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-10 lg:gap-14 items-center">
-        <div className="md:w-1/2">
+      <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
         <ScrollReveal>
           <span className="inline-block font-heading text-sm font-semibold uppercase tracking-widest text-orange bg-orange/10 px-4 py-1.5 rounded-full mb-6">
             {t("milestoneBadge")}
@@ -62,24 +58,6 @@ export function ProgrammeMilestone() {
             ))}
           </div>
         </ScrollReveal>
-        </div>
-
-        {/* Hero photo */}
-        <div className="md:w-1/2">
-          <ScrollReveal delay={0.2}>
-            <div className="rounded-2xl overflow-hidden">
-              <Image
-                src="/images/photography/zita-podium.jpg"
-                alt=""
-                width={1600}
-                height={1067}
-                className="w-full h-auto object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </ScrollReveal>
-        </div>
-        </div>
       </div>
     </section>
   );
