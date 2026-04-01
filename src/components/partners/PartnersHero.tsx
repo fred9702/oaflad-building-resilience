@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { HighlightKeywords } from "@/components/ui/HighlightKeywords";
@@ -10,15 +9,8 @@ export function PartnersHero() {
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
-      <Image
-        src="/images/photography/first-ladies-group.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        sizes="100vw"
-      />
       <div
-        className="absolute inset-0 opacity-85"
+        className="absolute inset-0"
         style={{
           background:
             "linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-light-beige) 100%)",

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -15,14 +14,6 @@ export function ProgrammePanels() {
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-light-beige">
-      <Image
-        src="/images/photography/first-ladies-steps.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-light-beige opacity-85" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-5xl px-6 lg:px-8">
         <ScrollReveal>

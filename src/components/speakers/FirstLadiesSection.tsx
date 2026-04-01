@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { firstLadies } from "@/data/first-ladies";
@@ -23,20 +22,6 @@ export function FirstLadiesSection() {
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-near-black leading-tight">
             {t("firstLadiesTitle")}
           </h2>
-        </ScrollReveal>
-
-        {/* Group banner */}
-        <ScrollReveal delay={0.1}>
-          <div className="mt-10 rounded-2xl overflow-hidden">
-            <Image
-              src="/images/photography/first-ladies-steps.jpg"
-              alt={t("firstLadiesTitle")}
-              width={1600}
-              height={1066}
-              className="w-full h-auto aspect-[21/9] object-cover"
-              sizes="(max-width: 768px) 100vw, 80vw"
-            />
-          </div>
         </ScrollReveal>
 
         {/* Featured host card */}
