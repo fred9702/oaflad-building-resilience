@@ -42,7 +42,7 @@ export function Cap241Hero() {
               alt="CAP 241"
               width={200}
               height={80}
-              className="h-12 w-auto max-w-[160px] md:h-20 md:max-w-none"
+              className="object-contain h-16 md:h-20 w-auto"
               priority
             />
           </div>
