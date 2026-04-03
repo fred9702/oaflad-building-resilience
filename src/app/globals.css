@@ -28,15 +28,31 @@ body {
   font-family: var(--font-body);
 }
 
+/*
+ * Type scale — outside any @layer so these override Tailwind utilities.
+ *
+ * Display (h1, h2): Jost Light 300 — thin, uppercase, editorial
+ * UI / Labels     : Jost Medium 500 — readable, not heavy
+ * Body            : Source Sans 3 400 — comfortable at paragraph length
+ */
+
+/* All font-heading elements default to medium */
+.font-heading {
+  font-weight: 500;
+}
+
+/* Display headings — forced thin regardless of component-level classes */
 h1, h2 {
-  font-weight: 300;
+  font-weight: 300 !important;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   line-height: 1.1;
 }
 
+/* H3 — slightly lighter than old bold, keeps component tracking */
 h3 {
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 p {
