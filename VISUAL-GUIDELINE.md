@@ -55,20 +55,36 @@ This document defines the complete visual identity for the **Building Resilience
 
 ## 3. Typography
 
-### Font Families
+### Font System
+
+Two fonts only. Playfair Display is the brand voice — it unifies the site with the campaign logo, which uses Playfair Display Bold. Source Sans 3 handles body text where a serif would slow reading at paragraph length.
 
 | Role | Family | CSS Variable | Fallback |
 |------|--------|--------------|----------|
-| **Headings** | Montserrat | `--font-heading` / `font-heading` | sans-serif |
-| **Body** | Source Sans 3 | `--font-body` / `font-body` | sans-serif |
+| **Headings / UI / Nav / Buttons / Labels** | Playfair Display | `--font-heading` / `font-heading` | Georgia, serif |
+| **Body paragraphs / descriptions** | Source Sans 3 | `--font-body` / `font-body` | sans-serif |
 | **Monospace** | Source Code Pro | `--font-mono` / `font-mono` | monospace |
+
+**Rule of thumb:** if it's a UI element, heading, or label → `font-heading` (Playfair Display). If it's a body paragraph or long description → `font-body` (Source Sans 3).
+
+### Weight Scale (Playfair Display)
+
+| Context | Tailwind class | Weight |
+|---------|---------------|--------|
+| Hero H1 / campaign title | `font-extrabold` | 800 |
+| Section H2 | `font-extrabold` | 800 |
+| H3 / subsection | `font-bold` | 700 |
+| Subtitles | `font-bold` | 700 |
+| Nav links | `font-semibold` | 600 |
+| Buttons / CTAs | `font-semibold` | 600 |
+| Labels / badges | `font-semibold` | 600 |
 
 ### Heading Hierarchy
 
 | Element | Size (mobile) | Size (desktop) | Weight | Color | Extra |
 |---------|--------------|----------------|--------|-------|-------|
-| **h1 (hero)** | `text-5xl` | `text-7xl` | `font-extrabold` (800) | Crimson | `leading-tight`, `letter-spacing: -0.02em` |
-| **h2 (section)** | `text-2xl` | `text-4xl` | `font-extrabold` (800) | White (on Crimson bg) or Crimson | `letter-spacing: -0.02em` |
+| **h1 (hero)** | `text-5xl` | `text-7xl` | `font-extrabold` (800) | Crimson | `leading-tight`, `letter-spacing: -0.01em` |
+| **h2 (section)** | `text-2xl` | `text-4xl` | `font-extrabold` (800) | White (on Crimson bg) or Crimson | `letter-spacing: -0.01em` |
 | **Subtitle** | `text-2xl` | `text-3xl` | `font-bold` (700) | Orange | Uses `font-heading` |
 | **Body large** | `text-lg` | `text-xl` | normal (400) | `brown/90` or `near-black/70` | `line-height: 1.7` |
 | **Body** | `text-lg` | `text-lg` | normal (400) | Near Black | `line-height: 1.7` |
@@ -77,9 +93,11 @@ This document defines the complete visual identity for the **Building Resilience
 ### Global Text Styles
 
 ```css
-h1, h2, h3 { letter-spacing: -0.02em; }
+h1, h2, h3 { letter-spacing: -0.01em; }
 p { line-height: 1.7; }
 ```
+
+> **Note on letter-spacing:** Playfair Display is a serif with generous built-in optical spacing. `-0.01em` is used (rather than the tighter `-0.02em` common for sans-serif display fonts) to preserve legibility and the natural character of the typeface.
 
 ---
 
@@ -429,4 +447,4 @@ Logo variants, favicon, and OG images are documented in [`ASSET-PLAN.md`](./ASSE
 
 ---
 
-*Source of truth: `feat/version-b` branch — `globals.css`, `HeroSection.tsx`, `CTABanner.tsx`, `Countdown.tsx`, `Navbar.tsx`, `Button.tsx`, `ComingSoonPage.tsx`, `ScrollReveal.tsx`*
+*Source of truth: `feat/font-system` branch — `layout.tsx` (font imports), `globals.css` (CSS variables + heading styles), `HeroSection.tsx`, `CTABanner.tsx`, `Navbar.tsx`, `Button.tsx`, `ComingSoonPage.tsx`, `ScrollReveal.tsx`*
