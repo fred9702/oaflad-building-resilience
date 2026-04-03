@@ -6,7 +6,6 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 const PANEL_ACCENTS = [
   { bg: "bg-crimson", light: "bg-crimson/8", text: "text-crimson" },
   { bg: "bg-orange", light: "bg-orange/8", text: "text-orange" },
-  { bg: "bg-green", light: "bg-green/8", text: "text-green" },
 ] as const;
 
 export function ProgrammePanels() {
@@ -30,8 +29,8 @@ export function ProgrammePanels() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {([1, 2, 3] as const).map((num, i) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {([1, 2] as const).map((num, i) => {
             const accent = PANEL_ACCENTS[i];
             return (
               <ScrollReveal key={num} delay={i * 0.1}>
@@ -49,15 +48,15 @@ export function ProgrammePanels() {
 
                   <div className="mt-5 space-y-2 text-base font-body text-near-black/60">
                     <p>
+                      <span className="font-semibold text-near-black/70">{t("panelTimeLabel")}:</span>{" "}
+                      {t(`panel${num}.time`)}
+                    </p>
+                    <p>
                       <span className="font-semibold text-near-black/70">{t("panelModeratorLabel")}:</span>{" "}
                       {t("panelTbc")}
                     </p>
                     <p>
                       <span className="font-semibold text-near-black/70">{t("panelSpeakersLabel")}:</span>{" "}
-                      {t("panelTbc")}
-                    </p>
-                    <p>
-                      <span className="font-semibold text-near-black/70">{t("panelTimeLabel")}:</span>{" "}
                       {t("panelTbc")}
                     </p>
                   </div>

@@ -7,17 +7,23 @@ const TIMELINE_COLORS = [
   { dot: "bg-orange", line: "border-orange/30" },
   { dot: "bg-crimson", line: "border-crimson/30" },
   { dot: "bg-green", line: "border-green/30" },
-  { dot: "bg-crimson", line: "border-crimson/30" },
   { dot: "bg-orange", line: "border-orange/30" },
+  { dot: "bg-crimson", line: "border-crimson/30" },
+  { dot: "bg-green", line: "border-green/30" },
+  { dot: "bg-orange", line: "border-orange/30" },
+  { dot: "bg-crimson", line: "border-crimson/30" },
   { dot: "bg-green", line: "border-green/30" },
 ] as const;
 
 const TIMELINE_KEYS = [
   "registration",
   "opening",
+  "oaflad",
+  "firstLadies",
+  "lunch",
+  "minister",
   "panel1",
   "panel2",
-  "panel3",
   "closing",
 ] as const;
 

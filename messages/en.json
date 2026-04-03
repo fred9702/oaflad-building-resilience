@@ -266,8 +266,8 @@
     "talkLocation": "Cité de la Démocratie",
     "talkRoom": "Lounge",
     "talkTimeLabel": "Time",
-    "talkWelcome": "Welcome at 10am",
-    "talkStart": "Start at 11am",
+    "talkWelcome": "Video capsules at 1:30pm",
+    "talkStart": "Start at 2:00pm",
     "talkDurationLabel": "Duration",
     "talkDuration": "2 hours maximum",
     "talkParticipantsLabel": "Participants",
@@ -283,48 +283,61 @@
     "panelTbc": "To be confirmed (TBC)",
     "panel1": {
       "title": "Panel 1",
-      "topic": "Women's resilience in the face of climate and social crises"
+      "topic": "Mental health",
+      "time": "2:05pm – 2:30pm"
     },
     "panel2": {
       "title": "Panel 2",
-      "topic": "Health, family stability and resilience"
-    },
-    "panel3": {
-      "title": "Panel 3",
-      "topic": "Partnerships and sustainable responses"
+      "topic": "Women's empowerment and resilience in Gabon",
+      "time": "2:30pm – 3:15pm"
     },
     "timelineBadge": "Conference Schedule",
     "timelineTitle": "Day at a Glance",
     "timeline": {
       "registration": {
-        "time": "TBC",
+        "time": "8:00am",
         "title": "Registration & Welcome",
-        "description": "Arrival, accreditation, and networking"
+        "description": "Arrival of guests and accreditation"
       },
       "opening": {
-        "time": "10am",
-        "title": "Talk — National Women's Day",
-        "description": "A national dialogue on the resilience of women and families"
+        "time": "10:15am",
+        "title": "Official Ceremony",
+        "description": "National anthem, addresses, and launch of #BuildingResilience campaign"
+      },
+      "oaflad": {
+        "time": "10:45am",
+        "title": "Address by Dr Nardos Berhanu",
+        "description": "Executive Secretary of OAFLAD"
+      },
+      "firstLadies": {
+        "time": "10:55am",
+        "title": "First Ladies' Addresses",
+        "description": "Experience sharing by OAFLAD First Ladies"
+      },
+      "lunch": {
+        "time": "12:00pm",
+        "title": "Official Luncheon",
+        "description": "Official luncheon and exhibition visit"
+      },
+      "minister": {
+        "time": "2:00pm",
+        "title": "Address by the Minister of Social Affairs",
+        "description": "Minister for Child and Women's Protection"
       },
       "panel1": {
-        "time": "TBC",
-        "title": "Panel 1 — Climate & Social Resilience",
-        "description": "Women's resilience in the face of climate and social crises"
+        "time": "2:05pm",
+        "title": "Panel 1 — Mental Health",
+        "description": "Mental health as a resilience issue"
       },
       "panel2": {
-        "time": "TBC",
-        "title": "Panel 2 — Health & Family Stability",
-        "description": "Health, family stability and resilience"
-      },
-      "panel3": {
-        "time": "TBC",
-        "title": "Panel 3 — Partnerships",
-        "description": "Partnerships and sustainable responses"
+        "time": "2:30pm",
+        "title": "Panel 2 — Empowerment & Resilience",
+        "description": "Women's empowerment and resilience in Gabon"
       },
       "closing": {
-        "time": "TBC",
-        "title": "CAP 241 Launch & Closing",
-        "description": "Official launch of CAP 241 and closing declarations"
+        "time": "3:30pm",
+        "title": "Closing",
+        "description": "Official closing of the conference"
       }
     },
     "speakersCtaTitle": "Meet our speakers",

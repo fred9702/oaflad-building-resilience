@@ -266,8 +266,8 @@
     "talkLocation": "Cité de la Démocratie",
     "talkRoom": "Lounge",
     "talkTimeLabel": "Horaire",
-    "talkWelcome": "Accueil à 10h",
-    "talkStart": "Début à 11h",
+    "talkWelcome": "Capsules à 13h30",
+    "talkStart": "Début à 14h00",
     "talkDurationLabel": "Durée",
     "talkDuration": "2 heures maximum",
     "talkParticipantsLabel": "Participants",
@@ -283,48 +283,61 @@
     "panelTbc": "À confirmer",
     "panel1": {
       "title": "Panel 1",
-      "topic": "Résilience des femmes face aux crises"
+      "topic": "Santé mentale",
+      "time": "14h05 – 14h30"
     },
     "panel2": {
       "title": "Panel 2",
-      "topic": "Santé et stabilité familiale"
-    },
-    "panel3": {
-      "title": "Panel 3",
-      "topic": "Partenariats et réponses durables"
+      "topic": "Autonomisation et résilience des femmes au Gabon",
+      "time": "14h30 – 15h15"
     },
     "timelineBadge": "Programme de la journée",
     "timelineTitle": "La journée en un coup d'œil",
     "timeline": {
       "registration": {
-        "time": "TBC",
+        "time": "08h00",
         "title": "Accueil & Inscription",
-        "description": "Arrivée, accréditation et networking"
+        "description": "Arrivée des invités et accréditation"
       },
       "opening": {
-        "time": "10h",
-        "title": "Talk — Journée nationale de la Femme",
-        "description": "Un dialogue national sur la résilience des femmes et des familles"
+        "time": "10h15",
+        "title": "Cérémonie officielle",
+        "description": "Hymne national, allocutions et lancement de la campagne #BuildingResilience"
+      },
+      "oaflad": {
+        "time": "10h45",
+        "title": "Intervention du Dr Nardos Berhanu",
+        "description": "Secrétaire exécutif de l'OPDAD"
+      },
+      "firstLadies": {
+        "time": "10h55",
+        "title": "Allocutions des Premières Dames",
+        "description": "Partages d'expérience des Premières Dames membres de l'OPDAD"
+      },
+      "lunch": {
+        "time": "12h00",
+        "title": "Déjeuner officiel",
+        "description": "Déjeuner officiel et visite de l'exposition"
+      },
+      "minister": {
+        "time": "14h00",
+        "title": "Allocution du Ministre des Affaires Sociales",
+        "description": "Ministre chargé de la Protection de l'Enfance et de la Femme"
       },
       "panel1": {
-        "time": "TBC",
-        "title": "Panel 1 — Résilience climatique et sociale",
-        "description": "La résilience des femmes face aux crises climatiques et sociales"
+        "time": "14h05",
+        "title": "Panel 1 — Santé mentale",
+        "description": "La santé mentale comme enjeu de résilience"
       },
       "panel2": {
-        "time": "TBC",
-        "title": "Panel 2 — Santé et stabilité familiale",
-        "description": "Santé, stabilité familiale et résilience"
-      },
-      "panel3": {
-        "time": "TBC",
-        "title": "Panel 3 — Partenariats",
-        "description": "Partenariats et réponses durables"
+        "time": "14h30",
+        "title": "Panel 2 — Autonomisation et résilience",
+        "description": "Autonomisation et résilience des femmes au Gabon"
       },
       "closing": {
-        "time": "TBC",
-        "title": "Lancement du CAP 241 & Clôture",
-        "description": "Lancement officiel du CAP 241 et déclarations de clôture"
+        "time": "15h30",
+        "title": "Clôture des travaux",
+        "description": "Clôture officielle de la journée"
       }
     },
     "speakersCtaTitle": "Découvrir nos intervenants",
