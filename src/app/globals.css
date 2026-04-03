@@ -13,7 +13,7 @@
   --color-near-black: #2D2D2D;
 
   /* Font families */
-  --font-heading: var(--font-montserrat), "Montserrat", sans-serif;
+  --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
   --font-body: var(--font-source-sans), "Source Sans 3", sans-serif;
   --font-mono: var(--font-source-code), "Source Code Pro", monospace;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 h1, h2, h3 {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 p {

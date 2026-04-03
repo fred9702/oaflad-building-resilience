@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Montserrat, Source_Sans_3, Source_Code_Pro } from "next/font/google";
+import { Playfair_Display, Source_Sans_3, Source_Code_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
   display: "swap",
 });
 
@@ -54,7 +55,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} ${sourceSans.variable} ${sourceCode.variable} antialiased`}
+        className={`${playfair.variable} ${sourceSans.variable} ${sourceCode.variable} antialiased`}
       >
         {children}
         <Analytics />
