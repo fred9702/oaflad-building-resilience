@@ -4,7 +4,17 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import type { FirstLady } from "@/data/first-ladies";
 
-export function FirstLadyCard({ lady, featured = false }: { lady: FirstLady; featured?: boolean }) {
+export function FirstLadyCard({
+  lady,
+  featured = false,
+  hasMessage = false,
+  onReadMessage,
+}: {
+  lady: FirstLady;
+  featured?: boolean;
+  hasMessage?: boolean;
+  onReadMessage?: () => void;
+}) {
   const t = useTranslations("speakers");
 
   const name = t(`firstLadies.${lady.id}.name`);
@@ -104,6 +114,14 @@ export function FirstLadyCard({ lady, featured = false }: { lady: FirstLady; fea
         <p className="font-heading text-sm font-bold text-near-black leading-tight">
           {honorific} {name}
         </p>
+        {hasMessage && (
+          <button
+            onClick={onReadMessage}
+            className="mt-2 font-heading text-xs font-semibold text-crimson hover:text-crimson/80 transition-colors"
+          >
+            {t("readMessage")}
+          </button>
+        )}
       </div>
     </div>
   );

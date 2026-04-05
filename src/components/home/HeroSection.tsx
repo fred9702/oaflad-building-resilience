@@ -101,7 +101,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative min-h-[80vh] flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Full-bleed background photo */}
       <Image

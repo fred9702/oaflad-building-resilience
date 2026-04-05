@@ -90,19 +90,6 @@ export function Cap241Pillars() {
                     {t(`${key}.description`)}
                   </p>
 
-                  {/* Items list for pillar 1 (CAP Health has detailed items) */}
-                  {key === "pillar1" && (
-                    <ul className="mt-5 space-y-2">
-                      {(["care", "mental", "social", "family"] as const).map((item) => (
-                        <li key={item} className="flex items-start gap-2">
-                          <span className={`mt-1.5 w-1.5 h-1.5 rounded-full ${color.dot} shrink-0`} />
-                          <span className="font-body text-base text-near-black/70">
-                            {t(`${key}.items.${item}`)}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                   </div>
                 </div>
               </ScrollReveal>
