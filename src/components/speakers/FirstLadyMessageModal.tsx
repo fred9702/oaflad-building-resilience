@@ -54,8 +54,13 @@ export function FirstLadyMessageModal({
     };
   }, [isOpen, handleKeyDown]);
 
-  // Get message text based on active language — all texts live in messageTexts
-  const messageText = messageTexts[activeLang]?.[lady.id] ?? "";
+  // Extra languages beyond FR/EN (e.g. Portuguese for Angola)
+  const extraLanguages = message.languages.filter((l) => l !== "fr" && l !== "en");
+  const showToggle = extraLanguages.length > 0;
+
+  // Use current locale by default; activeLang only matters for extra languages
+  const displayLang = showToggle ? activeLang : locale;
+  const messageText = messageTexts[displayLang]?.[lady.id] ?? "";
 
   const name = t(`firstLadies.${lady.id}.name`);
   const country = t(`firstLadies.${lady.id}.country`);
@@ -131,22 +136,24 @@ export function FirstLadyMessageModal({
               </div>
             </div>
 
-            {/* Language toggle */}
-            <div className="flex gap-1 mb-6 p-1 bg-near-black/5 rounded-full w-fit">
-              {message.languages.map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => setActiveLang(lang)}
-                  className={`px-4 py-1.5 rounded-full text-sm font-heading font-semibold transition-colors ${
-                    activeLang === lang
-                      ? "bg-crimson text-white"
-                      : "text-near-black/60 hover:text-near-black"
-                  }`}
-                >
-                  {LANGUAGE_LABELS[lang] ?? lang}
-                </button>
-              ))}
-            </div>
+            {/* Language toggle — only shown when extra languages exist (e.g. Portuguese) */}
+            {showToggle && (
+              <div className="flex gap-1 mb-6 p-1 bg-near-black/5 rounded-full w-fit">
+                {message.languages.map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => setActiveLang(lang)}
+                    className={`px-4 py-1.5 rounded-full text-sm font-heading font-semibold transition-colors ${
+                      activeLang === lang
+                        ? "bg-crimson text-white"
+                        : "text-near-black/60 hover:text-near-black"
+                    }`}
+                  >
+                    {LANGUAGE_LABELS[lang] ?? lang}
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Message body */}
             <div className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8">
