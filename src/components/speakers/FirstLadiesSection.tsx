@@ -45,7 +45,12 @@ export function FirstLadiesSection() {
         {host && (
           <ScrollReveal>
             <div className="mt-10 mb-8">
-              <FirstLadyCard lady={host} featured />
+              <FirstLadyCard
+                lady={host}
+                featured
+                hasMessage={firstLadyMessageIds.has(host.id)}
+                onReadMessage={() => setSelectedLadyId(host.id)}
+              />
             </div>
           </ScrollReveal>
         )}

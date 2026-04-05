@@ -60,6 +60,14 @@ export function FirstLadyCard({
           <p className="font-heading text-xl md:text-2xl font-bold text-near-black">
             {honorific} {name}
           </p>
+          {hasMessage && (
+            <button
+              onClick={onReadMessage}
+              className="mt-3 font-heading text-sm font-semibold text-crimson hover:text-crimson/80 transition-colors"
+            >
+              {t("readMessage")}
+            </button>
+          )}
         </div>
       </div>
     );

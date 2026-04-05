@@ -25,13 +25,13 @@ export function PresidentialQuote() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Photo */}
             <div className="shrink-0">
-              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden ring-2 ring-crimson/30 shadow-xl">
+              <div className="relative w-48 md:w-56 aspect-[3/4] rounded-2xl overflow-hidden ring-2 ring-crimson/30 shadow-xl">
                 <Image
                   src="/images/speakers/president-brice-oligui-nguema.jpg"
                   alt={t("name")}
                   width={224}
-                  height={224}
-                  className="object-cover object-top w-full h-full"
+                  height={300}
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
