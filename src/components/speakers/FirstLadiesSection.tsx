@@ -20,7 +20,13 @@ export function FirstLadiesSection() {
     : null;
 
   const host = firstLadies.find((l) => l.isHost);
-  const attendees = firstLadies.filter((l) => !l.isHost);
+  const attendees = firstLadies
+    .filter((l) => !l.isHost)
+    .sort((a, b) => {
+      const aHas = firstLadyMessageIds.has(a.id) ? 0 : 1;
+      const bHas = firstLadyMessageIds.has(b.id) ? 0 : 1;
+      return aHas - bHas;
+    });
 
   return (
     <section id="first-ladies" className="relative py-20 md:py-28 overflow-hidden bg-white">
