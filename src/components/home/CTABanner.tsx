@@ -53,6 +53,9 @@ export function CTABanner() {
             <Button href={`/${locale}/programme`} variant="secondary">
               {t("programmeButton")}
             </Button>
+            <Button href={`/${locale}/register`} variant="primary">
+              {t("registerButton")}
+            </Button>
           </div>
         </ScrollReveal>
       </div>

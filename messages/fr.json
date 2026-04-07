@@ -31,6 +31,7 @@
   "cta": {
     "headline": "Rejoignez les leaders africains pour renforcer la résilience",
     "programmeButton": "Voir le programme",
+    "registerButton": "S'inscrire",
     "learnMoreButton": "En savoir plus",
     "stat1": { "value": "19", "label": "Premières Dames" },
     "stat2": { "value": "4", "label": "Piliers" },
@@ -353,7 +354,8 @@
     },
     "speakersCtaTitle": "Patronage & Dignitaires",
     "speakersCtaIntro": "Découvrez les leaders distingués et Premières Dames qui accordent leur patronage à la conférence #RenforcerLaRésilience.",
-    "speakersCta": "Voir le patronage"
+    "speakersCta": "Voir le patronage",
+    "registerCta": "S'inscrire"
   },
   "speakers": {
     "metaDescription": "Patronage de la conférence OPDAD #RenforcerLaRésilience — leaders distingués et Premières Dames engagées pour la résilience en Afrique.",

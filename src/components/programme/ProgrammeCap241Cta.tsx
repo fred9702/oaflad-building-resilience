@@ -29,9 +29,14 @@ export function ProgrammeCap241Cta() {
           <p className="font-body text-lg text-white/85 max-w-2xl mx-auto mb-10">
             <HighlightKeywords>{t("speakersCtaIntro")}</HighlightKeywords>
           </p>
-          <Button href={`/${locale}/speakers`} variant="primary">
-            {t("speakersCta")}
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button href={`/${locale}/speakers`} variant="primary">
+              {t("speakersCta")}
+            </Button>
+            <Button href={`/${locale}/register`} variant="secondary">
+              {t("registerCta")}
+            </Button>
+          </div>
         </ScrollReveal>
       </div>
     </section>

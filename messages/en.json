@@ -31,6 +31,7 @@
   "cta": {
     "headline": "Join African leaders in building resilience",
     "programmeButton": "View Programme",
+    "registerButton": "Register",
     "learnMoreButton": "Learn more",
     "stat1": { "value": "19", "label": "First Ladies" },
     "stat2": { "value": "4", "label": "Pillars" },
@@ -353,7 +354,8 @@
     },
     "speakersCtaTitle": "Patronage & Dignitaries",
     "speakersCtaIntro": "Discover the distinguished leaders and First Ladies lending their patronage to the #BuildingResilience conference.",
-    "speakersCta": "View patronage"
+    "speakersCta": "View patronage",
+    "registerCta": "Register"
   },
   "speakers": {
     "metaDescription": "Patronage of the OAFLAD #BuildingResilience conference — distinguished leaders and First Ladies championing resilience across Africa.",
