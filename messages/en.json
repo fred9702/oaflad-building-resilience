@@ -248,7 +248,7 @@
     "nkokAmbition": "This initiative reflects a clear ambition: to move from silent vulnerability to structured, visible, and sustainable responses."
   },
   "programme": {
-    "metaDescription": "Programme for the #BuildingResilience conference — panels on women's resilience, health, family stability, and sustainable partnerships. April 17, 2026.",
+    "metaDescription": "Programme for the #BuildingResilience conference — official ceremony, First Ladies' addresses, panels, and closing. April 17, 2026.",
     "title": "Programme",
     "badge": "Event Day",
     "milestoneBadge": "April 17, 2026",
@@ -259,21 +259,6 @@
       "partners": "Partner mobilization",
       "cooperation": "The start of a structured cooperation dynamic"
     },
-    "talkBadge": "National Women's Day",
-    "talkTitle": "Talk — National Women's Day",
-    "talkDescription": "A national dialogue on the resilience of women and families around addictions.",
-    "talkLocationLabel": "Location",
-    "talkLocation": "Cité de la Démocratie",
-    "talkRoom": "Lounge",
-    "talkTimeLabel": "Time",
-    "talkWelcome": "Video capsules at 1:30pm",
-    "talkStart": "Start at 2:00pm",
-    "talkDurationLabel": "Duration",
-    "talkDuration": "2 hours maximum",
-    "talkParticipantsLabel": "Participants",
-    "talkParticipants": "225 participants",
-    "talkAudience1": "Experts (moderators and speakers)",
-    "talkAudience2": "Gabonese women",
     "panelsBadge": "Panels & Discussions",
     "panelsTitle": "Panels and Discussions",
     "panelsIntro": "The discussions are designed to deepen the issues related to social and health resilience. They will allow sharing experiences, identifying common challenges, and developing tailored solutions.",
@@ -283,60 +268,96 @@
     "panelTbc": "To be confirmed (TBC)",
     "panel1": {
       "title": "Panel 1",
-      "topic": "Mental health",
-      "time": "2:05pm – 2:30pm"
+      "topic": "Mental Health and Family Stability",
+      "time": "1:50pm – 2:30pm"
     },
     "panel2": {
       "title": "Panel 2",
-      "topic": "Women's empowerment and resilience in Gabon",
-      "time": "2:30pm – 3:15pm"
+      "topic": "Women's Empowerment: a Public Governance Challenge",
+      "time": "2:30pm – 3:10pm"
     },
-    "timelineBadge": "Conference Schedule",
-    "timelineTitle": "Day at a Glance",
-    "timeline": {
+    "seq1Badge": "Official Ceremony",
+    "seq1Title": "Sequence 1 — Morning",
+    "seq1Subtitle": "In the presence of the President of the Republic and First Ladies",
+    "seq2Badge": "National Women's Day",
+    "seq2Title": "Sequence 2 — Afternoon",
+    "seq2Subtitle": "National and sectoral dimension",
+    "seq1": {
       "registration": {
         "time": "8:00am",
         "title": "Registration & Welcome",
         "description": "Arrival of guests and accreditation"
       },
       "opening": {
-        "time": "10:15am",
-        "title": "Official Ceremony",
-        "description": "National anthem, addresses, and launch of #BuildingResilience campaign"
+        "time": "10:05am",
+        "title": "Official Opening",
+        "description": "National anthem and address by the President of the Republic"
+      },
+      "launch": {
+        "time": "10:25am",
+        "title": "Campaign Launch",
+        "description": "Welcome address and launch of #BuildingResilience by the First Lady"
+      },
+      "capsule": {
+        "time": "10:30am",
+        "title": "Audiovisual Capsule",
+        "description": "Strategic campaign content"
       },
       "oaflad": {
-        "time": "10:45am",
+        "time": "10:35am",
         "title": "Address by Dr Nardos Berhanu",
         "description": "Executive Secretary of OAFLAD"
       },
       "firstLadies": {
-        "time": "10:55am",
+        "time": "10:40am",
         "title": "First Ladies' Addresses",
         "description": "Experience sharing by OAFLAD First Ladies"
       },
+      "doctorate": {
+        "time": "11:35am",
+        "title": "Honorary Doctorate Ceremony",
+        "description": "Honorary Doctorate awarded to the First Lady of the Gabonese Republic"
+      },
+      "exhibition": {
+        "time": "11:45am",
+        "title": "Exhibition Visit",
+        "description": "Guided visit of the #BuildingResilience exhibition"
+      },
       "lunch": {
-        "time": "12:00pm",
-        "title": "Official Luncheon",
-        "description": "Official luncheon and exhibition visit"
+        "time": "12:15pm",
+        "title": "Official Lunch",
+        "description": "Official luncheon"
+      }
+    },
+    "seq2": {
+      "capsules": {
+        "time": "1:30pm",
+        "title": "Audiovisual Capsules",
+        "description": "Screening of audiovisual capsules"
       },
       "minister": {
-        "time": "2:00pm",
+        "time": "1:40pm",
         "title": "Address by the Minister of Social Affairs",
         "description": "Minister for Child and Women's Protection"
       },
       "panel1": {
-        "time": "2:05pm",
-        "title": "Panel 1 — Mental Health",
-        "description": "Mental health as a resilience issue"
+        "time": "1:50pm",
+        "title": "Panel 1 — Mental Health & Family Stability",
+        "description": "Mental health and family stability as resilience issues"
       },
       "panel2": {
         "time": "2:30pm",
-        "title": "Panel 2 — Empowerment & Resilience",
-        "description": "Women's empowerment and resilience in Gabon"
+        "title": "Panel 2 — Women's Empowerment",
+        "description": "A public governance challenge in the 5th Republic"
+      },
+      "synthesis": {
+        "time": "3:10pm",
+        "title": "Summary of Discussions",
+        "description": "Synthesis and national commitment message"
       },
       "closing": {
-        "time": "3:30pm",
-        "title": "Closing",
+        "time": "3:20pm",
+        "title": "Official Closing",
         "description": "Official closing of the conference"
       }
     },
