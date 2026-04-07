@@ -70,7 +70,7 @@ export function FirstLadyCard({
 
   return (
     <div
-      className={`group relative rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
+      className={`group relative rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-1 h-full flex flex-col ${
         lady.isHost
           ? "border-crimson/30 bg-crimson/5 ring-2 ring-crimson/20"
           : "border-brown/10 bg-white/60"
@@ -95,7 +95,7 @@ export function FirstLadyCard({
       </div>
 
       {/* Info */}
-      <div className="p-3">
+      <div className="p-3 flex-1 flex flex-col">
         <div className="flex items-center gap-1.5 mb-1">
           <span className="text-lg leading-none">{lady.countryFlag}</span>
           <span className="font-body text-xs text-near-black/50 truncate">
@@ -113,7 +113,7 @@ export function FirstLadyCard({
         {hasMessage && (
           <button
             onClick={onReadMessage}
-            className="mt-2 font-heading text-xs font-semibold text-crimson hover:text-crimson/80 transition-colors"
+            className="mt-auto pt-2 font-heading text-xs font-semibold text-crimson hover:text-crimson/80 transition-colors self-start"
           >
             {t("readMessage")}
           </button>
