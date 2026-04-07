@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /en/about
+        - link "CAP 241" [ref=e9] [cursor=pointer]:
+          - /url: /en/cap-241
+        - link "Programme" [ref=e10] [cursor=pointer]:
+          - /url: /en/programme
+        - link "Speakers" [ref=e11] [cursor=pointer]:
+          - /url: /en/speakers
+        - link "Partners" [ref=e12] [cursor=pointer]:
+          - /url: /en/partners
+        - link "Media" [ref=e13] [cursor=pointer]:
+          - /url: /en/media
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /en/contact
+        - link "Register" [ref=e15] [cursor=pointer]:
+          - /url: /en/register
+        - button "Switch to FR" [ref=e16]: FR
+  - main [ref=e17]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Coming Soon
+      - heading "Media" [level=1] [ref=e22]
+      - paragraph [ref=e23]: Media content will be available after the event.
+  - contentinfo [ref=e25]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img "OAFLAD logo" [ref=e32]
+          - paragraph [ref=e33]: Organisation of African First Ladies for Development
+        - generic [ref=e34]:
+          - heading "Quick links" [level=3] [ref=e35]
+          - navigation "Footer navigation" [ref=e36]:
+            - link "About" [ref=e37] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e38] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e39] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e40] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e41]:
+          - heading "Follow us" [level=3] [ref=e42]
+          - generic [ref=e43]:
+            - link "Facebook" [ref=e44] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e45]
+            - link "Twitter / X" [ref=e47] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e48]
+            - link "Instagram" [ref=e50] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e51]
+            - link "YouTube" [ref=e53] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e54]
+      - generic [ref=e56]:
+        - paragraph [ref=e57]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e58]:
+          - button "Privacy Policy" [ref=e59]
+          - button "Terms of Use" [ref=e60]
+      - paragraph [ref=e61]: Made with love by Bomalab 🤖
+  - alert [ref=e62]

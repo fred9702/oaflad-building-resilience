@@ -1,0 +1,189 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - heading "Inscription" [level=1] [ref=e15]
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Prénom *
+            - textbox "Prénom *" [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]: Nom *
+            - textbox "Nom *" [ref=e23]
+          - generic [ref=e24]:
+            - generic [ref=e25]: Adresse e-mail *
+            - textbox "Adresse e-mail *" [ref=e26]
+          - generic [ref=e27]:
+            - generic [ref=e28]: Téléphone
+            - generic [ref=e29]:
+              - combobox "Indicatif pays" [ref=e30]:
+                - option "+241 Gabon"
+                - option "+33 France"
+                - option "+1 US / Canada"
+                - option "+44 United Kingdom"
+                - option "+351 Portugal"
+                - option "+34 Spain"
+                - option "+55 Brazil"
+                - option "+213 Algeria"
+                - option "+244 Angola"
+                - option "+229 Benin"
+                - option "+267 Botswana"
+                - option "+226 Burkina Faso"
+                - option "+257 Burundi"
+                - option "+237 Cameroon"
+                - option "+238 Cape Verde"
+                - option "+236 Central African Republic"
+                - option "+235 Chad"
+                - option "+269 Comoros"
+                - option "+242 Congo"
+                - option "+243 DR Congo"
+                - option "+253 Djibouti"
+                - option "+20 Egypt"
+                - option "+240 Equatorial Guinea"
+                - option "+291 Eritrea"
+                - option "+268 Eswatini"
+                - option "+251 Ethiopia"
+                - option "+241 Gabon" [selected]
+                - option "+220 Gambia"
+                - option "+233 Ghana"
+                - option "+224 Guinea"
+                - option "+245 Guinea-Bissau"
+                - option "+225 Ivory Coast"
+                - option "+254 Kenya"
+                - option "+266 Lesotho"
+                - option "+231 Liberia"
+                - option "+218 Libya"
+                - option "+261 Madagascar"
+                - option "+265 Malawi"
+                - option "+223 Mali"
+                - option "+222 Mauritania"
+                - option "+230 Mauritius"
+                - option "+212 Morocco"
+                - option "+258 Mozambique"
+                - option "+264 Namibia"
+                - option "+227 Niger"
+                - option "+234 Nigeria"
+                - option "+250 Rwanda"
+                - option "+239 São Tomé and Príncipe"
+                - option "+221 Senegal"
+                - option "+248 Seychelles"
+                - option "+232 Sierra Leone"
+                - option "+252 Somalia"
+                - option "+27 South Africa"
+                - option "+211 South Sudan"
+                - option "+249 Sudan"
+                - option "+255 Tanzania"
+                - option "+228 Togo"
+                - option "+216 Tunisia"
+                - option "+256 Uganda"
+                - option "+260 Zambia"
+                - option "+263 Zimbabwe"
+              - textbox "Numéro de téléphone (sans indicatif)" [ref=e31]:
+                - /placeholder: e.g. 074123456
+          - generic [ref=e32]:
+            - generic [ref=e33]: Organisation
+            - textbox "Organisation" [ref=e34]
+          - generic [ref=e35]:
+            - generic [ref=e36]: Fonction
+            - textbox "Fonction" [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]: Catégorie *
+            - combobox "Catégorie *" [ref=e40]:
+              - option "Sélectionner une catégorie" [disabled]
+              - option "OPDAD" [selected]
+              - option "Gouvernement"
+              - option "Partenaire"
+              - option "Société civile"
+              - option "Communauté"
+              - option "Autre"
+          - generic [ref=e41]:
+            - generic [ref=e42]: Langue préférée
+            - combobox "Langue préférée" [ref=e43]:
+              - option "Français" [selected]
+              - option "English"
+              - option "Português"
+              - option "Español"
+          - generic [ref=e45] [cursor=pointer]:
+            - checkbox "J'accepte que mes données soient traitées conformément à la politique de confidentialité de l'OPDAD. *" [ref=e46]
+            - generic [ref=e47]: J'accepte que mes données soient traitées conformément à la politique de confidentialité de l'OPDAD. *
+        - button "Soumettre l'inscription" [ref=e48]
+  - contentinfo [ref=e49]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - img "OAFLAD logo" [ref=e56]
+          - paragraph [ref=e57]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e58]:
+          - heading "Liens rapides" [level=3] [ref=e59]
+          - navigation "Footer navigation" [ref=e60]:
+            - link "À propos" [ref=e61] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e62] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e63] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e64] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e65] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e66] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e67] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e68] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e69]:
+          - heading "Suivez-nous" [level=3] [ref=e70]
+          - generic [ref=e71]:
+            - link "Facebook" [ref=e72] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e73]
+            - link "Twitter / X" [ref=e75] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e76]
+            - link "Instagram" [ref=e78] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e79]
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e83]:
+          - button "Politique de confidentialité" [ref=e84]
+          - button "Conditions d'utilisation" [ref=e85]
+      - paragraph [ref=e86]: Fait avec amour par Bomalab 🤖

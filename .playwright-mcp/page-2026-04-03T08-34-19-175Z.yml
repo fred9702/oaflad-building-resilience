@@ -1,0 +1,209 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: 17 avril 2026
+        - heading "Une étape fondatrice" [level=1] [ref=e18]
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: "Le 17 avril 2026 marque :"
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: "1"
+            - generic [ref=e24]:
+              - text: Le lancement du programme
+              - strong [ref=e25]: ÉQUILIBRES
+          - generic [ref=e26]:
+            - generic [ref=e27]: "2"
+            - generic [ref=e28]: La mobilisation des partenaires
+          - generic [ref=e29]:
+            - generic [ref=e30]: "3"
+            - generic [ref=e31]: Le début d'une dynamique de coopération
+    - generic [ref=e33]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: Programme de la journée
+        - heading "La journée en un coup d'œil" [level=2] [ref=e37]
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e45]: 08h00
+          - generic [ref=e46]:
+            - heading "Accueil & Inscription" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Arrivée des invités et accréditation
+        - generic [ref=e50]:
+          - generic [ref=e53]: 10h15
+          - generic [ref=e54]:
+            - heading "Cérémonie officielle" [level=3] [ref=e55]
+            - paragraph [ref=e56]: "Hymne national, allocutions et lancement de la campagne #BuildingResilience"
+        - generic [ref=e58]:
+          - generic [ref=e61]: 10h45
+          - generic [ref=e62]:
+            - heading "Intervention du Dr Nardos Berhanu" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Secrétaire exécutif de l'OPDAD
+        - generic [ref=e66]:
+          - generic [ref=e69]: 10h55
+          - generic [ref=e70]:
+            - heading "Allocutions des Premières Dames" [level=3] [ref=e71]
+            - paragraph [ref=e72]: Partages d'expérience des Premières Dames membres de l'OPDAD
+        - generic [ref=e74]:
+          - generic [ref=e77]: 12h00
+          - generic [ref=e78]:
+            - heading "Déjeuner officiel" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Déjeuner officiel et visite de l'exposition
+        - generic [ref=e82]:
+          - generic [ref=e85]: 14h00
+          - generic [ref=e86]:
+            - heading "Allocution du Ministre des Affaires Sociales" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Ministre chargé de la Protection de l'Enfance et de la Femme
+        - generic [ref=e90]:
+          - generic [ref=e93]: 14h05
+          - generic [ref=e94]:
+            - heading "Panel 1 — Santé mentale" [level=3] [ref=e95]
+            - paragraph [ref=e96]: La santé mentale comme enjeu de résilience
+        - generic [ref=e98]:
+          - generic [ref=e101]: 14h30
+          - generic [ref=e102]:
+            - heading "Panel 2 — Autonomisation et résilience" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Autonomisation et résilience des femmes au Gabon
+        - generic [ref=e106]:
+          - generic [ref=e109]: 15h30
+          - generic [ref=e110]:
+            - heading "Clôture des travaux" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Clôture officielle de la journée
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]: Journée Nationale de la Femme
+        - heading "Talk — Journée Nationale de la Femme" [level=2] [ref=e119]
+        - paragraph [ref=e120]: Un dialogue national sur la résilience des femmes et des familles autour des addictions.
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - img [ref=e125]
+          - generic [ref=e128]:
+            - text: Lieu
+            - generic [ref=e129]: Cité de la Démocratie
+            - paragraph [ref=e130]: Lounge
+        - generic [ref=e131]:
+          - img [ref=e133]
+          - generic [ref=e135]:
+            - text: Horaire
+            - generic [ref=e136]:
+              - text: Capsules à 13h30
+              - generic [ref=e137]: ·Début à 14h00
+    - generic [ref=e139]:
+      - generic [ref=e141]:
+        - generic [ref=e142]: Panels et échanges
+        - heading "Panels et échanges" [level=2] [ref=e143]
+        - paragraph [ref=e144]: Les échanges organisés visent à approfondir les enjeux liés à la résilience sociale et sanitaire. Ils permettront de croiser les expériences, d'identifier les défis communs, de partager des solutions adaptées.
+      - generic [ref=e145]:
+        - generic [ref=e147]:
+          - generic [ref=e148]: Panel 1
+          - paragraph [ref=e149]: Santé mentale
+          - generic [ref=e150]:
+            - paragraph [ref=e151]:
+              - generic [ref=e152]: "Horaire:"
+              - text: 14h05 – 14h30
+            - paragraph [ref=e153]:
+              - generic [ref=e154]: "Modérateur:"
+              - text: À confirmer
+            - paragraph [ref=e155]:
+              - generic [ref=e156]: "Intervenants:"
+              - text: À confirmer
+        - generic [ref=e158]:
+          - generic [ref=e159]: Panel 2
+          - paragraph [ref=e160]: Autonomisation et résilience des femmes au Gabon
+          - generic [ref=e161]:
+            - paragraph [ref=e162]:
+              - generic [ref=e163]: "Horaire:"
+              - text: 14h30 – 15h15
+            - paragraph [ref=e164]:
+              - generic [ref=e165]: "Modérateur:"
+              - text: À confirmer
+            - paragraph [ref=e166]:
+              - generic [ref=e167]: "Intervenants:"
+              - text: À confirmer
+    - generic [ref=e171]:
+      - heading "Découvrir nos intervenants" [level=2] [ref=e172]
+      - paragraph [ref=e173]:
+        - text: Découvrez les leaders, experts et défenseurs africains qui interviendront lors de la conférence
+        - strong [ref=e174]: "#RenforcerLaRésilience"
+        - text: .
+      - link "Voir les intervenants" [ref=e175] [cursor=pointer]:
+        - /url: /fr/speakers
+        - text: Voir les intervenants
+  - contentinfo [ref=e176]:
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - img "OAFLAD logo" [ref=e183]
+          - paragraph [ref=e184]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e185]:
+          - heading "Liens rapides" [level=3] [ref=e186]
+          - navigation "Footer navigation" [ref=e187]:
+            - link "À propos" [ref=e188] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e189] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e190] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e191] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e192] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e193] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e194] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e195] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e196]:
+          - heading "Suivez-nous" [level=3] [ref=e197]
+          - generic [ref=e198]:
+            - link "Facebook" [ref=e199] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e200]
+            - link "Twitter / X" [ref=e202] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e203]
+            - link "Instagram" [ref=e205] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e206]
+      - generic [ref=e208]:
+        - paragraph [ref=e209]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e210]:
+          - button "Politique de confidentialité" [ref=e211]
+          - button "Conditions d'utilisation" [ref=e212]

@@ -1,0 +1,289 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: Intervenants & Dignitaires
+        - heading "Intervenants & Dignitaires" [level=1] [ref=e22]
+      - paragraph [ref=e24]:
+        - text: Découvrez les leaders et dignitaires distingués qui participent à la conférence
+        - strong [ref=e25]: "#RenforcerLaRésilience"
+        - text: à Libreville.
+    - generic [ref=e29]:
+      - img "S.E. Brice Clotaire Oligui Nguema" [ref=e32]
+      - generic [ref=e33]:
+        - img [ref=e34]
+        - blockquote [ref=e36]: Bâtir l'édifice nouveau, c'est faire le choix d'une société plus juste, plus équilibrée et résolument tournée vers l'humain. Dans cette ambition, la valorisation du capital humain est essentielle. Elle implique un engagement clair en faveur de l'éducation, de la protection sociale et de l'inclusion, notamment des femmes et des jeunes. Car il ne peut y avoir de développement durable sans équité. Il ne peut y avoir de Nation forte sans la pleine participation des femmes. Les femmes gabonaises sont au cœur de cette dynamique. Elles portent, chaque jour, une part essentielle de l'équilibre social, de la transmission des valeurs et du progrès collectif. Le Gabon que nous bâtissons est un Gabon où chacune trouve sa place, où chacune avance avec dignité, et où personne n'est laissé de côté.
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: S.E. Brice Clotaire Oligui Nguema
+          - paragraph [ref=e39]: Président de la République Gabonaise
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: Premières Dames & Premier Gentleman
+        - heading "Présent(e)s à la conférence" [level=2] [ref=e44]
+      - generic [ref=e47]:
+        - img "Zita Oligui Nguema" [ref=e49]
+        - generic [ref=e50]:
+          - generic [ref=e51]: Hôtesse
+          - generic [ref=e52]:
+            - generic [ref=e53]: 🇬🇦
+            - generic [ref=e54]: Gabon
+          - paragraph [ref=e55]: S.E Mme Zita Oligui Nguema
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - img "Ana Dias Lourenço" [ref=e60]
+            - generic [ref=e62]: Première Dame
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: 🇦🇴
+              - generic [ref=e66]: Angola
+            - paragraph [ref=e67]: S.E Mme Ana Dias Lourenço
+            - button "Lire le message" [ref=e68]
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - img "Fatima Maada Bio" [ref=e72]
+            - generic [ref=e74]: Première Dame
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: 🇸🇱
+              - generic [ref=e78]: Sierra Leone
+            - paragraph [ref=e79]: S.E Mme Fatima Maada Bio
+            - button "Lire le message" [ref=e80]
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - img "Marie Khone Faye" [ref=e84]
+            - generic [ref=e86]: Première Dame
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: 🇸🇳
+              - generic [ref=e90]: Sénégal
+            - paragraph [ref=e91]: S.E Mme Marie Khone Faye
+            - button "Lire le message" [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - img "Denise Nyakeru Tshisekedi" [ref=e96]
+            - generic [ref=e98]: Première Dame
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: 🇨🇩
+              - generic [ref=e102]: RD Congo
+            - paragraph [ref=e103]: S.E Mme Denise Nyakeru Tshisekedi
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - img "Antoinette Sassou Nguesso" [ref=e107]
+            - generic [ref=e109]: Première Dame
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: 🇨🇬
+              - generic [ref=e113]: Congo
+            - paragraph [ref=e114]: S.E Mme Antoinette Sassou Nguesso
+            - button "Lire le message" [ref=e115]
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - img "Angeline Ndayishimiye" [ref=e119]
+            - generic [ref=e121]: Première Dame
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: 🇧🇮
+              - generic [ref=e125]: Burundi
+            - paragraph [ref=e126]: S.E Mme Angeline Ndayishimiye
+            - button "Lire le message" [ref=e127]
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - img "Oluremi Tinubu" [ref=e131]
+            - generic [ref=e133]: Première Dame
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: 🇳🇬
+              - generic [ref=e137]: Nigéria
+            - paragraph [ref=e138]: S.E Mme Oluremi Tinubu
+            - button "Lire le message" [ref=e139]
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - img "Kartumu Yarta Boakai" [ref=e143]
+            - generic [ref=e145]: Première Dame
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]: 🇱🇷
+              - generic [ref=e149]: Libéria
+            - paragraph [ref=e150]: S.E Mme Kartumu Yarta Boakai
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - img "Dominique Ouattara" [ref=e154]
+            - generic [ref=e156]: Première Dame
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: 🇨🇮
+              - generic [ref=e160]: Côte d'Ivoire
+            - paragraph [ref=e161]: S.E Mme Dominique Ouattara
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - img "Jeannette Kagame" [ref=e165]
+            - generic [ref=e167]: Première Dame
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: 🇷🇼
+              - generic [ref=e171]: Rwanda
+            - paragraph [ref=e172]: S.E Mme Jeannette Kagame
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - img "Rachel Ruto" [ref=e176]
+            - generic [ref=e178]: Première Dame
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]: 🇰🇪
+              - generic [ref=e182]: Kenya
+            - paragraph [ref=e183]: S.E Mme Rachel Ruto
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]: 🇸🇹
+            - generic [ref=e190]: Première Dame
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - generic [ref=e193]: 🇸🇹
+              - generic [ref=e194]: São Tomé-et-Príncipe
+            - paragraph [ref=e195]: S.E Mme Maria de Fátima Vila Nova
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - img "Constancia Mangue de Obiang" [ref=e199]
+            - generic [ref=e201]: Première Dame
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - generic [ref=e204]: 🇬🇶
+              - generic [ref=e205]: Guinée équatoriale
+            - paragraph [ref=e206]: S.E Mme Constancia Mangue de Obiang
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - generic [ref=e211]: 🇬🇳
+            - generic [ref=e213]: Première Dame
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]: 🇬🇳
+              - generic [ref=e217]: Guinée
+            - paragraph [ref=e218]: S.E Mme Lauriane Doumbouya
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - img "Tina Marguerite Touadéra" [ref=e222]
+            - generic [ref=e224]: Première Dame
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - generic [ref=e227]: 🇨🇫
+              - generic [ref=e228]: République centrafricaine
+            - paragraph [ref=e229]: S.E Mme Tina Marguerite Touadéra
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - img "Lordina Mahama" [ref=e233]
+            - generic [ref=e235]: Première Dame
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - generic [ref=e238]: 🇬🇭
+              - generic [ref=e239]: Ghana
+            - paragraph [ref=e240]: S.E Mme Lordina Mahama
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e245]: 🇳🇦
+            - generic [ref=e247]: Premier Gentleman
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: 🇳🇦
+              - generic [ref=e251]: Namibie
+            - paragraph [ref=e252]: S.E M. Epaphras Denga Ndaitwah
+    - generic [ref=e254]:
+      - generic [ref=e255]:
+        - generic [ref=e256]: Dignitaires
+        - heading "Dignitaires présent(e)s" [level=2] [ref=e257]
+      - generic [ref=e260]:
+        - generic [ref=e261]:
+          - img "Dr Nardos Berhanu" [ref=e262]
+          - generic [ref=e264]: Secrétaire Exécutive
+        - generic [ref=e265]:
+          - paragraph [ref=e266]: OPDAD
+          - paragraph [ref=e267]: Dr Nardos Berhanu
+    - generic [ref=e270]:
+      - generic [ref=e271]: Bientôt disponible
+      - heading "Annonces des intervenants" [level=2] [ref=e272]
+      - paragraph [ref=e273]: Liste des intervenants à venir.
+    - generic [ref=e278]:
+      - paragraph [ref=e279]: Découvrez les partenaires qui ont contribué à rendre cela possible.
+      - link "Voir les partenaires" [ref=e280] [cursor=pointer]:
+        - /url: /fr/partners
+        - text: Voir les partenaires
+  - contentinfo [ref=e281]:
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - generic [ref=e287]:
+          - img "OAFLAD logo" [ref=e288]
+          - paragraph [ref=e289]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e290]:
+          - heading "Liens rapides" [level=3] [ref=e291]
+          - navigation "Footer navigation" [ref=e292]:
+            - link "À propos" [ref=e293] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e294] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e295] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e296] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e297] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e298] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e299] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e300] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e301]:
+          - heading "Suivez-nous" [level=3] [ref=e302]
+          - generic [ref=e303]:
+            - link "Facebook" [ref=e304] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e305]
+            - link "Twitter / X" [ref=e307] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e308]
+            - link "Instagram" [ref=e310] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e311]
+      - generic [ref=e313]:
+        - paragraph [ref=e314]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e315]:
+          - button "Politique de confidentialité" [ref=e316]
+          - button "Conditions d'utilisation" [ref=e317]

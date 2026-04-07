@@ -1,0 +1,230 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e15]:
+      - generic [ref=e17]:
+        - img "CAP 241" [ref=e18]
+        - generic [ref=e19]: Cadre stratégique
+      - 'heading "CAP 241 : un cadre structurant" [level=1] [ref=e21]':
+        - strong [ref=e22]: CAP 241
+        - text: ": un cadre structurant"
+      - paragraph [ref=e24]:
+        - text: L'action de la
+        - link "Fondation Ma Bannière" [ref=e25] [cursor=pointer]:
+          - /url: https://mabanniere.ga/
+        - text: "s'inscrit dans un cadre structuré : CAP 241. Ce cadre repose sur une logique simple :"
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: "1"
+          - generic [ref=e30]: Relier l'impact social
+        - generic [ref=e31]:
+          - generic [ref=e32]: "2"
+          - generic [ref=e33]: La stabilité nationale
+        - generic [ref=e34]:
+          - generic [ref=e35]: "3"
+          - generic [ref=e36]: Le rayonnement international
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Quatre piliers
+        - heading "Quatre piliers complémentaires" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - img "CAP Santé" [ref=e47]
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img "CAP Santé" [ref=e51]
+              - generic [ref=e52]:
+                - heading "CAP Santé" [level=3] [ref=e53]
+                - paragraph [ref=e54]: ÉQUILIBRES
+            - paragraph [ref=e55]: La santé constitue le socle de toute stabilité durable. Lorsqu'un parcours de soins se fragmente, ce sont des trajectoires qui se rompent.
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - generic [ref=e59]: La continuité des soins
+              - listitem [ref=e60]:
+                - generic [ref=e62]: La santé mentale
+              - listitem [ref=e63]:
+                - generic [ref=e65]: L'accompagnement des vulnérabilités sociales
+              - listitem [ref=e66]:
+                - generic [ref=e68]: La protection des équilibres familiaux
+        - generic [ref=e70]:
+          - img "CAP Femmes" [ref=e72]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - img "CAP Femmes" [ref=e76]
+              - generic [ref=e77]:
+                - heading "CAP Femmes" [level=3] [ref=e78]
+                - paragraph [ref=e79]: TRANSFERT
+            - paragraph [ref=e80]: Soutenir les femmes dans leur rôle central au sein des familles et des communautés par le transfert de compétences et l'autonomisation.
+        - generic [ref=e82]:
+          - img "CAP Jeunesse" [ref=e84]
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - img "CAP Jeunesse" [ref=e88]
+              - generic [ref=e89]:
+                - heading "CAP Jeunesse" [level=3] [ref=e90]
+                - paragraph [ref=e91]: TRAJECTOIRES
+            - paragraph [ref=e92]: Reconstruire les parcours de vie des jeunes à travers la formation, le mentorat et les parcours de réinsertion.
+        - generic [ref=e94]:
+          - img "CAP Éducation" [ref=e96]
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - img "CAP Éducation" [ref=e100]
+              - generic [ref=e101]:
+                - heading "CAP Éducation" [level=3] [ref=e102]
+                - paragraph [ref=e103]: SAVOIRS
+            - paragraph [ref=e104]: Renforcer les fondations éducatives pour construire une résilience durable par la prévention et la sensibilisation.
+      - generic [ref=e106]:
+        - heading "Ces piliers ne fonctionnent pas de manière isolée. Ils s'inscrivent dans une logique d'interdépendance :" [level=3] [ref=e107]
+        - generic [ref=e108]:
+          - generic [ref=e111]: La stabilité sanitaire protège les femmes
+          - generic [ref=e114]: La stabilité familiale sécurise l'enfance
+          - generic [ref=e117]: La prévention renforce l'éducation
+          - generic [ref=e120]: Le transfert de compétences soutient la résilience économique
+        - paragraph [ref=e121]: Cette architecture évite la fragmentation des interventions. Elle favorise une approche transversale, cohérente et durable.
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - generic [ref=e126]: Programme
+        - heading "Le programme ÉQUILIBRES" [level=2] [ref=e127]:
+          - text: Le programme
+          - strong [ref=e128]: ÉQUILIBRES
+        - paragraph [ref=e129]: Prévenir, soutenir, reconstruire
+      - paragraph [ref=e131]:
+        - text: Le programme
+        - strong [ref=e132]: ÉQUILIBRES
+        - text: constitue la traduction opérationnelle du pilier Santé. Dans de nombreuses situations, le poids des fragilités repose en grande partie sur les femmes.
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e137]: "1"
+          - paragraph [ref=e138]: Prévenir les ruptures
+        - generic [ref=e139]:
+          - generic [ref=e141]: "2"
+          - paragraph [ref=e142]: Soutenir la continuité des soins
+        - generic [ref=e143]:
+          - generic [ref=e145]: "3"
+          - paragraph [ref=e146]: Reconstruire les trajectoires
+      - paragraph [ref=e148]: "Une ambition claire : Transformer des fragilités en trajectoires stabilisées. Passer du silence à l'accompagnement. Construire des réponses durables."
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - generic [ref=e151]: Le défi
+          - heading "Des trajectoires fragilisées" [level=3] [ref=e152]
+        - generic [ref=e153]:
+          - paragraph [ref=e154]: "Nos sociétés sont confrontées à des fragilités multiples :"
+          - generic [ref=e155]:
+            - generic [ref=e156]: Fragilités psychosociales
+            - generic [ref=e157]: Ruptures familiales
+            - generic [ref=e158]: Désorientation des parcours
+        - generic [ref=e159]:
+          - paragraph [ref=e160]:
+            - strong [ref=e161]: ÉQUILIBRES
+            - text: "répond à cette exigence :"
+          - generic [ref=e162]:
+            - generic [ref=e163]: Reconnaître
+            - generic [ref=e164]: Prévenir
+            - generic [ref=e165]: Accompagner
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]: Action concrète
+        - heading "Vers une réponse structurante" [level=2] [ref=e171]
+      - paragraph [ref=e173]: Face aux fragilités identifiées, la réponse ne peut être ponctuelle. Elle doit être structurée, cohérente et inscrite dans la durée.
+      - generic [ref=e175]:
+        - heading "C'est dans cette perspective que s'inscrit le projet de création du Centre de désintoxication, de formation et de réinsertion de Nkok." [level=3] [ref=e176]
+        - paragraph [ref=e177]: "Ce centre propose :"
+        - list [ref=e178]:
+          - listitem [ref=e179]:
+            - generic [ref=e181]: Un accueil adapté
+          - listitem [ref=e182]:
+            - generic [ref=e184]: Un accompagnement psychosocial
+          - listitem [ref=e185]:
+            - generic [ref=e187]: Des dispositifs de formation et de réinsertion
+          - listitem [ref=e188]:
+            - generic [ref=e190]: Un suivi des parcours
+      - generic [ref=e192]:
+        - paragraph [ref=e193]: "Il incarne une approche globale :"
+        - generic [ref=e194]:
+          - generic [ref=e195]: Reconnaître
+          - generic [ref=e196]: Accompagner
+          - generic [ref=e197]: Restaurer
+      - paragraph [ref=e199]: Passer du silence à l'accompagnement.
+    - generic [ref=e202]:
+      - paragraph [ref=e204]: Sous Ma Bannière, nous soignons, nous partageons, nous protégeons.
+      - link "Voir le programme" [ref=e206] [cursor=pointer]:
+        - /url: /fr/programme
+        - text: Voir le programme
+  - contentinfo [ref=e207]:
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - img "OAFLAD logo" [ref=e214]
+          - paragraph [ref=e215]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e216]:
+          - heading "Liens rapides" [level=3] [ref=e217]
+          - navigation "Footer navigation" [ref=e218]:
+            - link "À propos" [ref=e219] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e220] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e221] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e222] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e223] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e224] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e225] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e226] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e227]:
+          - heading "Suivez-nous" [level=3] [ref=e228]
+          - generic [ref=e229]:
+            - link "Facebook" [ref=e230] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e231]
+            - link "Twitter / X" [ref=e233] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e234]
+            - link "Instagram" [ref=e236] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e237]
+      - generic [ref=e239]:
+        - paragraph [ref=e240]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e241]:
+          - button "Politique de confidentialité" [ref=e242]
+          - button "Conditions d'utilisation" [ref=e243]

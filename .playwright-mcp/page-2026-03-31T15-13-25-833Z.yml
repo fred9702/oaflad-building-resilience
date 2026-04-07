@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /en/about
+        - link "CAP 241" [ref=e9] [cursor=pointer]:
+          - /url: /en/cap-241
+        - link "Programme" [ref=e10] [cursor=pointer]:
+          - /url: /en/programme
+        - link "Speakers" [ref=e11] [cursor=pointer]:
+          - /url: /en/speakers
+        - link "Partners" [ref=e12] [cursor=pointer]:
+          - /url: /en/partners
+        - link "Media" [ref=e13] [cursor=pointer]:
+          - /url: /en/media
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /en/contact
+        - link "Register" [ref=e15] [cursor=pointer]:
+          - /url: /en/register
+        - button "Switch to FR" [ref=e16]: FR
+  - main [ref=e17]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Our Partners
+        - heading "Partners" [level=1] [ref=e28]
+      - paragraph [ref=e30]:
+        - text: The
+        - strong [ref=e31]: "#BuildingResilience"
+        - text: campaign is made possible through the collaboration of organizations committed to strengthening resilience across Africa.
+    - generic [ref=e35]:
+      - generic [ref=e37]:
+        - img "OAFLAD / OPDAD" [ref=e39]
+        - heading "OAFLAD / OPDAD" [level=3] [ref=e40]
+        - paragraph [ref=e41]: The Organization of African First Ladies for Development brings together First Ladies from across the continent to advocate for health, education, and women's empowerment.
+        - generic [ref=e42]:
+          - link "Visit website →" [ref=e43] [cursor=pointer]:
+            - /url: https://oaflad.org
+          - link "View attending First Ladies" [ref=e44] [cursor=pointer]:
+            - /url: /en/speakers#first-ladies
+            - text: View attending First Ladies
+            - img [ref=e45]
+      - generic [ref=e48]:
+        - img "Ma Banniere Foundation" [ref=e50]
+        - heading "Ma Banniere Foundation" [level=3] [ref=e51]
+        - paragraph [ref=e52]: Founded by the First Lady of Gabon, the Ma Banniere Foundation works to improve the lives of vulnerable populations through social action and community development.
+        - link "Visit website →" [ref=e54] [cursor=pointer]:
+          - /url: https://mabanniere.ga/
+      - generic [ref=e56]:
+        - heading "Cap241" [level=3] [ref=e57]
+        - paragraph [ref=e58]: "Cap241 is the strategic framework for social action linking health, family stability, prevention, and skills transfer under the #BuildingResilience campaign."
+        - link "Visit website →" [ref=e60] [cursor=pointer]:
+          - /url: https://cap241.org
+      - generic [ref=e62]:
+        - heading "Bomalab" [level=3] [ref=e63]
+        - paragraph [ref=e64]: Bomalab is a creative technology hub driving innovation and digital transformation in Central Africa. Bomalab designed and developed the resilience241.com website.
+        - link "Visit website →" [ref=e66] [cursor=pointer]:
+          - /url: https://bomalab.com
+  - contentinfo [ref=e67]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - img "OAFLAD logo" [ref=e74]
+          - paragraph [ref=e75]: Organisation of African First Ladies for Development
+        - generic [ref=e76]:
+          - heading "Quick links" [level=3] [ref=e77]
+          - navigation "Footer navigation" [ref=e78]:
+            - link "About" [ref=e79] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e80] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e81] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e82] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e83]:
+          - heading "Follow us" [level=3] [ref=e84]
+          - generic [ref=e85]:
+            - link "Facebook" [ref=e86] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e87]
+            - link "Twitter / X" [ref=e89] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e90]
+            - link "Instagram" [ref=e92] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e93]
+            - link "YouTube" [ref=e95] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e96]
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e100]:
+          - button "Privacy Policy" [ref=e101]
+          - button "Terms of Use" [ref=e102]
+      - paragraph [ref=e103]: Made with love by Bomalab 🤖
+  - alert [ref=e104]

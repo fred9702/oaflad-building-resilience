@@ -1,0 +1,106 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - link "À propos" [ref=e8] [cursor=pointer]:
+          - /url: /fr/about
+        - link "CAP 241" [ref=e9] [cursor=pointer]:
+          - /url: /fr/cap-241
+        - link "Programme" [ref=e10] [cursor=pointer]:
+          - /url: /fr/programme
+        - link "Intervenants" [ref=e11] [cursor=pointer]:
+          - /url: /fr/speakers
+        - link "Partenaires" [ref=e12] [cursor=pointer]:
+          - /url: /fr/partners
+        - link "Média" [ref=e13] [cursor=pointer]:
+          - /url: /fr/media
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /fr/contact
+        - link "S'inscrire" [ref=e15] [cursor=pointer]:
+          - /url: /fr/register
+        - button "Switch to EN" [ref=e16]: EN
+  - main [ref=e17]:
+    - generic [ref=e25]:
+      - 'img "OAFLAD #BuildingResilience" [ref=e27]'
+      - generic [ref=e28]:
+        - heading "Renforcer la Résilience" [level=1] [ref=e29]
+        - paragraph [ref=e30]:
+          - strong [ref=e31]: "#RenforcerLaRésilience"
+        - paragraph [ref=e32]: 17 Avril 2026 · Libreville, Gabon
+        - generic [ref=e33]:
+          - link "S'inscrire" [ref=e34] [cursor=pointer]:
+            - /url: /fr/register
+            - text: S'inscrire
+          - link "Programme" [ref=e35] [cursor=pointer]:
+            - /url: /fr/programme
+            - text: Programme
+          - link "CAP 241" [ref=e36] [cursor=pointer]:
+            - /url: /fr/cap-241
+            - text: CAP 241
+    - region "Compte à rebours avant la conférence" [ref=e37]:
+      - status [ref=e38]: 16 Jours, 15 Heures, 46 Minutes
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: Compte à rebours avant la conférence
+        - generic [ref=e41]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "16"
+            - generic [ref=e45]: Jours
+          - generic [ref=e50]:
+            - generic [ref=e51]: "15"
+            - generic [ref=e52]: Heures
+          - generic [ref=e57]:
+            - generic [ref=e58]: "46"
+            - generic [ref=e59]: Minutes
+          - generic [ref=e64]:
+            - generic [ref=e65]: "14"
+            - generic [ref=e66]: Secondes
+    - generic [ref=e70]:
+      - heading "Rejoignez les leaders africains pour renforcer la résilience" [level=2] [ref=e71]
+      - paragraph [ref=e72]: 17 Avril 2026 · Libreville, Gabon
+      - link "S'inscrire maintenant" [ref=e74] [cursor=pointer]:
+        - /url: /fr/register
+        - text: S'inscrire maintenant
+  - contentinfo [ref=e75]:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - img "OAFLAD logo" [ref=e82]
+          - paragraph [ref=e83]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e84]:
+          - heading "Liens rapides" [level=3] [ref=e85]
+          - navigation "Footer navigation" [ref=e86]:
+            - link "À propos" [ref=e87] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e88] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e89] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Contact" [ref=e90] [cursor=pointer]:
+              - /url: /fr/contact
+        - generic [ref=e91]:
+          - heading "Suivez-nous" [level=3] [ref=e92]
+          - generic [ref=e93]:
+            - link "Facebook" [ref=e94] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e95]
+            - link "Twitter / X" [ref=e97] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e98]
+            - link "Instagram" [ref=e100] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e101]
+            - link "YouTube" [ref=e103] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e104]
+      - generic [ref=e106]:
+        - paragraph [ref=e107]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e108]:
+          - button "Politique de confidentialité" [ref=e109]
+          - button "Conditions d'utilisation" [ref=e110]
+      - paragraph [ref=e111]: Fait avec amour par Bomalab 🤖
+  - alert [ref=e112]
