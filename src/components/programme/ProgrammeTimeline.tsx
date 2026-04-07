@@ -36,18 +36,29 @@ const SEQ2_COLORS = [
   "bg-orange", "bg-crimson", "bg-green",
 ] as const;
 
+const ACCENT_STYLES = {
+  crimson: {
+    badge: "text-crimson bg-crimson/10",
+    line: "from-crimson/40 to-crimson/10",
+  },
+  orange: {
+    badge: "text-orange bg-orange/10",
+    line: "from-orange/40 to-orange/10",
+  },
+} as const;
+
 function TimelineSequence({
   seqKey,
   keys,
   colors,
-  accentColor,
+  accent,
   locale,
   t,
 }: {
   seqKey: "seq1" | "seq2";
   keys: readonly string[];
   colors: readonly string[];
-  accentColor: string;
+  accent: keyof typeof ACCENT_STYLES;
   locale: string;
   t: ReturnType<typeof useTranslations>;
 }) {
@@ -55,7 +66,7 @@ function TimelineSequence({
     <div className="mb-20 last:mb-0">
       <ScrollReveal>
         <div className="text-center mb-12">
-          <span className={`inline-block font-heading text-sm font-semibold uppercase tracking-widest text-${accentColor} bg-${accentColor}/10 px-4 py-1.5 rounded-full mb-4`}>
+          <span className={`inline-block font-heading text-sm font-semibold uppercase tracking-widest ${ACCENT_STYLES[accent].badge} px-4 py-1.5 rounded-full mb-4`}>
             {t(`${seqKey}Badge`)}
           </span>
           <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-near-black">
@@ -69,7 +80,7 @@ function TimelineSequence({
 
       <div className="relative">
         <div
-          className={`absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-${accentColor}/40 to-${accentColor}/10`}
+          className={`absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b ${ACCENT_STYLES[accent].line}`}
           aria-hidden="true"
         />
 
@@ -130,7 +141,7 @@ export function ProgrammeTimeline() {
           seqKey="seq1"
           keys={SEQ1_KEYS}
           colors={SEQ1_COLORS}
-          accentColor="crimson"
+          accent="crimson"
           locale={locale}
           t={t}
         />
@@ -138,7 +149,7 @@ export function ProgrammeTimeline() {
           seqKey="seq2"
           keys={SEQ2_KEYS}
           colors={SEQ2_COLORS}
-          accentColor="orange"
+          accent="orange"
           locale={locale}
           t={t}
         />

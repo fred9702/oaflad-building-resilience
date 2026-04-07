@@ -31,6 +31,7 @@
   "cta": {
     "headline": "Rejoignez les leaders africains pour renforcer la résilience",
     "programmeButton": "Voir le programme",
+    "registerButton": "S'inscrire",
     "learnMoreButton": "En savoir plus",
     "stat1": { "value": "19", "label": "Premières Dames" },
     "stat2": { "value": "4", "label": "Piliers" },
@@ -353,18 +354,22 @@
     },
     "speakersCtaTitle": "Patronage & Dignitaires",
     "speakersCtaIntro": "Découvrez les leaders distingués et Premières Dames qui accordent leur patronage à la conférence #RenforcerLaRésilience.",
-    "speakersCta": "Voir le patronage"
+    "speakersCta": "Voir le patronage",
+    "registerCta": "S'inscrire"
   },
   "speakers": {
     "metaDescription": "Patronage de la conférence OPDAD #RenforcerLaRésilience — leaders distingués et Premières Dames engagées pour la résilience en Afrique.",
     "title": "Patronage & Dignitaires",
     "badge": "Patronage & Dignitaires",
     "intro": "La conférence #RenforcerLaRésilience est honorée par le patronage de leaders distingués et de Premières Dames de tout le continent africain.",
-    "content": "Liste des intervenants à venir.",
-    "comingSoonBadge": "Bientôt disponible",
-    "comingSoonTitle": "Annonces des intervenants",
+    "content": "Les profils des modérateurs seront annoncés prochainement.",
+    "comingSoonBadge": "Modérateurs",
+    "comingSoonTitle": "Modérateurs des panels",
     "firstLadiesBadge": "Premières Dames & Premier Gentleman",
     "firstLadiesTitle": "Présent(e)s à la conférence",
+    "keynoteBadge": "Intervenantes principales",
+    "speakersBadge": "Intervenantes confirmées",
+    "attendingBadge": "Présentes",
     "hostLabel": "Hôtesse",
     "firstGentlemanLabel": "Premier Gentleman",
     "firstLadyLabel": "Première Dame",
@@ -373,6 +378,7 @@
     "honorificDr": "S.E Dr",
     "readMessage": "Lire le message",
     "closeModal": "Fermer",
+    "messagePlaceholder": "Message à venir.",
     "presidentBadge": "Message présidentiel",
     "president": {
       "name": "S.E. Brice Clotaire Oligui Nguema",
@@ -392,8 +398,8 @@
     },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
-      "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
-      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone" },
+      "angola": { "name": "Ana Dias Lourenço", "country": "Angola", "role": "Vice-Présidente, OPDAD" },
+      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone", "role": "Présidente, OPDAD" },
       "senegal": { "name": "Marie Khone Faye", "country": "Sénégal" },
       "drc": { "name": "Denise Nyakeru Tshisekedi", "country": "RD Congo" },
       "congo": { "name": "Antoinette Sassou Nguesso", "country": "Congo" },

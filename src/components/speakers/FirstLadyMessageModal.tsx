@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "@phosphor-icons/react";
+import { X, Quotes } from "@phosphor-icons/react";
 import type { FirstLady } from "@/data/first-ladies";
 import { messageTexts, type FirstLadyMessage } from "@/data/first-lady-messages";
 
@@ -156,24 +156,34 @@ export function FirstLadyMessageModal({
             )}
 
             {/* Message body */}
-            <div className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8">
-              {messageText}
-            </div>
+            <Quotes
+              size={32}
+              weight="fill"
+              className="text-crimson/30 mb-3"
+            />
+            <blockquote className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8 italic">
+              {messageText || t("messagePlaceholder")}
+            </blockquote>
 
             {/* Signature */}
-            <div className="border-t border-near-black/10 pt-4">
-              <p className="font-heading text-sm font-bold text-near-black">
-                {message.signature.formal}
-              </p>
-              <p className="font-body text-sm text-near-black/60">
-                {message.signature.title}
-              </p>
-              {message.signature.role && (
-                <p className="font-body text-sm text-near-black/60">
-                  {message.signature.role}
-                </p>
-              )}
-            </div>
+            {(() => {
+              const sig = message.signature[locale] ?? message.signature["en"];
+              return (
+                <div className="border-t border-near-black/10 pt-4">
+                  <p className="font-heading text-sm font-bold text-near-black">
+                    {sig.formal}
+                  </p>
+                  <p className="font-body text-sm text-near-black/60">
+                    {sig.title}
+                  </p>
+                  {sig.role && (
+                    <p className="font-body text-sm text-near-black/60">
+                      {sig.role}
+                    </p>
+                  )}
+                </div>
+              );
+            })()}
           </motion.div>
         </motion.div>
       )}

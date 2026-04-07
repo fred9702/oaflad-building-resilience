@@ -20,13 +20,14 @@ export function FirstLadiesSection() {
     : null;
 
   const host = firstLadies.find((l) => l.isHost);
-  const attendees = firstLadies
-    .filter((l) => !l.isHost)
-    .sort((a, b) => {
-      const aHas = firstLadyMessageIds.has(a.id) ? 0 : 1;
-      const bHas = firstLadyMessageIds.has(b.id) ? 0 : 1;
-      return aHas - bHas;
-    });
+  const speakers = firstLadies.filter((l) => l.isSpeaker || l.isKeynote);
+  const attending = firstLadies.filter((l) => !l.isHost && !l.isSpeaker && !l.isKeynote);
+
+  const cardProps = (lady: typeof firstLadies[number]) => ({
+    lady,
+    hasMessage: firstLadyMessageIds.has(lady.id),
+    onReadMessage: () => setSelectedLadyId(lady.id),
+  });
 
   return (
     <section id="first-ladies" className="relative py-20 md:py-28 overflow-hidden bg-white">
@@ -41,32 +42,53 @@ export function FirstLadiesSection() {
           </h2>
         </ScrollReveal>
 
-        {/* Featured host card */}
+        {/* Tier 1: Featured host card */}
         {host && (
           <ScrollReveal>
-            <div className="mt-10 mb-8">
-              <FirstLadyCard
-                lady={host}
-                featured
-                hasMessage={firstLadyMessageIds.has(host.id)}
-                onReadMessage={() => setSelectedLadyId(host.id)}
-              />
+            <div className="mt-10 mb-12">
+              <FirstLadyCard {...cardProps(host)} featured />
             </div>
           </ScrollReveal>
         )}
 
-        {/* Attendees grid — 4 columns max for larger cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
-          {attendees.map((lady, i) => (
-            <ScrollReveal key={lady.id} delay={0.03 * (i + 1)}>
-              <FirstLadyCard
-                  lady={lady}
-                  hasMessage={firstLadyMessageIds.has(lady.id)}
-                  onReadMessage={() => setSelectedLadyId(lady.id)}
-                />
+        {/* Tier 2: Confirmed speakers */}
+        {speakers.length > 0 && (
+          <div className="mb-12">
+            <ScrollReveal>
+              <span className="inline-block font-heading text-xs font-semibold uppercase tracking-widest text-orange bg-orange/10 px-3 py-1 rounded-full mb-5">
+                {t("keynoteBadge")}
+              </span>
             </ScrollReveal>
-          ))}
-        </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+              {speakers.map((lady, i) => (
+                <ScrollReveal key={lady.id} delay={0.03 * (i + 1)} className="h-full">
+                  <FirstLadyCard
+                    {...cardProps(lady)}
+                    roleBadge={lady.isKeynote ? t(`firstLadies.${lady.id}.role`) : undefined}
+                  />
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Tier 3: Attending */}
+        {attending.length > 0 && (
+          <div>
+            <ScrollReveal>
+              <span className="inline-block font-heading text-xs font-semibold uppercase tracking-widest text-brown bg-brown/10 px-3 py-1 rounded-full mb-5">
+                {t("attendingBadge")}
+              </span>
+            </ScrollReveal>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+              {attending.map((lady, i) => (
+                <ScrollReveal key={lady.id} delay={0.03 * (i + 1)} className="h-full">
+                  <FirstLadyCard {...cardProps(lady)} />
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {selectedLady && selectedMessage && (

@@ -31,6 +31,7 @@
   "cta": {
     "headline": "Join African leaders in building resilience",
     "programmeButton": "View Programme",
+    "registerButton": "Register",
     "learnMoreButton": "Learn more",
     "stat1": { "value": "19", "label": "First Ladies" },
     "stat2": { "value": "4", "label": "Pillars" },
@@ -353,18 +354,22 @@
     },
     "speakersCtaTitle": "Patronage & Dignitaries",
     "speakersCtaIntro": "Discover the distinguished leaders and First Ladies lending their patronage to the #BuildingResilience conference.",
-    "speakersCta": "View patronage"
+    "speakersCta": "View patronage",
+    "registerCta": "Register"
   },
   "speakers": {
     "metaDescription": "Patronage of the OAFLAD #BuildingResilience conference — distinguished leaders and First Ladies championing resilience across Africa.",
     "title": "Patronage & Dignitaries",
     "badge": "Patronage & Dignitaries",
     "intro": "The #BuildingResilience conference is honoured by the patronage of distinguished leaders and First Ladies from across Africa.",
-    "content": "Speaker list coming soon.",
-    "comingSoonBadge": "Coming Soon",
-    "comingSoonTitle": "Speaker Announcements",
+    "content": "Moderator profiles will be announced soon.",
+    "comingSoonBadge": "Moderators",
+    "comingSoonTitle": "Panel Moderators",
     "firstLadiesBadge": "First Ladies & First Gentleman",
     "firstLadiesTitle": "Attending the Conference",
+    "keynoteBadge": "Keynote Speakers",
+    "speakersBadge": "Confirmed Speakers",
+    "attendingBadge": "Attending",
     "hostLabel": "Hostess",
     "firstGentlemanLabel": "First Gentleman",
     "firstLadyLabel": "First Lady",
@@ -373,6 +378,7 @@
     "honorificDr": "H.E Dr",
     "readMessage": "Read message",
     "closeModal": "Close",
+    "messagePlaceholder": "Message coming soon.",
     "presidentBadge": "Presidential message",
     "president": {
       "name": "H.E. Brice Clotaire Oligui Nguema",
@@ -392,8 +398,8 @@
     },
     "firstLadies": {
       "gabon": { "name": "Zita Oligui Nguema", "country": "Gabon" },
-      "angola": { "name": "Ana Dias Lourenço", "country": "Angola" },
-      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone" },
+      "angola": { "name": "Ana Dias Lourenço", "country": "Angola", "role": "Vice-President, OAFLAD" },
+      "sierraLeone": { "name": "Fatima Maada Bio", "country": "Sierra Leone", "role": "President, OAFLAD" },
       "senegal": { "name": "Marie Khone Faye", "country": "Senegal" },
       "drc": { "name": "Denise Nyakeru Tshisekedi", "country": "DR Congo" },
       "congo": { "name": "Antoinette Sassou Nguesso", "country": "Congo" },

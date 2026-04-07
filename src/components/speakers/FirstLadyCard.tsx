@@ -9,11 +9,13 @@ export function FirstLadyCard({
   featured = false,
   hasMessage = false,
   onReadMessage,
+  roleBadge,
 }: {
   lady: FirstLady;
   featured?: boolean;
   hasMessage?: boolean;
   onReadMessage?: () => void;
+  roleBadge?: string;
 }) {
   const t = useTranslations("speakers");
 
@@ -28,7 +30,7 @@ export function FirstLadyCard({
     return (
       <div className="group relative flex flex-col sm:flex-row items-center gap-6 rounded-2xl overflow-hidden border-2 border-crimson/30 bg-crimson/5 ring-2 ring-crimson/20 p-4 sm:p-0">
         {/* Featured photo */}
-        <div className="relative w-full sm:w-48 md:w-56 aspect-[3/4] sm:aspect-auto sm:h-64 bg-light-beige overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl shrink-0">
+        <div className="relative w-full h-64 sm:w-48 md:w-56 sm:h-full bg-light-beige overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl shrink-0">
           {lady.photoPath ? (
             <Image
               src={lady.photoPath}
@@ -68,7 +70,7 @@ export function FirstLadyCard({
 
   return (
     <div
-      className={`group relative rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
+      className={`group relative rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-1 h-full flex flex-col ${
         lady.isHost
           ? "border-crimson/30 bg-crimson/5 ring-2 ring-crimson/20"
           : "border-brown/10 bg-white/60"
@@ -93,7 +95,7 @@ export function FirstLadyCard({
       </div>
 
       {/* Info */}
-      <div className="p-3">
+      <div className="p-3 flex-1 flex flex-col">
         <div className="flex items-center gap-1.5 mb-1">
           <span className="text-lg leading-none">{lady.countryFlag}</span>
           <span className="font-body text-xs text-near-black/50 truncate">
@@ -103,14 +105,21 @@ export function FirstLadyCard({
         <p className="font-heading text-sm font-bold text-near-black leading-tight">
           {honorific} {name}
         </p>
-        {hasMessage && (
-          <button
-            onClick={onReadMessage}
-            className="mt-2 font-heading text-xs font-semibold text-crimson hover:text-crimson/80 transition-colors"
-          >
-            {t("readMessage")}
-          </button>
+        {roleBadge && (
+          <span className="inline-block mt-1 font-heading text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-orange/15 text-orange">
+            {roleBadge}
+          </span>
         )}
+        <div className="mt-auto">
+          {hasMessage && (
+            <button
+              onClick={onReadMessage}
+              className="pt-2 font-heading text-xs font-semibold text-crimson hover:text-crimson/80 transition-colors"
+            >
+              {t("readMessage")}
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
