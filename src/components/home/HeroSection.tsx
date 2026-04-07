@@ -123,7 +123,7 @@ export function HeroSection() {
       />
 
       {/* Content — centered */}
-      <div className="relative z-10 mx-auto max-w-5xl w-full px-4 py-20 lg:px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-5xl w-full px-4 pt-4 pb-20 lg:px-8 text-center">
         <motion.div {...logoAnim}>
           <Image
             src={heroLogo}
