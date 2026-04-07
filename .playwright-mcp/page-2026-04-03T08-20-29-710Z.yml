@@ -1,0 +1,125 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e15]:
+      - 'img "OPDAD #RenforcerLaRésilience" [ref=e17]'
+      - paragraph [ref=e18]: 17 Avril 2026 · Libreville, Gabon
+      - generic [ref=e19]:
+        - status [ref=e20]
+        - paragraph [ref=e21]: Compte à rebours avant la conférence
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]: "--"
+              - generic [ref=e26]: Jours
+            - generic [ref=e27]: ":"
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: "--"
+              - generic [ref=e31]: Heures
+            - generic [ref=e32]: ":"
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]: "--"
+              - generic [ref=e36]: Minutes
+            - generic [ref=e37]: ":"
+          - generic [ref=e39]:
+            - generic [ref=e40]: "--"
+            - generic [ref=e41]: Secondes
+    - generic [ref=e45]:
+      - heading "Rejoignez les leaders africains pour renforcer la résilience" [level=2] [ref=e46]
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: "19"
+          - generic [ref=e50]: Premières Dames
+        - generic [ref=e51]:
+          - generic [ref=e52]: "4"
+          - generic [ref=e53]: Piliers
+        - generic [ref=e54]:
+          - generic [ref=e55]: "1"
+          - generic [ref=e56]: Jour
+      - generic [ref=e57]:
+        - link "En savoir plus" [ref=e58] [cursor=pointer]:
+          - /url: /fr/about
+          - text: En savoir plus
+        - link "Voir le programme" [ref=e59] [cursor=pointer]:
+          - /url: /fr/programme
+          - text: Voir le programme
+  - contentinfo [ref=e60]:
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - img "OAFLAD logo" [ref=e67]
+          - paragraph [ref=e68]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e69]:
+          - heading "Liens rapides" [level=3] [ref=e70]
+          - navigation "Footer navigation" [ref=e71]:
+            - link "À propos" [ref=e72] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e73] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e74] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e75] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e76] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e77] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e78] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e79] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e80]:
+          - heading "Suivez-nous" [level=3] [ref=e81]
+          - generic [ref=e82]:
+            - link "Facebook" [ref=e83] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e84]
+            - link "Twitter / X" [ref=e86] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e87]
+            - link "Instagram" [ref=e89] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e90]
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e94]:
+          - button "Politique de confidentialité" [ref=e95]
+          - button "Conditions d'utilisation" [ref=e96]

@@ -248,7 +248,7 @@
     "nkokAmbition": "Passer du silence à l'accompagnement."
   },
   "programme": {
-    "metaDescription": "Programme de la conférence #RenforcerLaRésilience — panels sur la résilience des femmes, la santé, la stabilité familiale et les partenariats durables. 17 avril 2026.",
+    "metaDescription": "Programme de la conférence #RenforcerLaRésilience — cérémonie officielle, allocutions des Premières Dames, panels et clôture. 17 avril 2026.",
     "title": "Programme",
     "badge": "Jour de l'événement",
     "milestoneBadge": "17 avril 2026",
@@ -259,21 +259,6 @@
       "partners": "La mobilisation des partenaires",
       "cooperation": "Le début d'une dynamique de coopération"
     },
-    "talkBadge": "Journée Nationale de la Femme",
-    "talkTitle": "Talk — Journée Nationale de la Femme",
-    "talkDescription": "Un dialogue national sur la résilience des femmes et des familles autour des addictions.",
-    "talkLocationLabel": "Lieu",
-    "talkLocation": "Cité de la Démocratie",
-    "talkRoom": "Lounge",
-    "talkTimeLabel": "Horaire",
-    "talkWelcome": "Capsules à 13h30",
-    "talkStart": "Début à 14h00",
-    "talkDurationLabel": "Durée",
-    "talkDuration": "2 heures maximum",
-    "talkParticipantsLabel": "Participants",
-    "talkParticipants": "225 participants",
-    "talkAudience1": "Experts (modérateurs et intervenants)",
-    "talkAudience2": "Femmes gabonaises",
     "panelsBadge": "Panels et échanges",
     "panelsTitle": "Panels et échanges",
     "panelsIntro": "Les échanges organisés visent à approfondir les enjeux liés à la résilience sociale et sanitaire. Ils permettront de croiser les expériences, d'identifier les défis communs, de partager des solutions adaptées.",
@@ -283,60 +268,86 @@
     "panelTbc": "À confirmer",
     "panel1": {
       "title": "Panel 1",
-      "topic": "Santé mentale",
-      "time": "14h05 – 14h30"
+      "topic": "Santé mentale et stabilité des familles",
+      "time": "13h50 – 14h30"
     },
     "panel2": {
       "title": "Panel 2",
-      "topic": "Autonomisation et résilience des femmes au Gabon",
-      "time": "14h30 – 15h15"
+      "topic": "Autonomisation des femmes : un challenge de gouvernance publique",
+      "time": "14h30 – 15h10"
     },
-    "timelineBadge": "Programme de la journée",
-    "timelineTitle": "La journée en un coup d'œil",
-    "timeline": {
+    "seq1Badge": "Cérémonie officielle",
+    "seq1Title": "Séquence 1 — Matin",
+    "seq1Subtitle": "En présence du Président de la République et des Premières Dames",
+    "seq2Badge": "Journée Nationale de la Femme",
+    "seq2Title": "Séquence 2 — Après-midi",
+    "seq2Subtitle": "Dimension nationale et sectorielle",
+    "seq1": {
       "registration": {
         "time": "08h00",
         "title": "Accueil & Inscription",
         "description": "Arrivée des invités et accréditation"
       },
       "opening": {
-        "time": "10h15",
-        "title": "Cérémonie officielle",
-        "description": "Hymne national, allocutions et lancement de la campagne #BuildingResilience"
+        "time": "10h05",
+        "title": "Ouverture officielle",
+        "description": "Hymne national et allocution du Président de la République"
+      },
+      "launch": {
+        "time": "10h25",
+        "title": "Lancement de la campagne",
+        "description": "Allocution de bienvenue et lancement de #RenforcerLaRésilience par la Première Dame"
       },
       "oaflad": {
-        "time": "10h45",
+        "time": "10h35",
         "title": "Intervention du Dr Nardos Berhanu",
         "description": "Secrétaire exécutif de l'OPDAD"
       },
       "firstLadies": {
-        "time": "10h55",
+        "time": "10h40",
         "title": "Allocutions des Premières Dames",
         "description": "Partages d'expérience des Premières Dames membres de l'OPDAD"
       },
-      "lunch": {
-        "time": "12h00",
-        "title": "Déjeuner officiel",
-        "description": "Déjeuner officiel et visite de l'exposition"
+      "doctorate": {
+        "time": "11h35",
+        "title": "Doctorat Honoris Causa",
+        "description": "Cérémonie de remise du Doctorat Honoris Causa à la Première Dame"
       },
+      "exhibition": {
+        "time": "11h45",
+        "title": "Visite de l'exposition",
+        "description": "Visite guidée de l'exposition #RenforcerLaRésilience"
+      },
+      "lunch": {
+        "time": "12h15",
+        "title": "Déjeuner officiel",
+        "description": "Déjeuner officiel"
+      }
+    },
+    "seq2": {
       "minister": {
-        "time": "14h00",
+        "time": "13h40",
         "title": "Allocution du Ministre des Affaires Sociales",
         "description": "Ministre chargé de la Protection de l'Enfance et de la Femme"
       },
       "panel1": {
-        "time": "14h05",
-        "title": "Panel 1 — Santé mentale",
-        "description": "La santé mentale comme enjeu de résilience"
+        "time": "13h50",
+        "title": "Panel 1 — Santé mentale et stabilité des familles",
+        "description": "La santé mentale et la stabilité des familles comme enjeux de résilience"
       },
       "panel2": {
         "time": "14h30",
-        "title": "Panel 2 — Autonomisation et résilience",
-        "description": "Autonomisation et résilience des femmes au Gabon"
+        "title": "Panel 2 — Autonomisation des femmes",
+        "description": "Un challenge de gouvernance publique à l'aune de la Ve République"
+      },
+      "synthesis": {
+        "time": "15h10",
+        "title": "Synthèse des travaux",
+        "description": "Synthèse et message d'engagement national"
       },
       "closing": {
-        "time": "15h30",
-        "title": "Clôture des travaux",
+        "time": "15h20",
+        "title": "Clôture officielle",
         "description": "Clôture officielle de la journée"
       }
     },

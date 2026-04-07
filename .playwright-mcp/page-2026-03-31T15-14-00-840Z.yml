@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to FR" [ref=e8]: FR
+        - button "Open menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /en/about
+          - text: About
+        - link:
+          - /url: /en/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /en/programme
+          - text: Programme
+        - link:
+          - /url: /en/speakers
+          - text: Speakers
+        - link:
+          - /url: /en/partners
+          - text: Partners
+        - link:
+          - /url: /en/media
+          - text: Media
+        - link:
+          - /url: /en/contact
+          - text: Contact
+        - link:
+          - /url: /en/register
+          - text: Register
+  - main [ref=e12]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: Speakers & Dignitaries
+        - heading "Speakers & Dignitaries" [level=1] [ref=e22]
+      - paragraph [ref=e24]:
+        - text: Meet the distinguished leaders and dignitaries attending the
+        - strong [ref=e25]: "#BuildingResilience"
+        - text: conference in Libreville.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: First Ladies & First Gentleman
+        - heading "Attending the Conference" [level=2] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - img "Zita Oligui Nguema" [ref=e36]
+            - generic [ref=e38]: Hostess
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: 🇬🇦
+              - generic [ref=e42]: Gabon
+            - paragraph [ref=e43]: H.E Mrs Zita Oligui Nguema
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img "Ana Dias Lourenço" [ref=e47]
+            - generic [ref=e49]: First Lady
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: 🇦🇴
+              - generic [ref=e53]: Angola
+            - paragraph [ref=e54]: H.E Mrs Ana Dias Lourenço
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img "Fatima Maada Bio" [ref=e58]
+            - generic [ref=e60]: First Lady
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]: 🇸🇱
+              - generic [ref=e64]: Sierra Leone
+            - paragraph [ref=e65]: H.E Mrs Fatima Maada Bio
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - img "Marie Khone Faye" [ref=e69]
+            - generic [ref=e71]: First Lady
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: 🇸🇳
+              - generic [ref=e75]: Senegal
+            - paragraph [ref=e76]: H.E Mrs Marie Khone Faye
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - img "Denise Nyakeru Tshisekedi" [ref=e80]
+            - generic [ref=e82]: First Lady
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]: 🇨🇩
+              - generic [ref=e86]: DR Congo
+            - paragraph [ref=e87]: H.E Mrs Denise Nyakeru Tshisekedi
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - img "Antoinette Sassou Nguesso" [ref=e91]
+            - generic [ref=e93]: First Lady
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: 🇨🇬
+              - generic [ref=e97]: Congo
+            - paragraph [ref=e98]: H.E Mrs Antoinette Sassou Nguesso
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - img "Angeline Ndayishimiye" [ref=e102]
+            - generic [ref=e104]: First Lady
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: 🇧🇮
+              - generic [ref=e108]: Burundi
+            - paragraph [ref=e109]: H.E Mrs Angeline Ndayishimiye
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - img "Oluremi Tinubu" [ref=e113]
+            - generic [ref=e115]: First Lady
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]: 🇳🇬
+              - generic [ref=e119]: Nigeria
+            - paragraph [ref=e120]: H.E Mrs Oluremi Tinubu
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - img "Kartumu Yarta Boakai" [ref=e124]
+            - generic [ref=e126]: First Lady
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - generic [ref=e129]: 🇱🇷
+              - generic [ref=e130]: Liberia
+            - paragraph [ref=e131]: H.E Mrs Kartumu Yarta Boakai
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img "Dominique Ouattara" [ref=e135]
+            - generic [ref=e137]: First Lady
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: 🇨🇮
+              - generic [ref=e141]: Côte d'Ivoire
+            - paragraph [ref=e142]: H.E Mrs Dominique Ouattara
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - img "Jeannette Kagame" [ref=e146]
+            - generic [ref=e148]: First Lady
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]: 🇷🇼
+              - generic [ref=e152]: Rwanda
+            - paragraph [ref=e153]: H.E Mrs Jeannette Kagame
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - img "Rachel Ruto" [ref=e157]
+            - generic [ref=e159]: First Lady
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: 🇰🇪
+              - generic [ref=e163]: Kenya
+            - paragraph [ref=e164]: H.E Mrs Rachel Ruto
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e169]: 🇸🇹
+            - generic [ref=e171]: First Lady
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - generic [ref=e174]: 🇸🇹
+              - generic [ref=e175]: São Tomé and Príncipe
+            - paragraph [ref=e176]: H.E Mrs Maria de Fátima Vila Nova
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - img "Constancia Mangue de Obiang" [ref=e180]
+            - generic [ref=e182]: First Lady
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: 🇬🇶
+              - generic [ref=e186]: Equatorial Guinea
+            - paragraph [ref=e187]: H.E Mrs Constancia Mangue de Obiang
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e192]: 🇬🇳
+            - generic [ref=e194]: First Lady
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: 🇬🇳
+              - generic [ref=e198]: Guinea
+            - paragraph [ref=e199]: H.E Mrs Lauriane Doumbouya
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - img "Tina Marguerite Touadéra" [ref=e203]
+            - generic [ref=e205]: First Lady
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e208]: 🇨🇫
+              - generic [ref=e209]: Central African Republic
+            - paragraph [ref=e210]: H.E Mrs Tina Marguerite Touadéra
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - img "Lordina Mahama" [ref=e214]
+            - generic [ref=e216]: First Lady
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e219]: 🇬🇭
+              - generic [ref=e220]: Ghana
+            - paragraph [ref=e221]: H.E Mrs Lordina Mahama
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e226]: 🇳🇦
+            - generic [ref=e228]: First Gentleman
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: 🇳🇦
+              - generic [ref=e232]: Namibia
+            - paragraph [ref=e233]: H.E Mr Epaphras Denga Ndaitwah
+    - generic [ref=e237]:
+      - generic [ref=e238]: Coming Soon
+      - heading "Speaker Announcements" [level=2] [ref=e239]
+      - paragraph [ref=e240]: Speaker list coming soon.
+  - contentinfo [ref=e242]:
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - img "OAFLAD logo" [ref=e249]
+          - paragraph [ref=e250]: Organisation of African First Ladies for Development
+        - generic [ref=e251]:
+          - heading "Quick links" [level=3] [ref=e252]
+          - navigation "Footer navigation" [ref=e253]:
+            - link "About" [ref=e254] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e255] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e256] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e257] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e258]:
+          - heading "Follow us" [level=3] [ref=e259]
+          - generic [ref=e260]:
+            - link "Facebook" [ref=e261] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e262]
+            - link "Twitter / X" [ref=e264] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e265]
+            - link "Instagram" [ref=e267] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e268]
+            - link "YouTube" [ref=e270] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e271]
+      - generic [ref=e273]:
+        - paragraph [ref=e274]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e275]:
+          - button "Privacy Policy" [ref=e276]
+          - button "Terms of Use" [ref=e277]
+      - paragraph [ref=e278]: Made with love by Bomalab 🤖

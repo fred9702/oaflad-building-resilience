@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to FR" [ref=e8]: FR
+        - button "Open menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /en/about
+          - text: About
+        - link:
+          - /url: /en/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /en/programme
+          - text: Programme
+        - link:
+          - /url: /en/speakers
+          - text: Speakers
+        - link:
+          - /url: /en/partners
+          - text: Partners
+        - link:
+          - /url: /en/media
+          - text: Media
+        - link:
+          - /url: /en/contact
+          - text: Contact
+        - link:
+          - /url: /en/register
+          - text: Register
+  - main [ref=e12]:
+    - generic [ref=e20]:
+      - 'img "OAFLAD #BuildingResilience" [ref=e22]'
+      - generic [ref=e23]:
+        - heading "Building Resilience" [level=1] [ref=e24]
+        - paragraph [ref=e25]:
+          - strong [ref=e26]: "#BuildingResilience"
+        - paragraph [ref=e27]: April 17, 2026 · Libreville, Gabon
+        - generic [ref=e28]:
+          - link "Register" [ref=e29] [cursor=pointer]:
+            - /url: /en/register
+            - text: Register
+          - link "Programme" [ref=e30] [cursor=pointer]:
+            - /url: /en/programme
+            - text: Programme
+          - link "CAP 241" [ref=e31] [cursor=pointer]:
+            - /url: /en/cap-241
+            - text: CAP 241
+    - region "Countdown to the conference" [ref=e32]:
+      - status [ref=e33]
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: Countdown to the conference
+        - generic [ref=e36]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: "--"
+            - generic [ref=e40]: Days
+          - generic [ref=e45]:
+            - generic [ref=e46]: "--"
+            - generic [ref=e47]: Hours
+          - generic [ref=e52]:
+            - generic [ref=e53]: "--"
+            - generic [ref=e54]: Minutes
+          - generic [ref=e59]:
+            - generic [ref=e60]: "--"
+            - generic [ref=e61]: Seconds
+    - generic [ref=e65]:
+      - heading "Join African leaders in building resilience" [level=2] [ref=e66]
+      - paragraph [ref=e67]: 17 April 2026 · Libreville, Gabon
+      - link "Register now" [ref=e69] [cursor=pointer]:
+        - /url: /en/register
+        - text: Register now
+  - contentinfo [ref=e70]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - img "OAFLAD logo" [ref=e77]
+          - paragraph [ref=e78]: Organisation of African First Ladies for Development
+        - generic [ref=e79]:
+          - heading "Quick links" [level=3] [ref=e80]
+          - navigation "Footer navigation" [ref=e81]:
+            - link "About" [ref=e82] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e83] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e84] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e85] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e86]:
+          - heading "Follow us" [level=3] [ref=e87]
+          - generic [ref=e88]:
+            - link "Facebook" [ref=e89] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e90]
+            - link "Twitter / X" [ref=e92] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e93]
+            - link "Instagram" [ref=e95] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e96]
+            - link "YouTube" [ref=e98] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e99]
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e103]:
+          - button "Privacy Policy" [ref=e104]
+          - button "Terms of Use" [ref=e105]
+      - paragraph [ref=e106]: Made with love by Bomalab 🤖

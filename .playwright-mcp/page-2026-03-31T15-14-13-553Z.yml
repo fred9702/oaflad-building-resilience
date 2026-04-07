@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to FR" [ref=e8]: FR
+        - button "Open menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /en/about
+          - text: About
+        - link:
+          - /url: /en/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /en/programme
+          - text: Programme
+        - link:
+          - /url: /en/speakers
+          - text: Speakers
+        - link:
+          - /url: /en/partners
+          - text: Partners
+        - link:
+          - /url: /en/media
+          - text: Media
+        - link:
+          - /url: /en/contact
+          - text: Contact
+        - link:
+          - /url: /en/register
+          - text: Register
+  - main [ref=e12]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Continental Campaign
+        - heading "An African Initiative to Strengthen Resilience" [level=1] [ref=e23]
+      - paragraph [ref=e25]:
+        - text: The continental campaign
+        - strong [ref=e26]: "#BuildingResilience"
+        - text: ", led by the Organization of African First Ladies for Development (OAFLAD), reflects a collective effort to address the growing vulnerabilities facing African societies."
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: "In a context marked by:"
+        - generic [ref=e30]:
+          - generic [ref=e33]: The impact of climate change
+          - generic [ref=e36]: Social tensions and conflict situations
+          - generic [ref=e39]: The fragility of health systems
+      - paragraph [ref=e41]: women and girls emerge as both the most exposed and the central drivers of resilience within families and communities.
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: "This continental initiative is grounded in a strong conviction:"
+        - paragraph [ref=e45]: resilience cannot be sustainable unless it is structured, supported, and collectively driven.
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: "Through this campaign, OAFLAD calls for:"
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e52]: "1"
+            - paragraph [ref=e53]: Strengthening social and health protection systems
+          - generic [ref=e54]:
+            - generic [ref=e56]: "2"
+            - paragraph [ref=e57]: Supporting women in their central role within families and communities
+          - generic [ref=e58]:
+            - generic [ref=e60]: "3"
+            - paragraph [ref=e61]: Developing coordinated responses tailored to local realities
+      - paragraph [ref=e63]:
+        - text: The
+        - strong [ref=e64]: "#BuildingResilience"
+        - text: campaign therefore provides a continental framework for mobilization, fostering the exchange of experiences, coordination of actions, and the development of sustainable solutions.
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: Gabon's Commitment
+        - heading "Gabon's Strategic Choice" [level=2] [ref=e70]
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: "Faced with the challenges of our time, Gabon has made a clear choice:"
+        - paragraph [ref=e73]:
+          - text: To contribute to the continental
+          - strong [ref=e74]: "#BuildingResilience"
+          - text: initiative by placing health and family stability at the core of its commitment.
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: "This choice is based on a simple conviction:"
+        - paragraph [ref=e78]: Resilience cannot be declared. It must be built.
+        - paragraph [ref=e79]: It is built through prevention, continuity of care, and the reconstruction of fragile life trajectories.
+      - paragraph [ref=e81]:
+        - text: The
+        - strong [ref=e82]: EQUILIBRIUM
+        - text: Programme 2026–2029, part of the national
+        - strong [ref=e83]: CAP 241
+        - text: framework, represents Gabon's contribution to this African initiative.
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: "It reflects a strong commitment:"
+        - generic [ref=e87]:
+          - generic [ref=e90]: To structure a coherent national response
+          - generic [ref=e93]: To address the root causes of vulnerability
+          - generic [ref=e96]: To sustainably strengthen social stability
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: "Gabon affirms a clear position:"
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Health is not a sectoral policy.
+          - paragraph [ref=e102]: It is a condition for stability.
+          - paragraph [ref=e103]: It is a lever for sustainable resilience.
+      - link "Discover CAP 241" [ref=e106] [cursor=pointer]:
+        - /url: /en/cap-241
+        - text: Discover CAP 241
+    - generic [ref=e110]:
+      - generic [ref=e111]: Message
+      - blockquote [ref=e112]:
+        - paragraph [ref=e113]: “On this day of April 17, National Women's Day in Gabon, I wish to address each and every one of you. To those present here. To those working in our cities, in our villages, in our homes. And to those whose commitment, often unseen, continues to sustain our society.”
+        - generic [ref=e114]: — Her Excellency Zita Oligui Nguema
+    - paragraph [ref=e119]: Under Ma Banniere, we care, we share, we protect.
+  - contentinfo [ref=e121]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - img "OAFLAD logo" [ref=e128]
+          - paragraph [ref=e129]: Organisation of African First Ladies for Development
+        - generic [ref=e130]:
+          - heading "Quick links" [level=3] [ref=e131]
+          - navigation "Footer navigation" [ref=e132]:
+            - link "About" [ref=e133] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e134] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e135] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e136] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e137]:
+          - heading "Follow us" [level=3] [ref=e138]
+          - generic [ref=e139]:
+            - link "Facebook" [ref=e140] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e141]
+            - link "Twitter / X" [ref=e143] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e144]
+            - link "Instagram" [ref=e146] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e147]
+            - link "YouTube" [ref=e149] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e150]
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e154]:
+          - button "Privacy Policy" [ref=e155]
+          - button "Terms of Use" [ref=e156]
+      - paragraph [ref=e157]: Made with love by Bomalab 🤖

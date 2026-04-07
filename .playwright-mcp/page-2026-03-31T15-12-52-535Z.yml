@@ -1,0 +1,193 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /en
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /en/about
+        - link "CAP 241" [ref=e9] [cursor=pointer]:
+          - /url: /en/cap-241
+        - link "Programme" [ref=e10] [cursor=pointer]:
+          - /url: /en/programme
+        - link "Speakers" [ref=e11] [cursor=pointer]:
+          - /url: /en/speakers
+        - link "Partners" [ref=e12] [cursor=pointer]:
+          - /url: /en/partners
+        - link "Media" [ref=e13] [cursor=pointer]:
+          - /url: /en/media
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /en/contact
+        - link "Register" [ref=e15] [cursor=pointer]:
+          - /url: /en/register
+        - button "Switch to FR" [ref=e16]: FR
+  - main [ref=e17]:
+    - generic [ref=e25]:
+      - generic [ref=e27]: Strategic Framework
+      - 'heading "CAP 241: A Framework for Social Action" [level=1] [ref=e29]':
+        - strong [ref=e30]: CAP 241
+        - text: ": A Framework for Social Action"
+      - paragraph [ref=e32]:
+        - text: The work of the
+        - link "Ma Banniere Foundation" [ref=e33] [cursor=pointer]:
+          - /url: https://mabanniere.ga/
+        - text: "is structured through CAP 241, a framework linking:"
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: "1"
+          - generic [ref=e38]: Social impact
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - generic [ref=e41]: National stability
+        - generic [ref=e42]:
+          - generic [ref=e43]: "3"
+          - generic [ref=e44]: International visibility
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - generic [ref=e50]: Four Pillars
+        - heading "Four Complementary Pillars" [level=2] [ref=e51]
+      - generic [ref=e52]:
+        - generic [ref=e54]:
+          - generic [ref=e56]: "1"
+          - heading "CAP Health" [level=3] [ref=e57]
+          - paragraph [ref=e58]: EQUILIBRIUM
+          - paragraph [ref=e59]: Health is the foundation of stability. When care pathways break, life trajectories collapse.
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - generic [ref=e63]: Continuity of care
+            - listitem [ref=e64]:
+              - generic [ref=e66]: Mental health support
+            - listitem [ref=e67]:
+              - generic [ref=e69]: Social vulnerability support
+            - listitem [ref=e70]:
+              - generic [ref=e72]: Family stability protection
+        - generic [ref=e74]:
+          - generic [ref=e76]: "2"
+          - heading "CAP Women" [level=3] [ref=e77]
+          - paragraph [ref=e78]: TRANSFERT
+          - paragraph [ref=e79]: Supporting women in their central role within families and communities through skills transfer and empowerment.
+        - generic [ref=e81]:
+          - generic [ref=e83]: "3"
+          - heading "CAP Youth" [level=3] [ref=e84]
+          - paragraph [ref=e85]: TRAJECTORIES
+          - paragraph [ref=e86]: Rebuilding life paths for young people through training, mentoring and reintegration pathways.
+        - generic [ref=e88]:
+          - generic [ref=e90]: "4"
+          - heading "CAP Education" [level=3] [ref=e91]
+          - paragraph [ref=e92]: KNOWLEDGE
+          - paragraph [ref=e93]: Strengthening educational foundations to build lasting resilience through prevention and awareness.
+      - generic [ref=e95]:
+        - heading "These pillars do not function in isolation. They operate in a logic of interdependence:" [level=3] [ref=e96]
+        - generic [ref=e97]:
+          - generic [ref=e100]: Health stability protects women
+          - generic [ref=e103]: Family stability safeguards childhood
+          - generic [ref=e106]: Prevention strengthens education
+          - generic [ref=e109]: Skills transfer supports economic resilience
+        - paragraph [ref=e110]: This architecture avoids fragmentation of interventions. It fosters a cross-cutting, coherent and sustainable approach.
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e115]: Programme
+        - heading "The EQUILIBRIUM Programme" [level=2] [ref=e116]:
+          - text: The
+          - strong [ref=e117]: EQUILIBRIUM
+          - text: Programme
+        - paragraph [ref=e118]: Prevent — Support — Rebuild
+      - paragraph [ref=e120]:
+        - text: Women often carry the weight of fragility.
+        - strong [ref=e121]: EQUILIBRIUM
+        - text: "provides structured responses:"
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e126]: "1"
+          - paragraph [ref=e127]: Preventing disruptions
+        - generic [ref=e128]:
+          - generic [ref=e130]: "2"
+          - paragraph [ref=e131]: Supporting care continuity
+        - generic [ref=e132]:
+          - generic [ref=e134]: "3"
+          - paragraph [ref=e135]: Rebuilding life trajectories
+      - paragraph [ref=e137]: "A clear ambition: to transform fragilities into stabilized trajectories. To move from silence to support. To build sustainable responses."
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: The Challenge
+          - heading "Fragile Trajectories Requiring Structured Response" [level=3] [ref=e141]
+        - generic [ref=e142]:
+          - paragraph [ref=e143]: "Our societies face:"
+          - generic [ref=e144]:
+            - generic [ref=e145]: Psychosocial fragility
+            - generic [ref=e146]: Family breakdown
+            - generic [ref=e147]: Disrupted life paths
+        - generic [ref=e148]:
+          - paragraph [ref=e149]:
+            - strong [ref=e150]: EQUILIBRIUM
+            - text: "responds by:"
+          - generic [ref=e151]:
+            - generic [ref=e152]: Recognising
+            - generic [ref=e153]: Preventing
+            - generic [ref=e154]: Supporting
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]: Concrete Action
+        - heading "Towards a Structured Response" [level=2] [ref=e160]
+      - paragraph [ref=e162]: In response to the identified vulnerabilities, action cannot be fragmented or temporary. It must be structured, coherent, and sustained over time.
+      - generic [ref=e164]:
+        - heading "It is within this perspective that the Nkok Integrated Center for Rehabilitation, Training, and Reintegration is being developed." [level=3] [ref=e165]
+        - paragraph [ref=e166]: "This center represents a concrete response to fragile life trajectories by providing:"
+        - list [ref=e167]:
+          - listitem [ref=e168]:
+            - generic [ref=e170]: Tailored reception and support for vulnerable individuals
+          - listitem [ref=e171]:
+            - generic [ref=e173]: Structured psychosocial support
+          - listitem [ref=e174]:
+            - generic [ref=e176]: Training and reintegration pathways
+          - listitem [ref=e177]:
+            - generic [ref=e179]: Continuous follow-up aimed at rebuilding sustainable life paths
+      - generic [ref=e181]:
+        - paragraph [ref=e182]: "Beyond its operational function, the center embodies a comprehensive approach:"
+        - generic [ref=e183]:
+          - generic [ref=e184]: Recognizing vulnerabilities
+          - generic [ref=e185]: Supporting life pathways
+          - generic [ref=e186]: Restoring balance
+      - paragraph [ref=e188]: "This initiative reflects a clear ambition: to move from silent vulnerability to structured, visible, and sustainable responses."
+  - contentinfo [ref=e189]:
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - img "OAFLAD logo" [ref=e196]
+          - paragraph [ref=e197]: Organisation of African First Ladies for Development
+        - generic [ref=e198]:
+          - heading "Quick links" [level=3] [ref=e199]
+          - navigation "Footer navigation" [ref=e200]:
+            - link "About" [ref=e201] [cursor=pointer]:
+              - /url: /en/about
+            - link "CAP 241" [ref=e202] [cursor=pointer]:
+              - /url: /en/cap-241
+            - link "Programme" [ref=e203] [cursor=pointer]:
+              - /url: /en/programme
+            - link "Contact" [ref=e204] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e205]:
+          - heading "Follow us" [level=3] [ref=e206]
+          - generic [ref=e207]:
+            - link "Facebook" [ref=e208] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e209]
+            - link "Twitter / X" [ref=e211] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e212]
+            - link "Instagram" [ref=e214] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e215]
+            - link "YouTube" [ref=e217] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e218]
+      - generic [ref=e220]:
+        - paragraph [ref=e221]: © 2026 Bomalab. All rights reserved.
+        - generic [ref=e222]:
+          - button "Privacy Policy" [ref=e223]
+          - button "Terms of Use" [ref=e224]
+      - paragraph [ref=e225]: Made with love by Bomalab 🤖
+  - alert [ref=e226]

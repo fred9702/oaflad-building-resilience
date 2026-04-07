@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "OAFLAD - Home" [ref=e5] [cursor=pointer]:
+        - /url: /fr
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to EN" [ref=e8]: EN
+        - button "Ouvrir le menu" [ref=e9]:
+          - img [ref=e10]
+    - generic:
+      - generic:
+        - link:
+          - /url: /fr/about
+          - text: À propos
+        - link:
+          - /url: /fr/cap-241
+          - text: CAP 241
+        - link:
+          - /url: /fr/programme
+          - text: Programme
+        - link:
+          - /url: /fr/speakers
+          - text: Intervenants
+        - link:
+          - /url: /fr/partners
+          - text: Partenaires
+        - link:
+          - /url: /fr/media
+          - text: Média
+        - link:
+          - /url: /fr/contact
+          - text: Contact
+        - link:
+          - /url: /fr/register
+          - text: S'inscrire
+  - main [ref=e12]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Campagne continentale
+        - heading "Une initiative africaine pour renforcer la résilience" [level=1] [ref=e23]
+      - paragraph [ref=e25]:
+        - text: La campagne continentale
+        - strong [ref=e26]: "#RenforcerLaRésilience"
+        - text: ", portée par l'Organisation des Premières Dames d'Afrique pour le Développement (OPDAD / OAFLAD), s'inscrit dans une dynamique collective visant à répondre aux fragilités croissantes auxquelles sont confrontées les sociétés africaines."
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: "Dans un contexte marqué par :"
+        - generic [ref=e30]:
+          - generic [ref=e33]: Les effets du changement climatique
+          - generic [ref=e36]: Les tensions sociales et les situations de conflit
+          - generic [ref=e39]: La vulnérabilité des systèmes de santé
+      - paragraph [ref=e41]: Les femmes et les jeunes filles apparaissent à la fois comme les premières exposées et les principales actrices de la résilience des communautés.
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: "Cette initiative repose sur une conviction forte :"
+        - paragraph [ref=e45]: La résilience ne peut être durable que si elle est structurée, accompagnée et portée collectivement.
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: "À travers cette campagne, l'OPDAD appelle à :"
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e52]: "1"
+            - paragraph [ref=e53]: Renforcer les systèmes de protection sociale et sanitaire
+          - generic [ref=e54]:
+            - generic [ref=e56]: "2"
+            - paragraph [ref=e57]: Soutenir les femmes dans leur rôle central
+          - generic [ref=e58]:
+            - generic [ref=e60]: "3"
+            - paragraph [ref=e61]: Développer des réponses coordonnées et adaptées aux réalités locales
+      - paragraph [ref=e63]:
+        - text: La campagne
+        - strong [ref=e64]: "#RenforcerLaRésilience"
+        - text: constitue ainsi un cadre de mobilisation continentale favorisant le partage d'expériences, la coordination des actions et l'émergence de solutions durables.
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: L'engagement du Gabon
+        - heading "Le choix stratégique du Gabon" [level=2] [ref=e70]
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: "Face aux défis contemporains, le Gabon a fait un choix clair :"
+        - paragraph [ref=e73]:
+          - text: Contribuer à la dynamique continentale
+          - strong [ref=e74]: "#RenforcerLaRésilience"
+          - text: en plaçant la santé et la stabilité des familles au cœur de son engagement.
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: "Ce choix repose sur une conviction simple :"
+        - paragraph [ref=e78]: La résilience ne se décrète pas. Elle se construit.
+        - paragraph [ref=e79]: Elle se construit par la prévention, la continuité des soins et la reconstruction des trajectoires de vie fragilisées.
+      - paragraph [ref=e81]:
+        - text: Le programme
+        - strong [ref=e82]: ÉQUILIBRES
+        - text: 2026–2029, inscrit dans le cadre national
+        - strong [ref=e83]: CAP 241
+        - text: ", constitue la contribution du Gabon à cette initiative africaine."
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: "Il traduit une volonté :"
+        - generic [ref=e87]:
+          - generic [ref=e90]: Structurer une réponse nationale cohérente
+          - generic [ref=e93]: Agir sur les causes profondes des fragilités
+          - generic [ref=e96]: Renforcer durablement les équilibres sociaux
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: "Le Gabon affirme ainsi une position claire :"
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: La santé n'est pas une politique sectorielle.
+          - paragraph [ref=e102]: Elle est une condition de stabilité.
+          - paragraph [ref=e103]: Elle est un levier de résilience durable.
+    - generic [ref=e109]:
+      - generic [ref=e110]: Message
+      - blockquote [ref=e111]:
+        - paragraph [ref=e112]: “En ce jour du 17 avril, journée nationale de la femme au Gabon, je souhaite m'adresser à chacune d'entre vous. À celles qui sont ici présentes. À celles qui œuvrent dans nos villes, dans nos villages, dans nos foyers. Et à celles dont l'engagement, souvent discret, continue de porter notre société.”
+        - generic [ref=e113]: — Son Excellence Madame Zita Oligui Nguema
+    - generic [ref=e116]:
+      - paragraph [ref=e118]: Découvrez le cadre structurant qui porte cette vision.
+      - link "Découvrir CAP 241" [ref=e120] [cursor=pointer]:
+        - /url: /fr/cap-241
+        - text: Découvrir CAP 241
+  - contentinfo [ref=e121]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - img "OAFLAD logo" [ref=e128]
+          - paragraph [ref=e129]: Organisation des Premières Dames d'Afrique pour le Développement
+        - generic [ref=e130]:
+          - heading "Liens rapides" [level=3] [ref=e131]
+          - navigation "Footer navigation" [ref=e132]:
+            - link "À propos" [ref=e133] [cursor=pointer]:
+              - /url: /fr/about
+            - link "CAP 241" [ref=e134] [cursor=pointer]:
+              - /url: /fr/cap-241
+            - link "Programme" [ref=e135] [cursor=pointer]:
+              - /url: /fr/programme
+            - link "Intervenants" [ref=e136] [cursor=pointer]:
+              - /url: /fr/speakers
+            - link "Partenaires" [ref=e137] [cursor=pointer]:
+              - /url: /fr/partners
+            - link "Média" [ref=e138] [cursor=pointer]:
+              - /url: /fr/media
+            - link "Contact" [ref=e139] [cursor=pointer]:
+              - /url: /fr/contact
+            - link "S'inscrire" [ref=e140] [cursor=pointer]:
+              - /url: /fr/register
+        - generic [ref=e141]:
+          - heading "Suivez-nous" [level=3] [ref=e142]
+          - generic [ref=e143]:
+            - link "Facebook" [ref=e144] [cursor=pointer]:
+              - /url: https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr
+              - img [ref=e145]
+            - link "Twitter / X" [ref=e147] [cursor=pointer]:
+              - /url: https://x.com/resilience241
+              - img [ref=e148]
+            - link "Instagram" [ref=e150] [cursor=pointer]:
+              - /url: https://instagram.com/resilience_241
+              - img [ref=e151]
+      - generic [ref=e153]:
+        - paragraph [ref=e154]: © 2026 Bomalab. Tous droits réservés.
+        - generic [ref=e155]:
+          - button "Politique de confidentialité" [ref=e156]
+          - button "Conditions d'utilisation" [ref=e157]
