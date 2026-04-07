@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "@phosphor-icons/react";
+import { X, Quotes } from "@phosphor-icons/react";
 import type { FirstLady } from "@/data/first-ladies";
 import { messageTexts, type FirstLadyMessage } from "@/data/first-lady-messages";
 
@@ -156,9 +156,14 @@ export function FirstLadyMessageModal({
             )}
 
             {/* Message body */}
-            <div className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8">
+            <Quotes
+              size={32}
+              weight="fill"
+              className="text-crimson/30 mb-3"
+            />
+            <blockquote className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8 italic">
               {messageText}
-            </div>
+            </blockquote>
 
             {/* Signature */}
             {(() => {
