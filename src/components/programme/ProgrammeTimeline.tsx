@@ -1,13 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const SEQ1_KEYS = [
   "registration",
   "opening",
   "launch",
-  "capsule",
   "oaflad",
   "firstLadies",
   "doctorate",
@@ -15,8 +15,10 @@ const SEQ1_KEYS = [
   "lunch",
 ] as const;
 
+/** Keys that should link to the About page */
+const LINK_KEYS = new Set(["launch"]);
+
 const SEQ2_KEYS = [
-  "capsules",
   "minister",
   "panel1",
   "panel2",
@@ -25,12 +27,12 @@ const SEQ2_KEYS = [
 ] as const;
 
 const SEQ1_COLORS = [
-  "bg-orange", "bg-crimson", "bg-crimson", "bg-green",
+  "bg-orange", "bg-crimson", "bg-crimson",
   "bg-orange", "bg-crimson", "bg-green", "bg-orange", "bg-crimson",
 ] as const;
 
 const SEQ2_COLORS = [
-  "bg-orange", "bg-crimson", "bg-green",
+  "bg-crimson", "bg-green",
   "bg-orange", "bg-crimson", "bg-green",
 ] as const;
 
@@ -39,12 +41,14 @@ function TimelineSequence({
   keys,
   colors,
   accentColor,
+  locale,
   t,
 }: {
   seqKey: "seq1" | "seq2";
   keys: readonly string[];
   colors: readonly string[];
   accentColor: string;
+  locale: string;
   t: ReturnType<typeof useTranslations>;
 }) {
   return (
@@ -83,14 +87,28 @@ function TimelineSequence({
                     </div>
                   </div>
 
-                  <div className="flex-1 bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5">
-                    <h4 className="font-heading text-base md:text-lg font-bold text-near-black">
-                      {t(`${seqKey}.${key}.title`)}
-                    </h4>
-                    <p className="mt-1 font-body text-sm text-near-black/60">
-                      {t(`${seqKey}.${key}.description`)}
-                    </p>
-                  </div>
+                  {LINK_KEYS.has(key) ? (
+                    <Link
+                      href={`/${locale}/about`}
+                      className="flex-1 bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5 hover:border-crimson/30 hover:bg-crimson/5 transition-colors group"
+                    >
+                      <h4 className="font-heading text-base md:text-lg font-bold text-near-black group-hover:text-crimson transition-colors">
+                        {t(`${seqKey}.${key}.title`)}
+                      </h4>
+                      <p className="mt-1 font-body text-sm text-near-black/60">
+                        {t(`${seqKey}.${key}.description`)}
+                      </p>
+                    </Link>
+                  ) : (
+                    <div className="flex-1 bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5">
+                      <h4 className="font-heading text-base md:text-lg font-bold text-near-black">
+                        {t(`${seqKey}.${key}.title`)}
+                      </h4>
+                      <p className="mt-1 font-body text-sm text-near-black/60">
+                        {t(`${seqKey}.${key}.description`)}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </ScrollReveal>
             );
@@ -103,6 +121,7 @@ function TimelineSequence({
 
 export function ProgrammeTimeline() {
   const t = useTranslations("programme");
+  const locale = useLocale();
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white">
@@ -112,6 +131,7 @@ export function ProgrammeTimeline() {
           keys={SEQ1_KEYS}
           colors={SEQ1_COLORS}
           accentColor="crimson"
+          locale={locale}
           t={t}
         />
         <TimelineSequence
@@ -119,6 +139,7 @@ export function ProgrammeTimeline() {
           keys={SEQ2_KEYS}
           colors={SEQ2_COLORS}
           accentColor="orange"
+          locale={locale}
           t={t}
         />
       </div>

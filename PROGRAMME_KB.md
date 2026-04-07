@@ -20,7 +20,6 @@ Des Femmes et des filles face aux changements climatiques et aux conflits
 | 10h05 – 10h10 | Hymne national |
 | 10h10 – 10h20 | Allocution de Son Excellence le Président de la République Gabonaise |
 | 10h25 – 10h30 | Allocution de bienvenue et lancement de la campagne nationale #RenforcerLaRésilience par Son Excellence Madame la Première Dame de la République Gabonaise |
-| 10h30 – 10h35 | Capsule audiovisuelle — contenu stratégique de la campagne |
 | 10h35 – 10h40 | Intervention du Dr Nardos Berhanu, Secrétaire exécutif de l'OPDAD |
 | 10h40 – 11h30 | Allocutions et partages d'expérience des Premières Dames (Première Dame de Sierra Leone, Présidente en exercice de l'OPDAD; Première Dame d'Angola, Vice-Présidente de l'OPDAD; autres Premières Dames) |
 | 11h35 – 11h40 | Cérémonie de remise du Doctorat Honoris Causa à Son Excellence Madame la Première Dame de la République Gabonaise |
@@ -35,7 +34,6 @@ Des Femmes et des filles face aux changements climatiques et aux conflits
 
 | Horaire | Programme |
 |---------|-----------|
-| 13h30 – 13h40 | Diffusion de capsules audiovisuelles |
 | 13h40 – 13h50 | Allocution du Ministre des Affaires Sociales, chargé de la Protection de l'Enfance et de la Femme |
 | 13h50 – 14h30 | **Panel 1 : Santé mentale et stabilité des familles** |
 | 14h30 – 15h10 | **Panel 2 : Autonomisation des femmes — un challenge de gouvernance publique à l'aune de la Ve République** |
@@ -76,7 +74,6 @@ For Women and Girls in the Face of Climate Change and Conflicts
 | 10:05am – 10:10am | National Anthem |
 | 10:10am – 10:20am | Address by His Excellency the President of the Gabonese Republic |
 | 10:25am – 10:30am | Welcome address and launch of the national campaign #BuildingResilience by Her Excellency the First Lady of the Gabonese Republic |
-| 10:30am – 10:35am | Audiovisual capsule — strategic campaign content |
 | 10:35am – 10:40am | Address by Dr Nardos Berhanu, Executive Secretary of OAFLAD |
 | 10:40am – 11:30am | Addresses and experience sharing by First Ladies (First Lady of Sierra Leone, Acting President of OAFLAD; First Lady of Angola, Vice-President of OAFLAD; other First Ladies) |
 | 11:35am – 11:40am | Honorary Doctorate Ceremony awarded to Her Excellency the First Lady of the Gabonese Republic |
@@ -91,7 +88,6 @@ For Women and Girls in the Face of Climate Change and Conflicts
 
 | Time | Programme |
 |------|-----------|
-| 1:30pm – 1:40pm | Screening of audiovisual capsules |
 | 1:40pm – 1:50pm | Address by the Minister of Social Affairs, in charge of Child and Women's Protection |
 | 1:50pm – 2:30pm | **Panel 1: Mental Health and Family Stability** |
 | 2:30pm – 3:10pm | **Panel 2: Women's Empowerment — a Public Governance Challenge** |

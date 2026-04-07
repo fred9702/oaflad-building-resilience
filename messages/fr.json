@@ -298,11 +298,6 @@
         "title": "Lancement de la campagne",
         "description": "Allocution de bienvenue et lancement de #RenforcerLaRésilience par la Première Dame"
       },
-      "capsule": {
-        "time": "10h30",
-        "title": "Capsule audiovisuelle",
-        "description": "Contenu stratégique de la campagne"
-      },
       "oaflad": {
         "time": "10h35",
         "title": "Intervention du Dr Nardos Berhanu",
@@ -330,11 +325,6 @@
       }
     },
     "seq2": {
-      "capsules": {
-        "time": "13h30",
-        "title": "Diffusion de capsules",
-        "description": "Capsules audiovisuelles"
-      },
       "minister": {
         "time": "13h40",
         "title": "Allocution du Ministre des Affaires Sociales",

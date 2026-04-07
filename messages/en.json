@@ -298,11 +298,6 @@
         "title": "Campaign Launch",
         "description": "Welcome address and launch of #BuildingResilience by the First Lady"
       },
-      "capsule": {
-        "time": "10:30am",
-        "title": "Audiovisual Capsule",
-        "description": "Strategic campaign content"
-      },
       "oaflad": {
         "time": "10:35am",
         "title": "Address by Dr Nardos Berhanu",
@@ -330,11 +325,6 @@
       }
     },
     "seq2": {
-      "capsules": {
-        "time": "1:30pm",
-        "title": "Audiovisual Capsules",
-        "description": "Screening of audiovisual capsules"
-      },
       "minister": {
         "time": "1:40pm",
         "title": "Address by the Minister of Social Affairs",
