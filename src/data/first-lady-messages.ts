@@ -26,6 +26,9 @@ export const messageTexts: Record<string, Record<string, string>> = {
     burundi: "Acting to strengthen the resilience of women and girls in the face of climate change means choosing the most powerful lever to drive lasting transformation across an entire continent.\n\nYour commitment is a beacon of hope for those who, every day, carry the weight of the world on their shoulders.",
     senegal: "It is a great honour to be in Libreville alongside my sister, Her Excellency Mrs Zita Oligui Nguema, First Lady of the Gabonese Republic, on the occasion of the #BuildingResilience event.\n\nHer exemplary commitment is a profound source of inspiration for our shared efforts.\n\nMay this event mark the beginning of new synergies to build together a stronger and more united future, and may our gathering serve as a catalyst for renewed and impactful African solidarity.",
     congo: "Africa's moment is increasingly taking shape, and it is for the youth of our continent to fully embrace their historic responsibility in rising to this challenge.\n\nOur generations have demonstrated resilience in the face of internal and external constraints, keeping Africa afloat despite adversity.\n\nBuilding a new form of resilience, grounded in lasting and irreversible progress, is now the key challenge entrusted to African youth, to make our continent in the 21st century a space of peace and well-being.",
+    equatorialGuinea: "",
+    kenya: "",
+    saoTome: "",
   },
   fr: {
     gabon: "En ce jour du 17 avril, journée nationale de la femme au Gabon, je souhaite m'adresser à chacune d'entre vous.\n\nÀ celles qui sont ici présentes. À celles qui œuvrent dans nos villes, dans nos villages, dans nos foyers. Et à celles dont l'engagement, souvent discret, continue de porter notre société.\n\nCette journée est un repère. Un moment de reconnaissance. Mais aussi un moment de responsabilité.\n\nCar derrière les équilibres que nous observons, il y a, très souvent, le poids silencieux que portent les femmes. Lorsque les fragilités s'installent, qu'elles soient sociales, économiques ou sanitaires, ce sont elles qui absorbent, organisent, maintiennent.\n\nMais la résilience d'une Nation ne peut pas reposer uniquement sur cette force silencieuse. Elle doit être structurée. Elle doit être accompagnée. Elle doit être organisée.\n\nC'est dans cet esprit que s'inscrit l'engagement du Gabon dans la campagne continentale : #BuildingResilience — Renforcer la résilience des femmes et des filles : climat, conflits et avenir durable.\n\nÀ travers le programme ÉQUILIBRES 2026–2029, que je lance officiellement ce jour, nous faisons le choix d'agir sur ce qui fonde durablement la stabilité : la continuité des soins, la prise en compte des fragilités, et la reconstruction des trajectoires.\n\nParce que lorsqu'un système de soins se fragilise, ce sont les femmes et les filles qui en subissent les conséquences les plus durables. Parce que lorsqu'une femme vacille, c'est toute une chaîne d'équilibres qui se trouve affectée.",
@@ -35,6 +38,9 @@ export const messageTexts: Record<string, Record<string, string>> = {
     burundi: "Agir pour la résilience des femmes et des filles face aux changements climatiques, c'est choisir le levier le plus puissant pour transformer durablement un continent tout entier.\n\nVotre engagement est une lumière pour celles qui portent déjà, chaque jour, le poids du monde sur leurs épaules.",
     senegal: "C'est un immense honneur d'être à Libreville aux côtés de ma consœur, Son Excellence Madame Zita Oligui Nguema, Première Dame de la République Gabonaise, à l'occasion de l'événement #BuildingResilience.\n\nSon engagement exemplaire constitue une source d'inspiration profonde pour nos efforts communs.\n\nQue cet événement marque le début de nouvelles synergies afin de bâtir ensemble un avenir plus fort et solidaire, et que notre rencontre soit le catalyseur d'une solidarité africaine renouvelée et porteuse d'espoir.",
     congo: "Le moment de l'Afrique se dessine avec force, et il appartient à la jeunesse de notre continent d'en assumer pleinement la responsabilité historique.\n\nNos générations ont su faire preuve de résilience face aux défis internes et externes, maintenant l'Afrique à flot malgré les épreuves.\n\nConstruire une nouvelle résilience, fondée sur un progrès durable et irréversible, constitue désormais le défi majeur qui incombe à la jeunesse africaine, afin de faire de notre continent, au XXIe siècle, un espace de paix et de mieux-être.",
+    equatorialGuinea: "",
+    kenya: "",
+    saoTome: "",
   },
   pt: {
     angola: "Comprometi-me a apoiar esta campanha que destaca a importância da educação, como ferramenta poderosa para fortalecer a resiliência.\n\nUnimos esforços para a criação de oportunidades de aprendizagem, especialmente em comunidades afectadas por conflitos, para que todas as meninas tenham a chance de construir seu próprio futuro.",
@@ -97,6 +103,30 @@ export const firstLadyMessages: FirstLadyMessage[] = [
     signature: {
       en: { formal: "H.E. Mrs Antoinette Sassou N'Guesso", title: "First Lady of the Republic of the Congo" },
       fr: { formal: "S.E. Mme Antoinette Sassou N'Guesso", title: "Première Dame de la République du Congo" },
+    },
+  },
+  {
+    id: "equatorialGuinea",
+    languages: ["fr", "en"],
+    signature: {
+      en: { formal: "H.E. Mrs Constancia Mangue de Obiang", title: "First Lady of Equatorial Guinea" },
+      fr: { formal: "S.E. Mme Constancia Mangue de Obiang", title: "Première Dame de la Guinée équatoriale" },
+    },
+  },
+  {
+    id: "kenya",
+    languages: ["fr", "en"],
+    signature: {
+      en: { formal: "H.E. Mrs Rachel Ruto", title: "First Lady of the Republic of Kenya" },
+      fr: { formal: "S.E. Mme Rachel Ruto", title: "Première Dame de la République du Kenya" },
+    },
+  },
+  {
+    id: "saoTome",
+    languages: ["fr", "en"],
+    signature: {
+      en: { formal: "H.E. Mrs Maria de Fátima Vila Nova", title: "First Lady of São Tomé and Príncipe" },
+      fr: { formal: "S.E. Mme Maria de Fátima Vila Nova", title: "Première Dame de São Tomé-et-Príncipe" },
     },
   },
 ];

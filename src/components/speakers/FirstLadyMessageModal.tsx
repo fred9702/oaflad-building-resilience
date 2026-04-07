@@ -162,7 +162,7 @@ export function FirstLadyMessageModal({
               className="text-crimson/30 mb-3"
             />
             <blockquote className="font-body text-near-black/90 leading-relaxed whitespace-pre-line mb-8 italic">
-              {messageText}
+              {messageText || t("messagePlaceholder")}
             </blockquote>
 
             {/* Signature */}
