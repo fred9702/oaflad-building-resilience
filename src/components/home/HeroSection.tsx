@@ -101,7 +101,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-center overflow-hidden"
     >
       {/* Full-bleed background photo */}
       <Image
@@ -123,7 +123,7 @@ export function HeroSection() {
       />
 
       {/* Content — centered */}
-      <div className="relative z-10 mx-auto max-w-5xl w-full px-4 pt-4 pb-20 lg:px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-5xl w-full px-4 pb-16 lg:px-8 text-center">
         <motion.div {...logoAnim}>
           <Image
             src={heroLogo}
