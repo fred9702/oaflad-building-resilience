@@ -125,7 +125,7 @@ export function Footer() {
             {t.rich("copyright", {
               link: (chunks) => (
                 <a
-                  href="https://chomei.store/bomalab"
+                  href="https://chomei.store/bomalab.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange transition-colors underline underline-offset-2"
