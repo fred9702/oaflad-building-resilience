@@ -72,11 +72,7 @@ export function FirstLadiesSection() {
         {/* Tier 3: Attending */}
         {attending.length > 0 && (
           <div>
-            <ScrollReveal>
-              <span className="inline-block font-heading text-xs font-semibold uppercase tracking-widest text-brown bg-brown/10 px-3 py-1 rounded-full mb-5">
-                {t("attendingBadge")}
-              </span>
-            </ScrollReveal>
+            <hr className="border-t border-brown/10 mb-8" />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
               {attending.map((lady, i) => (
                 <ScrollReveal key={lady.id} delay={0.03 * (i + 1)} className="h-full">
