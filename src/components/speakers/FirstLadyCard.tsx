@@ -96,9 +96,9 @@ export function FirstLadyCard({
 
       {/* Info */}
       <div className="p-3 flex-1 flex flex-col">
-        <div className="flex items-center gap-1.5 mb-1">
-          <span className="text-lg leading-none">{lady.countryFlag}</span>
-          <span className="font-body text-xs text-near-black/50 truncate">
+        <div className="flex items-start gap-1.5 mb-1">
+          <span className="text-lg leading-none shrink-0">{lady.countryFlag}</span>
+          <span className="font-body text-xs text-near-black/50">
             {country}
           </span>
         </div>
