@@ -130,7 +130,7 @@ export function HeroSection() {
             alt={locale === "fr" ? "OPDAD #RenforcerLaRésilience" : "OAFLAD #BuildingResilience"}
             width={480}
             height={240}
-            className="h-auto w-[320px] md:w-[480px] lg:w-[580px] mx-auto"
+            className={`h-auto mx-auto ${locale === "fr" ? "w-[380px] md:w-[540px] lg:w-[660px]" : "w-[320px] md:w-[480px] lg:w-[580px]"}`}
           />
         </motion.div>
 
