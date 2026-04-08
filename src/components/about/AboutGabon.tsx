@@ -64,7 +64,7 @@ export function AboutGabon() {
             <div className="mt-4 flex flex-col md:flex-row md:items-start gap-5">
               <div className="shrink-0 flex flex-row md:flex-col items-center md:items-center gap-3 md:gap-1 bg-orange/10 rounded-xl px-5 py-3 md:py-4 md:min-w-[100px]">
                 <span className="font-heading text-3xl md:text-4xl font-extrabold text-orange">18</span>
-                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-orange/70">quartiers</span>
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-orange/70">{t("terrainStatLabel")}</span>
               </div>
               <p className="font-body text-lg text-near-black/80 leading-relaxed">
                 {t("terrainTour")}
