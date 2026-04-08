@@ -28,7 +28,7 @@ export const partners: Partner[] = [
   },
   {
     id: "bomalab",
-    website: "https://bomalab.com",
+    website: "https://chomei.store/bomalab",
     color: "orange",
     logoPath: "/images/partners/bomalab-logo.png",
   },

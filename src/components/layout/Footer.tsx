@@ -121,7 +121,20 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <p className="font-body text-white/90">{t("copyright")}</p>
+          <p className="font-body text-white/90">
+            {t.rich("copyright", {
+              link: (chunks) => (
+                <a
+                  href="https://chomei.store/bomalab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange transition-colors underline underline-offset-2"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </p>
           <div className="flex gap-4 font-body">
             <button
               onClick={() => setLegalModal("privacy")}

@@ -86,7 +86,7 @@
     "backHome": "Retour à l'accueil"
   },
   "footer": {
-    "copyright": "© 2026 Bomalab. Tous droits réservés.",
+    "copyright": "© 2026 <link>Bomalab</link>. Tous droits réservés.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "tagline": "Organisation des Premières Dames d'Afrique pour le Développement"
@@ -428,7 +428,7 @@
       "coteIvoire": { "name": "Dominique Ouattara", "country": "République de Côte d'Ivoire" },
       "rwanda": { "name": "Jeannette Kagame", "country": "République du Rwanda" },
       "kenya": { "name": "Rachel Ruto", "country": "République du Kenya" },
-      "saoTome": { "name": "Maria de Fátima Vila Nova", "country": "République de São Tomé-et-Príncipe" },
+      "saoTome": { "name": "Maria de Fátima Vila Nova", "country": "République démocratique de São Tomé-et-Príncipe" },
       "equatorialGuinea": { "name": "Constancia Mangue de Obiang", "country": "République de Guinée équatoriale" },
       "guinea": { "name": "Lauriane Doumbouya", "country": "République de Guinée" },
       "car": { "name": "Tina Marguerite Touadéra", "country": "République centrafricaine" },
