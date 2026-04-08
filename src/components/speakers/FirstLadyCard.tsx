@@ -30,7 +30,7 @@ export function FirstLadyCard({
     return (
       <div className="group relative flex flex-col sm:flex-row items-center gap-6 rounded-2xl overflow-hidden border-2 border-crimson/30 bg-crimson/5 ring-2 ring-crimson/20 p-4 sm:p-0">
         {/* Featured photo */}
-        <div className="relative w-full h-64 sm:w-48 md:w-56 sm:h-full bg-light-beige overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl shrink-0">
+        <div className="relative w-full aspect-[3/4] sm:aspect-auto sm:w-48 md:w-56 sm:h-full bg-light-beige overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl shrink-0">
           {lady.photoPath ? (
             <Image
               src={lady.photoPath}
