@@ -138,7 +138,7 @@ export function HeroSection() {
           className="mt-8 max-w-2xl mx-auto text-center"
           {...fadeUp(0.3)}
         >
-          <p className="font-heading text-xl md:text-2xl font-semibold text-crimson leading-snug tracking-tight">
+          <p className="font-heading text-xl md:text-2xl font-semibold text-brown leading-snug tracking-tight">
             {t("tagline")}
           </p>
           <div
