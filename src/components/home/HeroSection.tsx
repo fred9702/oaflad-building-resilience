@@ -134,12 +134,19 @@ export function HeroSection() {
           />
         </motion.div>
 
-        <motion.p
-          className="mt-6 max-w-2xl mx-auto font-body text-lg md:text-xl text-brown leading-relaxed"
+        <motion.div
+          className="mt-8 max-w-2xl mx-auto text-center"
           {...fadeUp(0.3)}
         >
-          {t("tagline")}
-        </motion.p>
+          <p className="font-heading text-xl md:text-2xl font-semibold text-crimson leading-snug tracking-tight">
+            {t("tagline")}
+          </p>
+          <div
+            className="mt-5 mx-auto h-[3px] w-24 rounded-full"
+            style={{ background: "linear-gradient(to right, #E07B39, #9B1C37)" }}
+            aria-hidden="true"
+          />
+        </motion.div>
 
         <motion.p
           className="mt-8 font-heading text-2xl md:text-4xl font-bold text-crimson"
