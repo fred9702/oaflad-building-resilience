@@ -83,10 +83,10 @@ export function AboutGabon() {
               {t("terrainNarrative")}
             </p>
 
-            <div className="mt-5 space-y-3">
+            <div className="mt-6 space-y-4">
               {(["terrainQuote1", "terrainQuote2"] as const).map((key) => (
-                <div key={key} className="border-l-3 border-orange bg-white/60 rounded-r-lg pl-5 py-4 shadow-sm">
-                  <p className="font-body text-base md:text-lg italic text-brown">
+                <div key={key} className="border-l-3 border-orange bg-white/60 rounded-r-lg px-6 py-5 md:px-8 md:py-6 shadow-sm">
+                  <p className="font-body text-base md:text-lg italic text-brown leading-relaxed">
                     «&nbsp;{t(key)}&nbsp;»
                   </p>
                 </div>
