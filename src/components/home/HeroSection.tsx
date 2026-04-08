@@ -135,8 +135,15 @@ export function HeroSection() {
         </motion.div>
 
         <motion.p
+          className="mt-6 max-w-2xl mx-auto font-body text-lg md:text-xl text-brown leading-relaxed"
+          {...fadeUp(0.3)}
+        >
+          {t("tagline")}
+        </motion.p>
+
+        <motion.p
           className="mt-8 font-heading text-2xl md:text-4xl font-bold text-crimson"
-          {...fadeUp(0.6)}
+          {...fadeUp(0.5)}
         >
           {t("subtitle")}
         </motion.p>
@@ -144,7 +151,7 @@ export function HeroSection() {
         {/* Countdown timer */}
         <motion.div
           className="mt-10"
-          {...fadeUp(0.8)}
+          {...fadeUp(0.7)}
         >
           <div ref={srRef} className="sr-only" aria-live="polite" role="status" />
           <p className="text-sm uppercase tracking-widest text-brown/60 mb-4 font-heading">
