@@ -52,6 +52,12 @@ export const firstLadies: FirstLady[] = [
     isSpeaker: true,
   },
   {
+    id: "coteIvoire", // since April 2011
+    countryFlag: "\u{1F1E8}\u{1F1EE}",
+    photoPath: "/images/partners/first-ladies/dominique-ouattara.jpg",
+    isSpeaker: true,
+  },
+  {
     id: "burundi", // since June 2020
     countryFlag: "\u{1F1E7}\u{1F1EE}",
     photoPath: "/images/partners/first-ladies/angeline-ndayishimiye.jpg",
@@ -60,7 +66,7 @@ export const firstLadies: FirstLady[] = [
   {
     id: "saoTome", // since October 2021
     countryFlag: "\u{1F1F8}\u{1F1F9}",
-    photoPath: null,
+    photoPath: "/images/partners/first-ladies/maria-de-fatima-vila-nova.jpg",
     isSpeaker: true,
   },
   {
@@ -86,11 +92,6 @@ export const firstLadies: FirstLady[] = [
     id: "rwanda", // since April 2000
     countryFlag: "\u{1F1F7}\u{1F1FC}",
     photoPath: "/images/partners/first-ladies/jeannette-kagame.jpeg",
-  },
-  {
-    id: "coteIvoire", // since April 2011
-    countryFlag: "\u{1F1E8}\u{1F1EE}",
-    photoPath: "/images/partners/first-ladies/dominique-ouattara.jpg",
   },
   {
     id: "car", // since March 2016
