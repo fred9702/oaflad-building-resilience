@@ -54,89 +54,89 @@ export const firstLadyMessages: FirstLadyMessage[] = [
     id: "gabon",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Zita Oligui Nguema", title: "First Lady of the Gabonese Republic" },
-      fr: { formal: "S.E. Mme Zita Oligui Nguema", title: "Première Dame de la République Gabonaise" },
+      en: { formal: "Her Excellency Mrs Zita Oligui Nguema", title: "First Lady of the Gabonese Republic" },
+      fr: { formal: "Son Excellence Mme Zita Oligui Nguema", title: "Première Dame de la République Gabonaise" },
     },
   },
   {
     id: "angola",
     languages: ["pt", "fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Ana Dias Lourenço", title: "First Lady of Angola" },
-      fr: { formal: "S.E. Mme Ana Dias Lourenço", title: "Première Dame de la République d'Angola" },
-      pt: { formal: "S.E. Sra. Ana Dias Lourenço", title: "Primeira-Dama da República de Angola" },
+      en: { formal: "Her Excellency Mrs Ana Dias Lourenço", title: "First Lady of Angola" },
+      fr: { formal: "Son Excellence Mme Ana Dias Lourenço", title: "Première Dame de la République d'Angola" },
+      pt: { formal: "Sua Excelência Sra. Ana Dias Lourenço", title: "Primeira-Dama da República de Angola" },
     },
   },
   {
     id: "sierraLeone",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Dr Fatima Maada Bio", title: "First Lady of Sierra Leone", role: "President, OAFLAD" },
-      fr: { formal: "S.E. Dr Fatima Maada Bio", title: "Première Dame de la République de Sierra Leone", role: "Présidente en exercice de l'OPDAD" },
+      en: { formal: "Her Excellency Dr Fatima Maada Bio", title: "First Lady of Sierra Leone", role: "President, OAFLAD" },
+      fr: { formal: "Son Excellence Dr Fatima Maada Bio", title: "Première Dame de la République de Sierra Leone", role: "Présidente en exercice de l'OPDAD" },
     },
   },
   {
     id: "nigeria",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Senator Oluremi Tinubu, CON", title: "First Lady of the Federal Republic of Nigeria", role: "Member, Steering Committee, OAFLAD" },
-      fr: { formal: "S.E. Sénatrice Oluremi Tinubu, CON", title: "Première Dame de la République Fédérale du Nigéria", role: "Membre du Comité directeur de l'OPDAD" },
+      en: { formal: "Her Excellency Senator Oluremi Tinubu, CON", title: "First Lady of the Federal Republic of Nigeria", role: "Member, Steering Committee, OAFLAD" },
+      fr: { formal: "Son Excellence Sénatrice Oluremi Tinubu, CON", title: "Première Dame de la République Fédérale du Nigéria", role: "Membre du Comité directeur de l'OPDAD" },
     },
   },
   {
     id: "burundi",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Angéline Ndayishimiye Ndayubaha", title: "First Lady of the Republic of Burundi" },
-      fr: { formal: "S.E. Mme Angéline Ndayishimiye Ndayubaha", title: "Première Dame de la République du Burundi" },
+      en: { formal: "Her Excellency Mrs Angéline Ndayishimiye Ndayubaha", title: "First Lady of the Republic of Burundi" },
+      fr: { formal: "Son Excellence Mme Angéline Ndayishimiye Ndayubaha", title: "Première Dame de la République du Burundi" },
     },
   },
   {
     id: "senegal",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Marie Khone Faye", title: "First Lady of the Republic of Senegal" },
-      fr: { formal: "S.E. Mme Marie Khone Faye", title: "Première Dame de la République du Sénégal" },
+      en: { formal: "Her Excellency Mrs Marie Khone Faye", title: "First Lady of the Republic of Senegal" },
+      fr: { formal: "Son Excellence Mme Marie Khone Faye", title: "Première Dame de la République du Sénégal" },
     },
   },
   {
     id: "congo",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Antoinette Sassou N'Guesso", title: "First Lady of the Republic of the Congo" },
-      fr: { formal: "S.E. Mme Antoinette Sassou N'Guesso", title: "Première Dame de la République du Congo" },
+      en: { formal: "Her Excellency Mrs Antoinette Sassou N'Guesso", title: "First Lady of the Republic of the Congo" },
+      fr: { formal: "Son Excellence Mme Antoinette Sassou N'Guesso", title: "Première Dame de la République du Congo" },
     },
   },
   {
     id: "equatorialGuinea",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Constancia Mangue de Obiang", title: "First Lady of Equatorial Guinea" },
-      fr: { formal: "S.E. Mme Constancia Mangue de Obiang", title: "Première Dame de la Guinée équatoriale" },
+      en: { formal: "Her Excellency Mrs Constancia Mangue de Obiang", title: "First Lady of Equatorial Guinea" },
+      fr: { formal: "Son Excellence Mme Constancia Mangue de Obiang", title: "Première Dame de la Guinée équatoriale" },
     },
   },
   {
     id: "coteIvoire",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Dominique Ouattara", title: "First Lady of the Republic of Côte d'Ivoire", role: "President, Children of Africa Foundation" },
-      fr: { formal: "S.E. Mme Dominique Ouattara", title: "Première Dame de la République de Côte d'Ivoire", role: "Présidente de la Fondation Children of Africa" },
+      en: { formal: "Her Excellency Mrs Dominique Ouattara", title: "First Lady of the Republic of Côte d'Ivoire", role: "President, Children of Africa Foundation" },
+      fr: { formal: "Son Excellence Mme Dominique Ouattara", title: "Première Dame de la République de Côte d'Ivoire", role: "Présidente de la Fondation Children of Africa" },
     },
   },
   {
     id: "kenya",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Rachel Ruto", title: "First Lady of the Republic of Kenya" },
-      fr: { formal: "S.E. Mme Rachel Ruto", title: "Première Dame de la République du Kenya" },
+      en: { formal: "Her Excellency Mrs Rachel Ruto", title: "First Lady of the Republic of Kenya" },
+      fr: { formal: "Son Excellence Mme Rachel Ruto", title: "Première Dame de la République du Kenya" },
     },
   },
   {
     id: "saoTome",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "H.E. Mrs Maria de Fátima Vila Nova", title: "First Lady of the Democratic Republic of São Tomé and Príncipe" },
-      fr: { formal: "S.E. Mme Maria de Fátima Vila Nova", title: "Première Dame de la République démocratique de São Tomé-et-Príncipe" },
+      en: { formal: "Her Excellency Mrs Maria de Fátima Vila Nova", title: "First Lady of the Democratic Republic of São Tomé and Príncipe" },
+      fr: { formal: "Son Excellence Mme Maria de Fátima Vila Nova", title: "Première Dame de la République démocratique de São Tomé-et-Príncipe" },
     },
   },
 ];
