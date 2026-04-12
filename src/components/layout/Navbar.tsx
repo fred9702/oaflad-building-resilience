@@ -168,14 +168,6 @@ export function Navbar({ locale }: { locale: string }) {
             </Link>
           ))}
 
-          {/* Register CTA */}
-          <Link
-            href={`/${locale}/register`}
-            className="font-heading text-base font-semibold text-white bg-orange hover:bg-orange/90 px-4 py-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-warm-cream"
-          >
-            {t("register")}
-          </Link>
-
           {/* Language switcher — min 44px touch target */}
           <button
             onClick={switchLocale}
@@ -238,14 +230,6 @@ export function Navbar({ locale }: { locale: string }) {
               {t(key)}
             </Link>
           ))}
-          <Link
-            href={`/${locale}/register`}
-            onClick={() => setMenuOpen(false)}
-            tabIndex={menuOpen ? 0 : -1}
-            className="font-heading text-lg font-semibold text-white bg-orange hover:bg-orange/90 px-4 py-3 rounded text-center mt-4 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-warm-cream"
-          >
-            {t("register")}
-          </Link>
         </div>
       </div>
     </header>
