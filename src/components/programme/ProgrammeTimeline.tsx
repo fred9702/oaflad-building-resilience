@@ -26,7 +26,6 @@ const SEQ2_KEYS = [
   "minister",
   "panel1",
   "panel2",
-  "synthesis",
   "closing",
 ] as const;
 
@@ -38,7 +37,7 @@ const SEQ1_COLORS = [
 
 const SEQ2_COLORS = [
   "bg-orange", "bg-crimson", "bg-green",
-  "bg-orange", "bg-crimson", "bg-green",
+  "bg-orange", "bg-green",
 ] as const;
 
 const ACCENT_STYLES = {

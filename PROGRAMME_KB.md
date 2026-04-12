@@ -40,8 +40,7 @@ Des Femmes et des filles face aux changements climatiques et aux conflits
 | 13h40 – 13h50 | Allocution du Ministre des Affaires Sociales, chargé de la Protection de l'Enfance et de la Femme |
 | 13h50 – 14h30 | **Panel 1 : Santé mentale et stabilité des familles** |
 | 14h30 – 15h10 | **Panel 2 : Autonomisation des femmes — un challenge de gouvernance publique à l'aune de la Ve République** |
-| 15h10 – 15h20 | Synthèse des travaux et message d'engagement national |
-| 15h20 – 15h30 | Clôture officielle |
+| 15h10 – 15h30 | Clôture officielle |
 
 ---
 
@@ -97,8 +96,7 @@ For Women and Girls in the Face of Climate Change and Conflicts
 | 1:40pm – 1:50pm | Address by the Minister of Social Affairs, in charge of Child and Women's Protection |
 | 1:50pm – 2:30pm | **Panel 1: Mental Health and Family Stability** |
 | 2:30pm – 3:10pm | **Panel 2: Women's Empowerment — a Public Governance Challenge** |
-| 3:10pm – 3:20pm | Summary of discussions and national commitment message |
-| 3:20pm – 3:30pm | Official closing |
+| 3:10pm – 3:30pm | Official closing |
 
 ---
 
