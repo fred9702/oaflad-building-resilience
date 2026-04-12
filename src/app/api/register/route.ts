@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createServerClient } from "@/lib/supabase/server";
+import { validateRegistrationToken } from "@/lib/registration-token";
 
 async function hashEmail(email: string): Promise<string> {
   const normalized = email.toLowerCase().trim();
@@ -24,6 +25,14 @@ export async function POST(request: Request) {
       language_pref,
       gdpr_consent,
     } = body;
+
+    const tokenValid = await validateRegistrationToken(body.token || null);
+    if (!tokenValid) {
+      return NextResponse.json(
+        { error: "Invalid or expired registration token" },
+        { status: 403 }
+      );
+    }
 
     if (!first_name || !last_name || !email || !category || !gdpr_consent) {
       return NextResponse.json(
