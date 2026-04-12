@@ -45,6 +45,17 @@ create table if not exists media_items (
   sort_order int default 0
 );
 
+-- 4. Registration tokens (QR code gating)
+create table if not exists registration_tokens (
+  id uuid primary key default gen_random_uuid(),
+  token text unique not null,
+  label text not null default 'Event QR Code',
+  is_active boolean not null default true,
+  opens_at timestamptz,
+  closes_at timestamptz,
+  created_at timestamptz default now()
+);
+
 -- RLS Policies
 
 -- Enable RLS on all tables
@@ -88,3 +99,18 @@ create policy "Admin can manage media"
   to authenticated
   using (true)
   with check (true);
+
+-- Registration tokens: only authenticated (admin) can manage
+alter table registration_tokens enable row level security;
+
+create policy "Admin can manage registration tokens"
+  on registration_tokens for all
+  to authenticated
+  using (true)
+  with check (true);
+
+-- Anon can read active tokens (for validation)
+create policy "Public can validate tokens"
+  on registration_tokens for select
+  to anon
+  using (is_active = true);
