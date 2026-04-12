@@ -101,10 +101,4 @@ export const firstLadies: FirstLady[] = [
     countryFlag: "\u{1F1EC}\u{1F1ED}",
     photoPath: "/images/partners/first-ladies/lordina-mahama.jpeg",
   },
-  {
-    id: "namibia", // since March 2025
-    countryFlag: "\u{1F1F3}\u{1F1E6}",
-    photoPath: null,
-    isFirstGentleman: true,
-  },
 ];
