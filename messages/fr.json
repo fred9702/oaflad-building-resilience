@@ -479,6 +479,14 @@
     "rougeDelEst": {
       "name": "Rouge de l'Est — Usine de Transformation Ekarlong",
       "description": "Qian Guo Dong"
+    },
+    "westAlliance": {
+      "name": "WestAlliance",
+      "description": "Porteur de lumière"
+    },
+    "revesVoyages": {
+      "name": "Rêves Voyages",
+      "description": "Vivez vos rêves"
     }
   },
   "contact": {

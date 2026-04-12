@@ -22,7 +22,7 @@ export const partners: Partner[] = [
   },
   {
     id: "cap241",
-    website: "https://cap241.org",
+    website: "",
     color: "green",
     logoPath: "/images/cap241/cap-241.png",
   },
@@ -37,5 +37,17 @@ export const partners: Partner[] = [
     website: "",
     color: "crimson",
     logoPath: "/images/partners/rouge-de-lest-logo.jpg",
+  },
+  {
+    id: "westAlliance",
+    website: "",
+    color: "brown",
+    logoPath: "/images/partners/westalliance-logo.jpg",
+  },
+  {
+    id: "revesVoyages",
+    website: "",
+    color: "green",
+    logoPath: "/images/partners/reves-voyages-logo.jpg",
   },
 ];

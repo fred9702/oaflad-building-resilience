@@ -71,14 +71,16 @@ export function PartnerCard({ partner }: { partner: Partner }) {
 
       {/* Actions */}
       <div className="flex flex-wrap items-center gap-3">
-        <a
-          href={partner.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`font-heading text-sm font-semibold ${colors.link} underline underline-offset-4 transition-colors`}
-        >
-          {t("visitWebsite")} &rarr;
-        </a>
+        {partner.website && (
+          <a
+            href={partner.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`font-heading text-sm font-semibold ${colors.link} underline underline-offset-4 transition-colors`}
+          >
+            {t("visitWebsite")} &rarr;
+          </a>
+        )}
 
         {partner.expandable && (
           <Link
