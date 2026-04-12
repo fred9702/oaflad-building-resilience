@@ -553,5 +553,31 @@
     "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
     "errorAuth": "Le lien de connexion a expiré ou est invalide. Veuillez réessayer.",
     "backHome": "Retour à l'accueil"
+  },
+  "admin": {
+    "title": "Tableau de bord",
+    "signOut": "Déconnexion",
+    "totalRegistrations": "Total inscriptions",
+    "byCategory": "Par catégorie",
+    "recentRegistrations": "Inscriptions récentes",
+    "exportCsv": "Exporter CSV",
+    "searchPlaceholder": "Rechercher par nom, email ou organisation...",
+    "noResults": "Aucune inscription trouvée",
+    "tableHeaders": {
+      "name": "Nom",
+      "email": "E-mail",
+      "organisation": "Organisation",
+      "category": "Catégorie",
+      "language": "Langue",
+      "date": "Date"
+    },
+    "categories": {
+      "opdad": "OPDAD",
+      "government": "Gouvernement",
+      "partner": "Partenaire",
+      "civilSociety": "Société civile",
+      "community": "Communauté",
+      "other": "Autre"
+    }
   }
 }
