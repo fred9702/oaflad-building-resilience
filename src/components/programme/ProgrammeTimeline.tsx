@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
+import { CaretDown } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { AddToCalendar } from "./AddToCalendar";
+import { AgendaLegend } from "./AgendaLegend";
 
 const SEQ1_KEYS = [
   "registration",
@@ -51,6 +55,102 @@ const ACCENT_STYLES = {
   },
 } as const;
 
+function TimelineItem({
+  seqKey,
+  itemKey,
+  dotColor,
+  locale,
+  t,
+  isLink,
+}: {
+  seqKey: "seq1" | "seq2";
+  itemKey: string;
+  dotColor: string;
+  locale: string;
+  t: ReturnType<typeof useTranslations>;
+  isLink: boolean;
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const title = t(`${seqKey}.${itemKey}.title`);
+  const description = t(`${seqKey}.${itemKey}.description`);
+  const time = t(`${seqKey}.${itemKey}.time`);
+
+  return (
+    <div className="relative flex items-start gap-6 md:gap-8">
+      <div className="relative z-10 flex items-center justify-center shrink-0">
+        <div className={`w-12 md:w-16 h-12 md:h-16 rounded-full ${dotColor} flex items-center justify-center shadow-md`}>
+          <span className="font-heading text-xs md:text-sm font-bold text-white">
+            {time}
+          </span>
+        </div>
+      </div>
+
+      <div className="flex-1">
+        {isLink ? (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="w-full text-left bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5 hover:border-crimson/30 hover:bg-crimson/5 transition-colors group focus:outline-none focus:ring-2 focus:ring-orange"
+            aria-expanded={expanded}
+          >
+            <div className="flex items-center justify-between gap-2">
+              <h4 className="font-heading text-base md:text-lg font-bold text-near-black group-hover:text-crimson transition-colors">
+                {title}
+              </h4>
+              <CaretDown
+                size={16}
+                className={`shrink-0 text-near-black/40 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
+              />
+            </div>
+            {!expanded && (
+              <p className="mt-1 font-body text-sm text-near-black/60">{description}</p>
+            )}
+            {expanded && (
+              <div className="mt-3 space-y-2">
+                <p className="font-body text-sm text-near-black/60">{description}</p>
+                <Link
+                  href={`/${locale}/about`}
+                  className="inline-block font-heading text-sm font-semibold text-crimson hover:underline"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {locale === "fr" ? "En savoir plus →" : "Learn more →"}
+                </Link>
+                <div>
+                  <AddToCalendar title={title} startTime={time.replace("h", ":")} description={description} />
+                </div>
+              </div>
+            )}
+          </button>
+        ) : (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="w-full text-left bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5 hover:border-brown/20 hover:bg-warm-cream/80 transition-colors focus:outline-none focus:ring-2 focus:ring-orange"
+            aria-expanded={expanded}
+          >
+            <div className="flex items-center justify-between gap-2">
+              <h4 className="font-heading text-base md:text-lg font-bold text-near-black">
+                {title}
+              </h4>
+              <CaretDown
+                size={16}
+                className={`shrink-0 text-near-black/40 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
+              />
+            </div>
+            {!expanded && (
+              <p className="mt-1 font-body text-sm text-near-black/60">{description}</p>
+            )}
+            {expanded && (
+              <div className="mt-3 space-y-2">
+                <p className="font-body text-sm text-near-black/60">{description}</p>
+                <AddToCalendar title={title} startTime={time.replace("h", ":")} description={description} />
+              </div>
+            )}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function TimelineSequence({
   seqKey,
   keys,
@@ -68,19 +168,22 @@ function TimelineSequence({
 }) {
   return (
     <div className="mb-20 last:mb-0">
-      <ScrollReveal>
-        <div className="text-center mb-12">
-          <span className={`inline-block font-heading text-sm font-semibold uppercase tracking-widest ${ACCENT_STYLES[accent].badge} px-4 py-1.5 rounded-full mb-4`}>
-            {t(`${seqKey}Badge`)}
-          </span>
-          <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-near-black">
-            {t(`${seqKey}Title`)}
-          </h3>
-          <p className="mt-2 font-body text-sm text-near-black/60 italic">
-            {t(`${seqKey}Subtitle`)}
-          </p>
-        </div>
-      </ScrollReveal>
+      {/* Sticky sequence header */}
+      <div className="sticky top-[68px] z-10 bg-white/90 backdrop-blur-sm py-4 mb-8">
+        <ScrollReveal>
+          <div className="text-center">
+            <span className={`inline-block font-heading text-sm font-semibold uppercase tracking-widest ${ACCENT_STYLES[accent].badge} px-4 py-1.5 rounded-full mb-4`}>
+              {t(`${seqKey}Badge`)}
+            </span>
+            <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-near-black">
+              {t(`${seqKey}Title`)}
+            </h3>
+            <p className="mt-2 font-body text-sm text-near-black/60 italic">
+              {t(`${seqKey}Subtitle`)}
+            </p>
+          </div>
+        </ScrollReveal>
+      </div>
 
       <div className="relative">
         <div
@@ -93,38 +196,14 @@ function TimelineSequence({
             const dotColor = colors[i % colors.length];
             return (
               <ScrollReveal key={key} delay={i * 0.05}>
-                <div className="relative flex items-start gap-6 md:gap-8">
-                  <div className="relative z-10 flex items-center justify-center shrink-0">
-                    <div className={`w-12 md:w-16 h-12 md:h-16 rounded-full ${dotColor} flex items-center justify-center shadow-md`}>
-                      <span className="font-heading text-xs md:text-sm font-bold text-white">
-                        {t(`${seqKey}.${key}.time`)}
-                      </span>
-                    </div>
-                  </div>
-
-                  {LINK_KEYS.has(key) ? (
-                    <Link
-                      href={`/${locale}/about`}
-                      className="flex-1 bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5 hover:border-crimson/30 hover:bg-crimson/5 transition-colors group"
-                    >
-                      <h4 className="font-heading text-base md:text-lg font-bold text-near-black group-hover:text-crimson transition-colors">
-                        {t(`${seqKey}.${key}.title`)}
-                      </h4>
-                      <p className="mt-1 font-body text-sm text-near-black/60">
-                        {t(`${seqKey}.${key}.description`)}
-                      </p>
-                    </Link>
-                  ) : (
-                    <div className="flex-1 bg-warm-cream/60 border border-brown/10 rounded-xl px-5 py-4 md:px-6 md:py-5">
-                      <h4 className="font-heading text-base md:text-lg font-bold text-near-black">
-                        {t(`${seqKey}.${key}.title`)}
-                      </h4>
-                      <p className="mt-1 font-body text-sm text-near-black/60">
-                        {t(`${seqKey}.${key}.description`)}
-                      </p>
-                    </div>
-                  )}
-                </div>
+                <TimelineItem
+                  seqKey={seqKey}
+                  itemKey={key}
+                  dotColor={dotColor}
+                  locale={locale}
+                  t={t}
+                  isLink={LINK_KEYS.has(key)}
+                />
               </ScrollReveal>
             );
           })}
@@ -141,6 +220,7 @@ export function ProgrammeTimeline() {
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white" aria-label="Programme timeline">
       <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
+        <AgendaLegend locale={locale} />
         <TimelineSequence
           seqKey="seq1"
           keys={SEQ1_KEYS}
