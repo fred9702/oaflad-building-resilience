@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
@@ -11,8 +12,13 @@ interface ScrollRevealProps {
 
 export function ScrollReveal({ children, delay = 0, className }: ScrollRevealProps) {
   const shouldReduceMotion = useReducedMotion();
+  const [hydrated, setHydrated] = useState(false);
 
-  if (shouldReduceMotion) {
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (shouldReduceMotion || !hydrated) {
     return <div className={className}>{children}</div>;
   }
 
