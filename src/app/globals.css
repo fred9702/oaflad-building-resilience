@@ -116,9 +116,10 @@ p {
 .speaker-photo {
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  filter: sepia(8%) saturate(110%) brightness(103%);
+  filter: sepia(20%) saturate(80%) brightness(105%) contrast(92%);
   border-radius: 0.5rem;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   html {

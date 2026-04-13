@@ -32,14 +32,23 @@ export function FirstLadyCard({
         {/* Featured photo */}
         <div className="relative w-full aspect-[3/4] sm:aspect-auto sm:w-48 md:w-56 sm:h-full bg-light-beige overflow-hidden rounded-xl sm:rounded-none sm:rounded-l-2xl shrink-0">
           {lady.photoPath ? (
-            <Image
-              src={lady.photoPath}
-              alt={`${honorific} ${name}, ${country}`}
-              width={224}
-              height={300}
-              className="speaker-photo w-full h-full"
-              style={lady.photoPosition ? { objectPosition: lady.photoPosition } : undefined}
-            />
+            <>
+              <Image
+                src={lady.photoPath}
+                alt={`${honorific} ${name}, ${country}`}
+                width={224}
+                height={300}
+                className="speaker-photo w-full h-full"
+                style={lady.photoPosition ? { objectPosition: lady.photoPosition } : undefined}
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background: "radial-gradient(ellipse at center 35%, transparent 35%, rgba(251,240,230,0.5) 100%), linear-gradient(to top, rgba(107,52,23,0.18) 0%, transparent 50%)",
+                }}
+                aria-hidden="true"
+              />
+            </>
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-light-beige to-warm-cream">
               <span className="text-7xl">{lady.countryFlag}</span>
@@ -93,6 +102,17 @@ export function FirstLadyCard({
             <span className="text-6xl">{lady.countryFlag}</span>
           </div>
         )}
+        {/* Warm vignette — fades distracting backgrounds toward edges */}
+        {lady.photoPath && (
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse at center 35%, transparent 35%, rgba(251,240,230,0.5) 100%), linear-gradient(to top, rgba(107,52,23,0.18) 0%, transparent 50%)",
+            }}
+            aria-hidden="true"
+          />
+        )}
+        {/* Hover overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
           <p className="font-body text-xs text-white/90 line-clamp-2">{country}</p>
         </div>
