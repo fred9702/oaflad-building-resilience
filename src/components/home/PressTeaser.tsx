@@ -8,6 +8,7 @@ import {
 } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import { SocialFeed } from "@/components/home/SocialFeed";
 
 const SOCIALS = [
   { icon: FacebookLogo, label: "Facebook", href: "https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr" },
@@ -21,7 +22,7 @@ export function PressTeaser() {
 
   return (
     <section className="bg-light-beige py-16 md:py-20" aria-label="Press and media">
-      <div className="mx-auto max-w-2xl px-4 text-center">
+      <div className="mx-auto max-w-5xl px-4 text-center">
         <ScrollReveal>
           <h2
             className="font-heading text-2xl md:text-3xl font-bold text-near-black mb-4"
@@ -49,10 +50,14 @@ export function PressTeaser() {
             ))}
           </div>
 
+          <SocialFeed />
+
           {/* Media contact */}
-          <Button href={`/${locale}/contact`} variant="secondary-dark">
-            {t("contact")}
-          </Button>
+          <div className="mt-8">
+            <Button href={`/${locale}/contact`} variant="secondary-dark">
+              {t("contact")}
+            </Button>
+          </div>
         </ScrollReveal>
       </div>
     </section>
