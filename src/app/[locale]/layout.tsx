@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SetLang } from "@/components/SetLang";
 import { BASE_URL } from "@/lib/seo";
+import { firstLadies } from "@/data/first-ladies";
 
 type Props = {
   children: React.ReactNode;
@@ -24,6 +25,29 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+
+  const speakerNames: Record<string, { fr: string; en: string }> = {
+    gabon: { fr: "S.E. Mme Zita Oligui Nguema", en: "H.E. Mrs. Zita Oligui Nguema" },
+    sierraLeone: { fr: "Dr Fatima Maada Bio", en: "Dr. Fatima Maada Bio" },
+    angola: { fr: "S.E. Mme Ana Dias Lourenço", en: "H.E. Mrs. Ana Dias Lourenço" },
+    equatorialGuinea: { fr: "S.E. Mme Constancia Mangue de Obiang", en: "H.E. Mrs. Constancia Mangue de Obiang" },
+    burundi: { fr: "S.E. Mme Angeline Ndayishimiye", en: "H.E. Mrs. Angeline Ndayishimiye" },
+    saoTome: { fr: "S.E. Mme Maria de Fátima Vila Nova", en: "H.E. Mrs. Maria de Fátima Vila Nova" },
+    congo: { fr: "S.E. Mme Antoinette Sassou Nguesso", en: "H.E. Mrs. Antoinette Sassou Nguesso" },
+    coteIvoire: { fr: "S.E. Mme Dominique Ouattara", en: "H.E. Mrs. Dominique Ouattara" },
+    kenya: { fr: "S.E. Mme Rachel Ruto", en: "H.E. Mrs. Rachel Ruto" },
+    nigeria: { fr: "S.E. Mme Oluremi Tinubu", en: "H.E. Mrs. Oluremi Tinubu" },
+    senegal: { fr: "S.E. Mme Marie Khone Faye", en: "H.E. Mrs. Marie Khone Faye" },
+    car: { fr: "S.E. Mme Brigitte Touadéra", en: "H.E. Mrs. Brigitte Touadéra" },
+    ghana: { fr: "S.E. Mme Lordina Mahama", en: "H.E. Mrs. Lordina Mahama" },
+  };
+
+  const performers = firstLadies
+    .filter((l) => speakerNames[l.id])
+    .map((l) => ({
+      "@type": "Person",
+      name: speakerNames[l.id][locale as "fr" | "en"] ?? speakerNames[l.id].fr,
+    }));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -65,6 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         },
         organizer: { "@id": `${BASE_URL}/#organization` },
         inLanguage: [locale],
+        performer: performers,
       },
     ],
   };
