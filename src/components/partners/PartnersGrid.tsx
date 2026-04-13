@@ -6,7 +6,7 @@ import { PartnerCard } from "./PartnerCard";
 
 export function PartnersGrid() {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden bg-white">
+    <section className="relative py-20 md:py-28 overflow-hidden bg-white" aria-label="Partners">
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{

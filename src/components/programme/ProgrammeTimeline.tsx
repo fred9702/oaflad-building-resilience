@@ -139,7 +139,7 @@ export function ProgrammeTimeline() {
   const locale = useLocale();
 
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden bg-white">
+    <section className="relative py-20 md:py-28 overflow-hidden bg-white" aria-label="Programme timeline">
       <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
         <TimelineSequence
           seqKey="seq1"

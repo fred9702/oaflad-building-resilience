@@ -7,7 +7,7 @@ export function QuoteSection() {
   const t = useTranslations("quote");
 
   return (
-    <section className="bg-warm-cream py-16 md:py-24">
+    <section className="bg-warm-cream py-16 md:py-24" aria-label="Quote">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <ScrollReveal>
           <figure className="border-l-4 border-orange pl-6 md:pl-8">

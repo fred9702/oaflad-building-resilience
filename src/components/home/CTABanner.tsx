@@ -11,6 +11,7 @@ export function CTABanner() {
   return (
     <section
       className="relative py-12 md:py-16 overflow-hidden bg-crimson"
+      aria-label="Call to action"
     >
       {/* Geometric overlay */}
       <div

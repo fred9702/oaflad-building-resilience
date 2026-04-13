@@ -45,7 +45,7 @@ export function FirstLadiesSection() {
   });
 
   return (
-    <section id="first-ladies" className="relative py-20 md:py-28 overflow-hidden bg-white">
+    <section id="first-ladies" className="relative py-20 md:py-28 overflow-hidden bg-white" aria-label="First Ladies">
 
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <ScrollReveal>
