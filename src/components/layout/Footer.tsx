@@ -35,6 +35,7 @@ export function Footer() {
     { key: "partners", href: "/partners" },
     { key: "media", href: "/media" },
     { key: "contact", href: "/contact" },
+    { key: "faq", href: "/faq" },
   ];
 
   return (

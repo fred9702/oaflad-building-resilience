@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { key: "partners", href: "/partners" },
   { key: "media", href: "/media" },
   { key: "contact", href: "/contact" },
+  { key: "faq", href: "/faq" },
 ] as const;
 
 const NAVBAR_LOGOS: Record<string, string> = {
