@@ -75,6 +75,23 @@ p {
   50% { transform: translateY(-10px) rotate(1deg); }
 }
 
+@keyframes particle-float {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+}
+
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* Glass utility */
 .glass {
   background: rgba(107, 52, 23, 0.5);
