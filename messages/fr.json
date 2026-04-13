@@ -43,6 +43,66 @@
     "stat2": { "value": "4", "label": "Piliers" },
     "stat3": { "value": "1", "label": "Jour" }
   },
+  "home": {
+    "mission": {
+      "photoAlt": "Son Excellence Madame Zita Oligui Nguema, Première Dame du Gabon"
+    },
+    "pillars": {
+      "badge": "Les Quatre Piliers",
+      "health": {
+        "name": "Santé",
+        "description": "Renforcer l'accès aux soins pour les femmes et les filles en contexte fragile",
+        "bullets": ["Santé maternelle en zones de crise", "Réseaux de soutien en santé mentale", "Infrastructures de santé communautaire"]
+      },
+      "women": {
+        "name": "Femmes",
+        "description": "Autonomisation économique et protection des droits des femmes",
+        "bullets": ["Programmes d'inclusion financière", "Cadres de protection juridique", "Développement du leadership"]
+      },
+      "youth": {
+        "name": "Jeunesse",
+        "description": "Investir dans la prochaine génération par l'éducation et les opportunités",
+        "bullets": ["Formation professionnelle pour les jeunes déplacés", "Programmes d'alphabétisation numérique", "Forums de leadership jeunesse"]
+      },
+      "education": {
+        "name": "Éducation",
+        "description": "Garantir l'accès à une éducation de qualité dans les zones touchées par les conflits",
+        "bullets": ["Initiatives de reconstruction d'écoles", "Programmes de formation des enseignants", "Solutions d'apprentissage à distance"]
+      },
+      "learnMore": "En savoir plus"
+    },
+    "speakers": {
+      "badge": "Premières Dames",
+      "viewAll": "Voir toutes les intervenantes"
+    },
+    "programme": {
+      "badge": "Programme",
+      "viewFull": "Voir le programme complet",
+      "moments": {
+        "opening": { "time": "08h00", "title": "Cérémonie d'ouverture", "description": "Discours de bienvenue et ouverture officielle" },
+        "presidential": { "time": "09h00", "title": "Allocution présidentielle", "description": "Message du Président de la République du Gabon" },
+        "firstLadies": { "time": "10h00", "title": "Allocutions des Premières Dames", "description": "Discours des Premières Dames participantes" },
+        "lunch": { "time": "12h30", "title": "Déjeuner & Exposition", "description": "Déjeuner de réseautage et exposition des partenaires" },
+        "panels": { "time": "14h00", "title": "Tables rondes", "description": "Panels thématiques sur les quatre piliers" },
+        "closing": { "time": "17h00", "title": "Cérémonie de clôture", "description": "Déclaration et discours de clôture" }
+      }
+    },
+    "impact": {
+      "stat1": { "value": "19", "label": "Premières Dames", "subtitle": "Venues de tout le continent" },
+      "stat2": { "value": "4", "label": "Piliers", "subtitle": "Santé, Femmes, Jeunesse, Éducation" },
+      "stat3": { "value": "18", "label": "Quartiers", "subtitle": "Visites d'engagement communautaire" },
+      "stat4": { "value": "1", "label": "Jour", "subtitle": "D'action continentale" }
+    },
+    "partners": {
+      "badge": "Partenaires & Soutiens",
+      "viewAll": "Voir tous les partenaires"
+    },
+    "press": {
+      "headline": "Suivez #RenforcerLaRésilience",
+      "followUs": "Suivez-nous sur les réseaux sociaux pour les mises à jour en direct",
+      "contact": "Demandes presse"
+    }
+  },
   "comingSoon": {
     "badge": "Bientôt disponible"
   },

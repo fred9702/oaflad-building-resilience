@@ -43,6 +43,66 @@
     "stat2": { "value": "4", "label": "Pillars" },
     "stat3": { "value": "1", "label": "Day" }
   },
+  "home": {
+    "mission": {
+      "photoAlt": "Her Excellency Mrs. Zita Oligui Nguema, First Lady of Gabon"
+    },
+    "pillars": {
+      "badge": "The Four Pillars",
+      "health": {
+        "name": "Health",
+        "description": "Strengthening healthcare access for women and girls in fragile contexts",
+        "bullets": ["Maternal health in crisis zones", "Mental health support networks", "Community health infrastructure"]
+      },
+      "women": {
+        "name": "Women",
+        "description": "Economic empowerment and protection of women's rights",
+        "bullets": ["Financial inclusion programmes", "Legal protection frameworks", "Leadership development"]
+      },
+      "youth": {
+        "name": "Youth",
+        "description": "Investing in the next generation through education and opportunity",
+        "bullets": ["Skills training for displaced youth", "Digital literacy programmes", "Youth leadership forums"]
+      },
+      "education": {
+        "name": "Education",
+        "description": "Ensuring access to quality education in conflict-affected areas",
+        "bullets": ["School reconstruction initiatives", "Teacher training programmes", "Distance learning solutions"]
+      },
+      "learnMore": "Learn more"
+    },
+    "speakers": {
+      "badge": "First Ladies",
+      "viewAll": "View all speakers"
+    },
+    "programme": {
+      "badge": "Programme",
+      "viewFull": "View full programme",
+      "moments": {
+        "opening": { "time": "08:00", "title": "Opening Ceremony", "description": "Welcome address and official opening" },
+        "presidential": { "time": "09:00", "title": "Presidential Address", "description": "Message from the President of Gabon" },
+        "firstLadies": { "time": "10:00", "title": "First Ladies' Addresses", "description": "Addresses from attending First Ladies" },
+        "lunch": { "time": "12:30", "title": "Lunch & Exhibition", "description": "Networking lunch and partner exhibition" },
+        "panels": { "time": "14:00", "title": "Panel Discussions", "description": "Thematic panels on the four pillars" },
+        "closing": { "time": "17:00", "title": "Closing Ceremony", "description": "Declaration and closing remarks" }
+      }
+    },
+    "impact": {
+      "stat1": { "value": "19", "label": "First Ladies", "subtitle": "Attending from across Africa" },
+      "stat2": { "value": "4", "label": "Pillars", "subtitle": "Health, Women, Youth, Education" },
+      "stat3": { "value": "18", "label": "Neighbourhoods", "subtitle": "Community engagement visits" },
+      "stat4": { "value": "1", "label": "Day", "subtitle": "Of continental action" }
+    },
+    "partners": {
+      "badge": "Partners & Supporters",
+      "viewAll": "View all partners"
+    },
+    "press": {
+      "headline": "Follow #BuildingResilience",
+      "followUs": "Follow us on social media for live updates",
+      "contact": "Media inquiries"
+    }
+  },
   "comingSoon": {
     "badge": "Coming Soon"
   },
