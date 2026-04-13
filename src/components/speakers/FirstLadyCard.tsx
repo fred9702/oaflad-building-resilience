@@ -37,7 +37,7 @@ export function FirstLadyCard({
               alt={`${honorific} ${name}, ${country}`}
               width={224}
               height={300}
-              className="object-cover w-full h-full"
+              className="speaker-photo w-full h-full"
               style={lady.photoPosition ? { objectPosition: lady.photoPosition } : undefined}
             />
           ) : (
@@ -85,7 +85,7 @@ export function FirstLadyCard({
             alt={`${honorific} ${name}, ${country}`}
             width={183}
             height={246}
-            className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+            className="speaker-photo w-full h-full transition-transform duration-300 group-hover:scale-105"
             style={lady.photoPosition ? { objectPosition: lady.photoPosition } : undefined}
           />
         ) : (
@@ -93,7 +93,9 @@ export function FirstLadyCard({
             <span className="text-6xl">{lady.countryFlag}</span>
           </div>
         )}
-
+        <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p className="font-body text-xs text-white/90 line-clamp-2">{country}</p>
+        </div>
       </div>
 
       {/* Info */}

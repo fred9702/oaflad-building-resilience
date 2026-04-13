@@ -107,6 +107,13 @@ p {
   box-shadow: 0 2px 8px rgba(224, 123, 57, 0.15);
 }
 
+.speaker-photo {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  filter: sepia(8%) saturate(110%) brightness(103%);
+  border-radius: 0.5rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
