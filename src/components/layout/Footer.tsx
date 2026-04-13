@@ -86,7 +86,7 @@ export function Footer() {
                 <Link
                   key={key}
                   href={`/${locale}${href}`}
-                  className="font-body text-sm text-white/90 hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+                  className="font-body text-sm text-white/90 hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded py-2 min-h-[44px] flex items-center"
                 >
                   {tNav(key)}
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="text-white hover:text-orange hover:scale-110 hover:-translate-y-0.5 transition-transform focus:outline-none focus:ring-2 focus:ring-orange rounded p-1"
+                  className="text-white hover:text-orange hover:scale-110 hover:-translate-y-0.5 transition-transform focus:outline-none focus:ring-2 focus:ring-orange rounded-full flex items-center justify-center min-w-[44px] min-h-[44px] p-2"
                 >
                   <Icon size={24} />
                 </a>
@@ -137,13 +137,13 @@ export function Footer() {
           <div className="flex gap-4 font-body">
             <button
               onClick={() => setLegalModal("privacy")}
-              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded min-h-[44px] py-2 px-3"
             >
               {t("privacy")}
             </button>
             <button
               onClick={() => setLegalModal("terms")}
-              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded min-h-[44px] py-2 px-3"
             >
               {t("terms")}
             </button>
