@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
-import { buildMetadata, BASE_URL } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
