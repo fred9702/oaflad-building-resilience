@@ -1,14 +1,12 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import {
   FacebookLogo,
   TwitterLogo,
   InstagramLogo,
 } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { Button } from "@/components/ui/Button";
-import { SocialFeed } from "@/components/home/SocialFeed";
 
 const SOCIALS = [
   { icon: FacebookLogo, label: "Facebook", href: "https://www.facebook.com/share/1B4pNuGHt7/?mibextid=wwXIfr" },
@@ -18,7 +16,6 @@ const SOCIALS = [
 
 export function PressTeaser() {
   const t = useTranslations("home.press");
-  const locale = useLocale();
 
   return (
     <section className="bg-light-beige py-16 md:py-20" aria-label="Press and media">
@@ -35,7 +32,7 @@ export function PressTeaser() {
           </p>
 
           {/* Social icons */}
-          <div className="flex justify-center gap-5 mb-8">
+          <div className="flex justify-center gap-5">
             {SOCIALS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
@@ -48,15 +45,6 @@ export function PressTeaser() {
                 <Icon size={28} />
               </a>
             ))}
-          </div>
-
-          <SocialFeed />
-
-          {/* Media contact */}
-          <div className="mt-8">
-            <Button href={`/${locale}/contact`} variant="secondary-dark">
-              {t("contact")}
-            </Button>
           </div>
         </ScrollReveal>
       </div>

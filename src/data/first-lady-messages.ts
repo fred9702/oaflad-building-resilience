@@ -74,7 +74,7 @@ export const firstLadyMessages: FirstLadyMessage[] = [
     languages: ["fr", "en"],
     signature: {
       en: { formal: "Her Excellency Dr Fatima Maada Bio", title: "First Lady of Sierra Leone", role: "President, OAFLAD" },
-      fr: { formal: "Son Excellence Dr Fatima Maada Bio", title: "Première Dame de la République de Sierra Leone", role: "Présidente en exercice de l'OPDAD" },
+      fr: { formal: "Son Excellence Dr Fatima Maada Bio", title: "Première Dame de la République de Sierra Leone", role: "Présidente de l'OPDAD" },
     },
   },
   {

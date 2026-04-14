@@ -79,17 +79,17 @@ function StatCard({ statKey }: { statKey: StatKey }) {
   return (
     <div ref={ref} className="flex flex-col items-center text-center p-6">
       <div
-        className="font-heading text-5xl md:text-6xl font-extrabold text-orange tabular-nums"
+        className="font-heading text-5xl md:text-6xl font-extrabold text-orange tabular-nums drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
         style={pulse ? { animation: "pulse-scale 0.6s ease-in-out" } : undefined}
       >
         {shouldReduceMotion || !inView ? numericValue : (
           inView ? <AnimatedCounter target={numericValue} onComplete={handleComplete} /> : 0
         )}
       </div>
-      <div className="mt-2 font-heading text-lg font-semibold text-warm-cream uppercase tracking-wide">
+      <div className="mt-2 font-heading text-lg font-bold text-warm-cream uppercase tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
         {label}
       </div>
-      <div className="mt-1 font-body text-sm text-warm-cream/60">
+      <div className="mt-1 font-body text-sm text-warm-cream/95 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
         {subtitle}
       </div>
     </div>
@@ -108,8 +108,14 @@ export function ImpactNumbers() {
         style={{ backgroundImage: 'url("/images/photography/hands-unity.jpg")' }}
         aria-hidden="true"
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-brown/85" aria-hidden="true" />
+      {/* Dark overlay — heavier for text readability */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, rgba(45,45,45,0.88) 0%, rgba(107,52,23,0.92) 100%)",
+        }}
+        aria-hidden="true"
+      />
 
       <div className="relative mx-auto max-w-5xl px-4 lg:px-8">
         <ScrollReveal>
