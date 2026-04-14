@@ -44,7 +44,7 @@ export function MissionStatement() {
         >
           {/* Portrait */}
           <div className="flex-shrink-0">
-            <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-[224px] h-[288px] md:w-[256px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/images/photography/zita-oligui-nguema-portrait.jpg"
                 alt={tHome("photoAlt")}
