@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { MissionStatement } from "@/components/home/MissionStatement";
 import { ImpactNumbers } from "@/components/home/ImpactNumbers";
 import { PressTeaser } from "@/components/home/PressTeaser";
-import { CTABanner } from "@/components/home/CTABanner";
+import { HomeFinalCta } from "@/components/home/HomeFinalCta";
 import { BASE_URL } from "@/lib/seo";
 
 type Props = {
@@ -35,7 +35,7 @@ export default async function HomePage({ params }: Props) {
       <MissionStatement />
       <ImpactNumbers />
       <PressTeaser />
-      <CTABanner />
+      <HomeFinalCta />
     </>
   );
 }
