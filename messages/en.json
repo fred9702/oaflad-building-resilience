@@ -28,7 +28,11 @@
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
-    "seconds": "Seconds"
+    "seconds": "Seconds",
+    "live": "The event is live",
+    "liveSubtitle": "Libreville, April 17, 2026",
+    "ended": "Thank you for following the event",
+    "endedSubtitle": "Together, we are #BuildingResilience"
   },
   "quote": {
     "text": "A Nation's resilience cannot depend on the silent burden women carry. It must be structured, supported, and organized.",

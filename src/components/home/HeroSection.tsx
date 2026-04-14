@@ -13,6 +13,16 @@ const HERO_LOGOS: Record<string, string> = {
 const HERO_LOGO_FALLBACK = "/images/common/mark.svg";
 
 const TARGET = new Date("2026-04-17T08:00:00+01:00").getTime();
+const EVENT_END = new Date("2026-04-18T00:00:00+01:00").getTime();
+
+type EventPhase = "upcoming" | "live" | "ended";
+
+function getEventPhase(): EventPhase {
+  const now = Date.now();
+  if (now < TARGET) return "upcoming";
+  if (now < EVENT_END) return "live";
+  return "ended";
+}
 
 function getTimeLeft() {
   const diff = Math.max(0, TARGET - Date.now());
@@ -56,12 +66,17 @@ export function HeroSection() {
 
   const [mounted, setMounted] = useState(false);
   const [time, setTime] = useState(getTimeLeft);
+  const [phase, setPhase] = useState<EventPhase>("upcoming");
   const srRef = useRef<HTMLDivElement>(null);
   const lastAnnouncedMinute = useRef(-1);
 
   useEffect(() => {
     setMounted(true);
-    const id = setInterval(() => setTime(getTimeLeft()), 1000);
+    setPhase(getEventPhase());
+    const id = setInterval(() => {
+      setTime(getTimeLeft());
+      setPhase(getEventPhase());
+    }, 1000);
     return () => clearInterval(id);
   }, []);
 
@@ -157,33 +172,66 @@ export function HeroSection() {
           {t("subtitle")}
         </motion.p>
 
-        {/* Countdown timer */}
+        {/* Countdown / Live / Ended */}
         <motion.div
           className="mt-10"
           {...fadeUp(0.7)}
         >
           <div ref={srRef} className="sr-only" aria-live="polite" role="status" />
-          <p className="text-sm uppercase tracking-widest text-brown/60 mb-4 font-heading">
-            {tCountdown("label")}
-          </p>
-          <div className="flex items-center justify-center gap-1.5 md:gap-5">
-            {boxes.map(({ value, label }, i) => (
-              <div key={label} className="flex items-center gap-1.5 md:gap-5">
-                <div
-                  className="bg-brown/80 backdrop-blur-sm border border-brown/20 rounded-lg md:rounded-xl px-2.5 py-2 md:px-5 md:py-4 flex flex-col items-center min-w-[60px] md:min-w-0"
-                  aria-hidden="true"
-                >
-                  <FlipNumber value={value} mounted={mounted} shouldReduceMotion={shouldReduceMotion} />
-                  <span className="mt-1 font-body text-[10px] md:text-xs text-warm-cream/80 uppercase tracking-wider">
-                    {label}
-                  </span>
-                </div>
-                {i < boxes.length - 1 && (
-                  <span className="text-brown/40 font-heading text-lg md:text-2xl font-bold" aria-hidden="true">:</span>
-                )}
+
+          {phase === "upcoming" && (
+            <>
+              <p className="text-sm uppercase tracking-widest text-brown/60 mb-4 font-heading">
+                {tCountdown("label")}
+              </p>
+              <div className="flex items-center justify-center gap-1.5 md:gap-5">
+                {boxes.map(({ value, label }, i) => (
+                  <div key={label} className="flex items-center gap-1.5 md:gap-5">
+                    <div
+                      className="bg-brown/80 backdrop-blur-sm border border-brown/20 rounded-lg md:rounded-xl px-2.5 py-2 md:px-5 md:py-4 flex flex-col items-center min-w-[60px] md:min-w-0"
+                      aria-hidden="true"
+                    >
+                      <FlipNumber value={value} mounted={mounted} shouldReduceMotion={shouldReduceMotion} />
+                      <span className="mt-1 font-body text-[10px] md:text-xs text-warm-cream/80 uppercase tracking-wider">
+                        {label}
+                      </span>
+                    </div>
+                    {i < boxes.length - 1 && (
+                      <span className="text-brown/40 font-heading text-lg md:text-2xl font-bold" aria-hidden="true">:</span>
+                    )}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
+
+          {phase === "live" && (
+            <div className="inline-flex flex-col items-center gap-2 bg-crimson text-white px-6 py-4 rounded-xl shadow-lg">
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-3 w-3" aria-hidden="true">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-warm-cream opacity-75" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-warm-cream" />
+                </span>
+                <span className="font-heading text-lg md:text-xl font-bold uppercase tracking-wide">
+                  {tCountdown("live")}
+                </span>
+              </div>
+              <p className="font-body text-sm text-warm-cream/90">
+                {tCountdown("liveSubtitle")}
+              </p>
+            </div>
+          )}
+
+          {phase === "ended" && (
+            <div className="inline-flex flex-col items-center gap-2 bg-brown/80 backdrop-blur-sm text-warm-cream px-6 py-4 rounded-xl shadow-lg">
+              <p className="font-heading text-lg md:text-xl font-bold">
+                {tCountdown("ended")}
+              </p>
+              <p className="font-body text-sm text-warm-cream/80">
+                {tCountdown("endedSubtitle")}
+              </p>
+            </div>
+          )}
         </motion.div>
       </div>
     </section>

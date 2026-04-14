@@ -28,7 +28,11 @@
     "days": "Jours",
     "hours": "Heures",
     "minutes": "Minutes",
-    "seconds": "Secondes"
+    "seconds": "Secondes",
+    "live": "L'événement est en cours",
+    "liveSubtitle": "Libreville, 17 avril 2026",
+    "ended": "Merci d'avoir suivi l'événement",
+    "endedSubtitle": "Ensemble, nous #RenforcerLaRésilience"
   },
   "quote": {
     "text": "La résilience d'une Nation ne peut pas reposer sur le silence des femmes. Elle doit être structurée, accompagnée, organisée.",
