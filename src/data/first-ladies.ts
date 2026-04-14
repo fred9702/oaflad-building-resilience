@@ -103,7 +103,7 @@ export const firstLadies: FirstLady[] = [
     id: "ghana", // since January 2025
     countryFlag: "\u{1F1EC}\u{1F1ED}",
     photoPath: "/images/partners/first-ladies/lordina-mahama.jpg",
-    photoPosition: "center top",
+    photoPosition: "center 15%",
     isSpeaker: true,
   },
 ];
