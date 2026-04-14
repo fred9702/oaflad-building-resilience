@@ -58,8 +58,8 @@ export const firstLadyMessages: FirstLadyMessage[] = [
     id: "gabon",
     languages: ["fr", "en"],
     signature: {
-      en: { formal: "Her Excellency Mrs Zita Oligui Nguema", title: "First Lady of the Gabonese Republic" },
-      fr: { formal: "Son Excellence Mme Zita Oligui Nguema", title: "Première Dame de la République Gabonaise" },
+      en: { formal: "Her Excellency Mrs Zita Oligui Nguema", title: "First Lady of the Gabonese Republic", role: "Founder, Ma Bannière Foundation" },
+      fr: { formal: "Son Excellence Mme Zita Oligui Nguema", title: "Première Dame de la République Gabonaise", role: "Fondatrice de la Fondation Ma Bannière" },
     },
   },
   {
