@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { ArrowUpRight } from "@phosphor-icons/react";
 
 export function MissionStatement() {
   const tQuote = useTranslations("quote");
@@ -92,6 +93,15 @@ export function MissionStatement() {
               <br />
               <span className="text-brown/70">{tQuote("role")}</span>
             </figcaption>
+            <a
+              href="https://zitaoliguinguema.ga"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-1.5 font-heading text-sm font-semibold text-crimson hover:text-crimson/80 transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+            >
+              {tHome("learnMore")}
+              <ArrowUpRight size={14} weight="bold" aria-hidden="true" />
+            </a>
           </figure>
         </div>
       </div>

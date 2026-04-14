@@ -55,7 +55,8 @@
   },
   "home": {
     "mission": {
-      "photoAlt": "Son Excellence Madame Zita Oligui Nguema, Première Dame du Gabon"
+      "photoAlt": "Son Excellence Madame Zita Oligui Nguema, Première Dame du Gabon",
+      "learnMore": "En savoir plus sur la Première Dame"
     },
     "pillars": {
       "badge": "Les Quatre Piliers",
