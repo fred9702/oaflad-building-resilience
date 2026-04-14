@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,11 +34,19 @@ export function FirstLadyMessageModal({
   const t = useTranslations("speakers");
   const locale = useLocale();
   const [activeLang, setActiveLang] = useState(locale);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   // Reset to current locale when modal opens
   useEffect(() => {
     if (isOpen) setActiveLang(locale);
   }, [isOpen, locale]);
+
+  // Scroll modal back to top whenever the lady changes (prev/next navigation)
+  useEffect(() => {
+    if (isOpen && modalRef.current) {
+      modalRef.current.scrollTop = 0;
+    }
+  }, [isOpen, lady.id]);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -120,6 +128,7 @@ export function FirstLadyMessageModal({
 
           {/* Modal */}
           <motion.div
+            ref={modalRef}
             className="relative z-10 w-full max-w-lg max-h-[85vh] overflow-y-auto rounded-2xl bg-white p-6 md:p-8 shadow-2xl"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
