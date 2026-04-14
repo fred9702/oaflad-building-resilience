@@ -5,8 +5,6 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { CaretDown } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { AddToCalendar } from "./AddToCalendar";
-import { AgendaLegend } from "./AgendaLegend";
 
 const SEQ1_KEYS = [
   "registration",
@@ -114,9 +112,6 @@ function TimelineItem({
                 >
                   {locale === "fr" ? "En savoir plus →" : "Learn more →"}
                 </Link>
-                <div>
-                  <AddToCalendar title={title} startTime={time.replace("h", ":")} description={description} />
-                </div>
               </div>
             )}
           </button>
@@ -139,9 +134,8 @@ function TimelineItem({
               <p className="mt-1 font-body text-sm text-near-black/60">{description}</p>
             )}
             {expanded && (
-              <div className="mt-3 space-y-2">
+              <div className="mt-3">
                 <p className="font-body text-sm text-near-black/60">{description}</p>
-                <AddToCalendar title={title} startTime={time.replace("h", ":")} description={description} />
               </div>
             )}
           </button>
@@ -220,7 +214,6 @@ export function ProgrammeTimeline() {
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white" aria-label="Programme timeline">
       <div className="relative mx-auto max-w-4xl px-6 lg:px-8">
-        <AgendaLegend locale={locale} />
         <TimelineSequence
           seqKey="seq1"
           keys={SEQ1_KEYS}
