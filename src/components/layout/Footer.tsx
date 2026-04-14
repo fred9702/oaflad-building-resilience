@@ -8,6 +8,7 @@ import {
   FacebookLogo,
   TwitterLogo,
   InstagramLogo,
+  YoutubeLogo,
 } from "@phosphor-icons/react";
 import { LegalModal } from "@/components/ui/LegalModal";
 
@@ -35,13 +36,29 @@ export function Footer() {
     { key: "partners", href: "/partners" },
     { key: "media", href: "/media" },
     { key: "contact", href: "/contact" },
-    { key: "faq", href: "/faq" },
   ];
 
   return (
-    <footer className="bg-brown text-warm-cream" role="contentinfo">
-      {/* Orange → Crimson gradient divider */}
-      <div className="h-[3px] w-full" style={{ background: "linear-gradient(to right, #E07B39, #9B1C37)" }} aria-hidden="true" />
+    <footer className="bg-brown text-white" role="contentinfo">
+      {/* Enhanced decorative African geometric strip */}
+      <div className="h-8 w-full" aria-hidden="true">
+        <div
+          className="h-4 w-full opacity-15"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='24' viewBox='0 0 40 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='20,0 40,24 0,24' fill='white'/%3E%3C/svg%3E")`,
+            backgroundRepeat: "repeat-x",
+            backgroundSize: "40px 16px",
+          }}
+        />
+        <div
+          className="h-4 w-full opacity-15"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='24' viewBox='0 0 40 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='20,24 40,0 0,0' fill='white'/%3E%3C/svg%3E")`,
+            backgroundRepeat: "repeat-x",
+            backgroundSize: "40px 16px",
+          }}
+        />
+      </div>
 
       <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
@@ -54,14 +71,14 @@ export function Footer() {
               height={42}
               className="h-auto w-[140px] brightness-0 invert"
             />
-            <p className="font-body text-sm text-warm-cream/90 text-center md:text-left max-w-xs">
+            <p className="font-body text-sm text-white/90 text-center md:text-left max-w-xs">
               {t("tagline")}
             </p>
           </div>
 
           {/* Col 2: Quick links — two sub-columns */}
           <div className="flex flex-col items-center md:items-start gap-3">
-            <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-warm-cream/60">
+            <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-white/60">
               {locale === "fr" ? "Liens rapides" : "Quick links"}
             </h3>
             <nav className="grid grid-cols-2 gap-x-8 gap-y-2" aria-label="Footer navigation">
@@ -69,7 +86,7 @@ export function Footer() {
                 <Link
                   key={key}
                   href={`/${locale}${href}`}
-                  className="font-body text-sm text-warm-cream/90 hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded py-2 min-h-[44px] flex items-center"
+                  className="font-body text-sm text-white/90 hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
                 >
                   {tNav(key)}
                 </Link>
@@ -79,7 +96,7 @@ export function Footer() {
 
           {/* Col 3: Social icons */}
           <div className="flex flex-col items-center md:items-end gap-3">
-            <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-warm-cream/60">
+            <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-white/60">
               {locale === "fr" ? "Suivez-nous" : "Follow us"}
             </h3>
             <div className="flex gap-4">
@@ -92,7 +109,7 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="text-warm-cream hover:text-orange hover:scale-110 hover:-translate-y-0.5 transition-transform focus:outline-none focus:ring-2 focus:ring-orange rounded-full flex items-center justify-center min-w-[44px] min-h-[44px] p-2"
+                  className="text-white hover:text-orange hover:scale-110 hover:-translate-y-0.5 transition-transform focus:outline-none focus:ring-2 focus:ring-orange rounded p-1"
                 >
                   <Icon size={24} />
                 </a>
@@ -102,30 +119,31 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-warm-cream/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <Image
-              src="/images/partners/oaflad-logo.png"
-              alt="OAFLAD"
-              width={100}
-              height={32}
-              className="h-8 w-auto brightness-0 invert"
-            />
-            <p className="font-body text-warm-cream/90">
-              © {new Date().getFullYear()} OAFLAD.{" "}
-              {locale === "fr" ? "Tous droits réservés." : "All rights reserved."}
-            </p>
-          </div>
+        <div className="mt-12 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+          <p className="font-body text-white/90">
+            {t.rich("copyright", {
+              link: (chunks) => (
+                <a
+                  href="https://chomei.store/bomalab.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange transition-colors underline underline-offset-2"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </p>
           <div className="flex gap-4 font-body">
             <button
               onClick={() => setLegalModal("privacy")}
-              className="text-warm-cream hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded min-h-[44px] py-2 px-3"
+              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
             >
               {t("privacy")}
             </button>
             <button
               onClick={() => setLegalModal("terms")}
-              className="text-warm-cream hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded min-h-[44px] py-2 px-3"
+              className="text-white hover:text-orange transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
             >
               {t("terms")}
             </button>
