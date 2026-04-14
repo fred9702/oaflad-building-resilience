@@ -4,7 +4,6 @@ import { Cap241Hero } from "@/components/cap241/Cap241Hero";
 import { Cap241Pillars } from "@/components/cap241/Cap241Pillars";
 import { Cap241Balance } from "@/components/cap241/Cap241Balance";
 import { Cap241Nkok } from "@/components/cap241/Cap241Nkok";
-import { Cap241Stats } from "@/components/cap241/Cap241Stats";
 import { Cap241Closing } from "@/components/cap241/Cap241Closing";
 import { buildMetadata } from "@/lib/seo";
 
@@ -25,7 +24,6 @@ export default async function Cap241Page({ params }: Props) {
       <Cap241Pillars />
       <Cap241Balance />
       <Cap241Nkok />
-      <Cap241Stats />
       <Cap241Closing />
     </>
   );
