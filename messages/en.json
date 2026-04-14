@@ -184,27 +184,48 @@
       "whatIs": {
         "question": "What is #BuildingResilience?",
         "answer": "#BuildingResilience is a pan-African campaign led by the First Lady of Gabon, Her Excellency Mrs. Zita Oligui Nguema, focused on strengthening resilience for women and girls facing climate change and conflict across the continent.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/about",
+          "label": "Learn more about the campaign"
+        }
       },
       "attending": {
         "question": "Who is attending?",
-        "answer": "The conference brings together 19 African First Ladies, alongside delegates, partners, UN representatives, and civil society organisations committed to the four pillars of CAP 241.",
-        "category": "event"
+        "answer": "The conference brings together 13 African First Ladies, alongside delegates, partners, and civil society organisations committed to the four pillars of CAP 241.",
+        "category": "event",
+        "link": {
+          "href": "/speakers",
+          "label": "View the full list of First Ladies"
+        }
       },
       "when": {
         "question": "When and where is the event?",
         "answer": "The conference takes place on April 17, 2026, in Libreville, Gabon.",
-        "category": "event"
+        "category": "event",
+        "link": {
+          "href": "/programme",
+          "label": "View the full programme"
+        }
       },
       "pillars": {
         "question": "What are the four pillars of CAP 241?",
         "answer": "The four pillars are Health, Women, Youth, and Education — the foundational areas through which the campaign strengthens resilience for communities across Africa.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/cap-241",
+          "label": "Learn more about CAP 241"
+        }
       },
       "oaflad": {
         "question": "What is OAFLAD?",
         "answer": "OAFLAD (Organization of African First Ladies for Development) is a continental body that brings together African First Ladies to advocate for health, education, and women's empowerment across the continent.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "https://oaflad.org",
+          "label": "Visit the OAFLAD website",
+          "external": true
+        }
       },
       "follow": {
         "question": "How can I follow the event?",
@@ -214,7 +235,11 @@
       "balance": {
         "question": "What is the BALANCE programme?",
         "answer": "BALANCE (ÉQUILIBRES 2026–2029) is a multi-year programme under CAP 241 that coordinates action across three axes: Prevent, Support, and Rebuild — addressing the root causes and consequences of fragility for women and girls.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/cap-241",
+          "label": "Learn more about the BALANCE programme"
+        }
       }
     }
   },

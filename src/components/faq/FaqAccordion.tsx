@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CaretDown } from "@phosphor-icons/react";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { CaretDown, ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
+import { useTranslations, useLocale } from "next-intl";
 
 const QUESTION_KEYS = [
   "whatIs",
@@ -21,6 +22,7 @@ type CategoryKey = (typeof CATEGORY_ORDER)[number];
 
 export function FaqAccordion() {
   const t = useTranslations("faq");
+  const locale = useLocale();
   const [openKey, setOpenKey] = useState<QuestionKey | null>(null);
 
   function toggle(key: QuestionKey) {
@@ -83,12 +85,45 @@ export function FaqAccordion() {
                       role="region"
                       aria-labelledby={buttonId}
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        isOpen ? "max-h-96" : "max-h-0"
+                        isOpen ? "max-h-[500px]" : "max-h-0"
                       }`}
                     >
-                      <p className="font-body text-base text-near-black/80 px-5 pb-5 leading-relaxed">
-                        {t(`questions.${key}.answer`)}
-                      </p>
+                      <div className="px-5 pb-5">
+                        <p className="font-body text-base text-near-black/80 leading-relaxed">
+                          {t(`questions.${key}.answer`)}
+                        </p>
+                        {(() => {
+                          try {
+                            const linkData = t.raw(`questions.${key}.link`) as { href: string; label: string; external?: boolean } | undefined;
+                            if (!linkData) return null;
+                            const isExternal = linkData.external || linkData.href.startsWith("http");
+                            if (isExternal) {
+                              return (
+                                <a
+                                  href={linkData.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-3 inline-flex items-center gap-1.5 font-heading text-sm font-semibold text-crimson hover:text-crimson/80 transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+                                >
+                                  {linkData.label}
+                                  <ArrowUpRight size={14} weight="bold" aria-hidden="true" />
+                                </a>
+                              );
+                            }
+                            return (
+                              <Link
+                                href={`/${locale}${linkData.href}`}
+                                className="mt-3 inline-flex items-center gap-1.5 font-heading text-sm font-semibold text-crimson hover:text-crimson/80 transition-colors focus:outline-none focus:ring-2 focus:ring-orange rounded"
+                              >
+                                {linkData.label}
+                                <ArrowRight size={14} weight="bold" aria-hidden="true" />
+                              </Link>
+                            );
+                          } catch {
+                            return null;
+                          }
+                        })()}
+                      </div>
                     </div>
                   </div>
                 );

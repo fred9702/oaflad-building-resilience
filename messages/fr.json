@@ -184,27 +184,48 @@
       "whatIs": {
         "question": "Qu'est-ce que #RenforcerLaRésilience ?",
         "answer": "#RenforcerLaRésilience est une campagne panafricaine portée par la Première Dame du Gabon, Son Excellence Madame Zita Oligui Nguema, visant à renforcer la résilience des femmes et des filles face aux changements climatiques et aux conflits sur le continent.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/about",
+          "label": "En savoir plus sur la campagne"
+        }
       },
       "attending": {
         "question": "Qui participe ?",
-        "answer": "La conférence réunit 19 Premières Dames africaines, ainsi que des délégués, partenaires, représentants des Nations Unies et organisations de la société civile engagés dans les quatre piliers du CAP 241.",
-        "category": "event"
+        "answer": "La conférence réunit 13 Premières Dames africaines, ainsi que des délégués, partenaires et organisations de la société civile engagés dans les quatre piliers du CAP 241.",
+        "category": "event",
+        "link": {
+          "href": "/speakers",
+          "label": "Voir la liste complète des Premières Dames"
+        }
       },
       "when": {
         "question": "Quand et où a lieu l'événement ?",
         "answer": "La conférence se tient le 17 avril 2026, à Libreville, au Gabon.",
-        "category": "event"
+        "category": "event",
+        "link": {
+          "href": "/programme",
+          "label": "Voir le programme complet"
+        }
       },
       "pillars": {
         "question": "Quels sont les quatre piliers du CAP 241 ?",
         "answer": "Les quatre piliers sont Santé, Femmes, Jeunesse et Éducation — les domaines fondamentaux à travers lesquels la campagne renforce la résilience des communautés à travers l'Afrique.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/cap-241",
+          "label": "En savoir plus sur le CAP 241"
+        }
       },
       "oaflad": {
         "question": "Qu'est-ce que l'OPDAD ?",
         "answer": "L'OPDAD (Organisation des Premières Dames d'Afrique pour le Développement) est un organisme continental qui rassemble les Premières Dames africaines pour promouvoir la santé, l'éducation et l'autonomisation des femmes sur le continent.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "https://oaflad.org",
+          "label": "Visiter le site de l'OPDAD",
+          "external": true
+        }
       },
       "follow": {
         "question": "Comment suivre l'événement ?",
@@ -214,7 +235,11 @@
       "balance": {
         "question": "Qu'est-ce que le programme ÉQUILIBRES ?",
         "answer": "ÉQUILIBRES 2026–2029 est un programme pluriannuel dans le cadre du CAP 241 qui coordonne l'action autour de trois axes : Prévenir, Accompagner et Reconstruire — s'attaquant aux causes profondes et aux conséquences de la fragilité pour les femmes et les filles.",
-        "category": "campaign"
+        "category": "campaign",
+        "link": {
+          "href": "/cap-241",
+          "label": "En savoir plus sur le programme ÉQUILIBRES"
+        }
       }
     }
   },
