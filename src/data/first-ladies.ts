@@ -51,6 +51,7 @@ export const firstLadies: FirstLady[] = [
     id: "burundi", // since June 2020
     countryFlag: "\u{1F1E7}\u{1F1EE}",
     photoPath: "/images/partners/first-ladies/angeline-ndayishimiye.jpg",
+    photoPosition: "center top",
     isSpeaker: true,
   },
   {
