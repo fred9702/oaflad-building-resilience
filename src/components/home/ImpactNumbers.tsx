@@ -79,17 +79,26 @@ function StatCard({ statKey }: { statKey: StatKey }) {
   return (
     <div ref={ref} className="flex flex-col items-center text-center p-6">
       <div
-        className="font-heading text-5xl md:text-6xl font-extrabold text-orange tabular-nums drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
-        style={pulse ? { animation: "pulse-scale 0.6s ease-in-out" } : undefined}
+        className="font-heading text-5xl md:text-6xl font-extrabold text-orange tabular-nums"
+        style={{
+          textShadow: "0 2px 6px rgba(0,0,0,0.7)",
+          ...(pulse ? { animation: "pulse-scale 0.6s ease-in-out" } : {}),
+        }}
       >
         {shouldReduceMotion || !inView ? numericValue : (
           inView ? <AnimatedCounter target={numericValue} onComplete={handleComplete} /> : 0
         )}
       </div>
-      <div className="mt-2 font-heading text-lg font-bold text-warm-cream uppercase tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+      <div
+        className="mt-2 font-heading text-lg font-bold uppercase tracking-wide"
+        style={{ color: "#FBF0E6", textShadow: "0 1px 3px rgba(0,0,0,0.8)" }}
+      >
         {label}
       </div>
-      <div className="mt-1 font-body text-sm text-warm-cream/95 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+      <div
+        className="mt-1 font-body text-sm"
+        style={{ color: "rgba(251, 240, 230, 0.92)", textShadow: "0 1px 3px rgba(0,0,0,0.8)" }}
+      >
         {subtitle}
       </div>
     </div>
