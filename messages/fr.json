@@ -496,12 +496,56 @@
     "panel1": {
       "title": "Panel 1",
       "topic": "Santé mentale et stabilité des familles",
-      "time": "13h50 – 14h30"
+      "time": "13h50 – 14h30",
+      "moderator": {
+        "name": "Mme Nicole Nguema",
+        "role": "Experte genre"
+      },
+      "panelists": [
+        {
+          "name": "Mme Micheline Otounga",
+          "role": "Ancien Conseiller du Premier Ministre en charge des questions sociales. Spécialiste des droits de la femme."
+        },
+        {
+          "name": "Mme Odile Boungat Ossawa",
+          "role": "Psychologue clinicienne. Ancien Conseiller chef de département genre chargé de la famille, de la jeunesse et des sports à la Primature. Experte des problématiques genre, VBG et santé reproductive."
+        },
+        {
+          "name": "Dr Ida Flore Maroundou",
+          "role": "Présidente de l'ONG AURORE. Directrice du Centre d'accueil pour femmes victimes de violences « Un refuge pour elle »."
+        },
+        {
+          "name": "Mme Reine Ambourouet Ogandaga",
+          "role": "Directrice du Centre National de Santé Mentale."
+        }
+      ]
     },
     "panel2": {
       "title": "Panel 2",
       "topic": "Autonomisation des femmes : un challenge de gouvernance publique",
-      "time": "14h30 – 15h10"
+      "time": "14h30 – 15h10",
+      "moderator": {
+        "name": "Mme Mireille Dirat",
+        "role": "Animatrice / Présentatrice"
+      },
+      "panelists": [
+        {
+          "name": null,
+          "role": "Spécialiste du Ministère de l'Agriculture et de l'Élevage."
+        },
+        {
+          "name": "Mme Inès Boussougou",
+          "role": "Directrice Générale de l'Économie Sociale, Ministère du Commerce et des PME/PMI."
+        },
+        {
+          "name": "Mme Bouanga",
+          "role": "Experte représentant le Ministère de la Planification, spécialiste de la bonne gouvernance."
+        },
+        {
+          "name": "M. Hugues Mbadinga",
+          "role": "Directeur Général de la Promotion de la Femme et du Genre."
+        }
+      ]
     },
     "seq1Badge": "Cérémonie officielle",
     "seq1Title": "Séquence 1 — Matin",
