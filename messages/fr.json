@@ -588,79 +588,74 @@
         "description": "Arrivée des invités et accréditation"
       },
       "opening": {
-        "time": "10h05",
+        "time": "10h05 – 10h10",
         "title": "Ouverture officielle",
         "description": "Exécution de l'Hymne national"
       },
       "launch": {
-        "time": "10h10",
+        "time": "10h10 – 10h20",
         "title": "Lancement de la campagne",
-        "description": "Allocution de bienvenue et lancement de #RenforcerLaRésilience par la Première Dame"
+        "description": "Allocution de bienvenue et lancement de #RenforcerLaRésilience par Son Excellence Madame la Première Dame, avec diffusion de la vidéo #BuildingResilience Gabon"
       },
       "president": {
-        "time": "10h20",
+        "time": "10h20 – 10h25",
         "title": "Allocution présidentielle",
-        "description": "Allocution de Son Excellence le Président de la République Gabonaise"
-      },
-      "video": {
-        "time": "10h30",
-        "title": "Capsule audiovisuelle",
-        "description": "Projection de la capsule audiovisuelle de la campagne"
+        "description": "Allocution de Son Excellence Monsieur le Président de la République Gabonaise"
       },
       "oaflad": {
-        "time": "10h35",
+        "time": "10h30 – 10h35",
         "title": "Intervention du Dr Nardos Berhanu",
-        "description": "Secrétaire exécutive de l'OPDAD"
+        "description": "Secrétaire exécutif de l'OPDAD"
       },
       "firstLadies": {
-        "time": "10h40",
+        "time": "10h40 – 11h30",
         "title": "Allocutions des Premières Dames",
-        "description": "Partages d'expérience des Premières Dames membres de l'OPDAD"
-      },
-      "un": {
-        "time": "11h30",
-        "title": "Allocution des Nations Unies",
-        "description": "Allocution de la Représentante des Nations Unies"
+        "description": "Son Excellence Madame Fatima Maada Bio (Sierra Leone, Présidente de l'OPDAD, 5 min) · Son Excellence Madame Ana Dias Lourenço (Angola, Vice-Présidente de l'OPDAD, 5 min) · Premières Dames (pré-séance)"
       },
       "doctorate": {
-        "time": "11h40",
+        "time": "11h40 – 11h45",
         "title": "Doctorat Honoris Causa",
-        "description": "Cérémonie de remise du Doctorat Honoris Causa à la Première Dame"
+        "description": "Cérémonie de remise du Doctorat Honoris Causa à Son Excellence Madame la Première Dame par le Conseil Africain et Franco-Arabe pour les Grades"
+      },
+      "poem": {
+        "time": "11h45 – 11h50",
+        "title": "Poème",
+        "description": "Lecture d'un poème en hommage à la Première Dame et à la campagne"
       },
       "exhibition": {
-        "time": "11h50",
+        "time": "11h50 – 12h50",
         "title": "Visite de l'exposition",
         "description": "Visite guidée de l'exposition #RenforcerLaRésilience"
       },
       "lunch": {
-        "time": "12h20",
+        "time": "12h20 – 13h10",
         "title": "Déjeuner officiel",
         "description": "Déjeuner officiel"
       }
     },
     "seq2": {
       "capsules": {
-        "time": "13h30",
+        "time": "13h30 – 13h40",
         "title": "Diffusion de capsules",
         "description": "Projection de capsules audiovisuelles"
       },
       "minister": {
-        "time": "13h40",
+        "time": "13h40 – 13h50",
         "title": "Allocution du Ministre des Affaires Sociales",
         "description": "Ministre chargé de la Protection de l'Enfance et de la Femme"
       },
       "panel1": {
-        "time": "13h50",
+        "time": "13h50 – 14h30",
         "title": "Panel 1 — Santé mentale et stabilité des familles",
         "description": "La santé mentale et la stabilité des familles comme enjeux de résilience"
       },
       "panel2": {
-        "time": "14h30",
+        "time": "14h30 – 15h10",
         "title": "Panel 2 — Autonomisation des femmes",
         "description": "Un challenge de gouvernance publique à l'aune de la Ve République"
       },
       "closing": {
-        "time": "15h10",
+        "time": "15h10 – 15h30",
         "title": "Clôture officielle",
         "description": "Clôture officielle de la journée"
       }

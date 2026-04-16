@@ -11,10 +11,10 @@ const SEQ1_KEYS = [
   "opening",
   "launch",
   "president",
-  "video",
   "oaflad",
   "firstLadies",
   "doctorate",
+  "poem",
   "exhibition",
   "lunch",
 ] as const;
