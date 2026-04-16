@@ -496,12 +496,56 @@
     "panel1": {
       "title": "Panel 1",
       "topic": "Mental Health and Family Stability",
-      "time": "1:50pm – 2:30pm"
+      "time": "1:50pm – 2:30pm",
+      "moderator": {
+        "name": "Mrs Nicole Nguema",
+        "role": "Gender Expert"
+      },
+      "panelists": [
+        {
+          "name": "Mrs Micheline Otounga",
+          "role": "Former Advisor to the Prime Minister on social affairs. Specialist in women's rights."
+        },
+        {
+          "name": "Mrs Odile Boungat Ossawa",
+          "role": "Clinical Psychologist. Former Head of the Gender Department at the Prime Minister's Office. Expert in gender, GBV and reproductive health."
+        },
+        {
+          "name": "Dr Ida Flore Maroundou",
+          "role": "President of AURORE NGO. Director of the 'A Refuge for Her' Centre for women victims of violence."
+        },
+        {
+          "name": "Mrs Reine Ambourouet Ogandaga",
+          "role": "Director, National Centre for Mental Health."
+        }
+      ]
     },
     "panel2": {
       "title": "Panel 2",
       "topic": "Women's Empowerment: a Public Governance Challenge",
-      "time": "2:30pm – 3:10pm"
+      "time": "2:30pm – 3:10pm",
+      "moderator": {
+        "name": "Mrs Mireille Dirat",
+        "role": "Host / Presenter"
+      },
+      "panelists": [
+        {
+          "name": null,
+          "role": "Specialist, Ministry of Agriculture and Livestock."
+        },
+        {
+          "name": "Mrs Inès Boussougou",
+          "role": "Director General for Social Economy, Ministry of Commerce and SMEs."
+        },
+        {
+          "name": "Mrs Bouanga",
+          "role": "Expert representative of the Ministry of Planning, specialist in good governance."
+        },
+        {
+          "name": "Mr Hugues Mbadinga",
+          "role": "Director General for the Promotion of Women and Gender."
+        }
+      ]
     },
     "seq1Badge": "Official Ceremony",
     "seq1Title": "Sequence 1 — Morning",
