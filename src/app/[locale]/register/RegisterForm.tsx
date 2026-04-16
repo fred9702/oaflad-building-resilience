@@ -3,14 +3,21 @@
 import { useState, type FormEvent } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
-import { FEATURED_CODES, AFRICAN_CODES } from "@/data/country-codes";
 
-const CATEGORIES = [
-  "opdad",
+const TITLES = ["mr", "mrs", "hem", "hon", "prof", "dr", "ven"] as const;
+
+const GROUPS = [
+  "firstLadies",
   "government",
-  "partner",
-  "civilSociety",
-  "community",
+  "senate",
+  "nationalAssembly",
+  "constitutionalCourt",
+  "highCourts",
+  "cesec",
+  "diplomaticCorps",
+  "internationalOrgs",
+  "presidency",
+  "associations",
   "other",
 ] as const;
 
@@ -34,23 +41,16 @@ export function RegisterForm({ token }: { token: string }) {
 
   function validate(form: FormData): Record<string, string> {
     const errors: Record<string, string> = {};
+    if (!form.get("title")) errors.title = t("required");
     if (!form.get("firstName")) errors.firstName = t("required");
     if (!form.get("lastName")) errors.lastName = t("required");
+    if (!form.get("group")) errors.group = t("required");
     const email = form.get("email") as string;
     if (!email) {
       errors.email = t("required");
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       errors.email = t("invalidEmail");
     }
-    const phone = form.get("phoneLocal") as string;
-    if (phone) {
-      const digits = phone.replace(/[\s\-().]/g, "");
-      if (digits.length < 7 || digits.length > 15 || !/^\d+$/.test(digits)) {
-        errors.phone = t("invalidPhone");
-      }
-    }
-    if (!form.get("category")) errors.category = t("required");
-    if (!form.get("gdprConsent")) errors.gdprConsent = t("consentRequired");
     return errors;
   }
 
@@ -68,24 +68,13 @@ export function RegisterForm({ token }: { token: string }) {
 
     setSubmitting(true);
     try {
-      const countryCode = formData.get("phoneCountryCode") as string;
-      const phoneLocal = formData.get("phoneLocal") as string;
-      let phone: string | null = null;
-      if (phoneLocal) {
-        const digits = phoneLocal.replace(/[\s\-().]/g, "");
-        phone = countryCode + digits;
-      }
-
       const body = {
+        title: formData.get("title"),
         first_name: formData.get("firstName"),
         last_name: formData.get("lastName"),
         email: formData.get("email"),
-        phone,
-        organisation: formData.get("organisation") || null,
-        role: formData.get("role") || null,
-        category: formData.get("category"),
+        category: formData.get("group"),
         language_pref: formData.get("languagePref") || "fr",
-        gdpr_consent: true,
         token,
       };
 
@@ -114,19 +103,19 @@ export function RegisterForm({ token }: { token: string }) {
   }
 
   const inputClass =
-    "w-full rounded border border-mid-grey bg-white px-4 py-2 font-body text-near-black focus:outline-none focus:ring-2 focus:ring-orange focus:border-orange";
-  const labelClass = "block font-body text-sm font-semibold text-near-black mb-1";
+    "w-full rounded-lg border border-mid-grey bg-white px-4 py-2.5 font-body text-near-black focus:outline-none focus:ring-2 focus:ring-orange focus:border-orange transition-colors";
+  const labelClass = "block font-body text-sm font-semibold text-near-black mb-1.5";
   const errorClass = "text-crimson text-sm mt-1 font-body";
 
   return (
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="bg-light-beige rounded-lg p-6 md:p-10 shadow-sm"
+      className="bg-light-beige rounded-2xl p-6 md:p-10 shadow-sm"
     >
       {error && (
         <div
-          className="mb-6 rounded border border-crimson bg-crimson/10 p-4 text-crimson font-body text-sm"
+          className="mb-6 rounded-lg border border-crimson bg-crimson/10 p-4 text-crimson font-body text-sm"
           role="alert"
         >
           {error}
@@ -134,6 +123,40 @@ export function RegisterForm({ token }: { token: string }) {
       )}
 
       <div className="grid gap-5 md:grid-cols-2">
+        {/* Title */}
+        <div>
+          <label htmlFor="title" className={labelClass}>
+            {t("titleLabel")} *
+          </label>
+          <select
+            id="title"
+            name="title"
+            required
+            aria-required="true"
+            aria-invalid={!!fieldErrors.title}
+            aria-describedby={fieldErrors.title ? "title-error" : undefined}
+            defaultValue=""
+            className={inputClass}
+          >
+            <option value="" disabled>
+              {t("titlePlaceholder")}
+            </option>
+            {TITLES.map((key) => (
+              <option key={key} value={key}>
+                {t(`titleOptions.${key}`)}
+              </option>
+            ))}
+          </select>
+          {fieldErrors.title && (
+            <p id="title-error" className={errorClass} role="alert">
+              {fieldErrors.title}
+            </p>
+          )}
+        </div>
+
+        {/* spacer on desktop */}
+        <div className="hidden md:block" />
+
         {/* First name */}
         <div>
           <label htmlFor="firstName" className={labelClass}>
@@ -147,6 +170,7 @@ export function RegisterForm({ token }: { token: string }) {
             aria-required="true"
             aria-invalid={!!fieldErrors.firstName}
             aria-describedby={fieldErrors.firstName ? "firstName-error" : undefined}
+            autoComplete="given-name"
             className={inputClass}
           />
           {fieldErrors.firstName && (
@@ -169,6 +193,7 @@ export function RegisterForm({ token }: { token: string }) {
             aria-required="true"
             aria-invalid={!!fieldErrors.lastName}
             aria-describedby={fieldErrors.lastName ? "lastName-error" : undefined}
+            autoComplete="family-name"
             className={inputClass}
           />
           {fieldErrors.lastName && (
@@ -191,6 +216,7 @@ export function RegisterForm({ token }: { token: string }) {
             aria-required="true"
             aria-invalid={!!fieldErrors.email}
             aria-describedby={fieldErrors.email ? "email-error" : undefined}
+            autoComplete="email"
             className={inputClass}
           />
           {fieldErrors.email && (
@@ -200,93 +226,33 @@ export function RegisterForm({ token }: { token: string }) {
           )}
         </div>
 
-        {/* Phone */}
+        {/* Group */}
         <div className="md:col-span-2">
-          <label className={labelClass}>
-            {t("phone")}
-          </label>
-          <div className="flex gap-2">
-            <select
-              name="phoneCountryCode"
-              defaultValue="+241"
-              className={`${inputClass} max-w-[8rem] min-w-0 shrink-0`}
-              aria-label={t("phoneCountryCode")}
-            >
-              <optgroup label="—">
-                {FEATURED_CODES.map((c) => (
-                  <option key={`f-${c.iso}`} value={c.code}>
-                    {c.code} {c.country}
-                  </option>
-                ))}
-              </optgroup>
-              <optgroup label="Africa">
-                {AFRICAN_CODES.map((c) => (
-                  <option key={`a-${c.iso}`} value={c.code}>
-                    {c.code} {c.country}
-                  </option>
-                ))}
-              </optgroup>
-            </select>
-            <input
-              id="phoneLocal"
-              name="phoneLocal"
-              type="tel"
-              placeholder="e.g. 074123456"
-              aria-label={t("phoneLocal")}
-              aria-invalid={!!fieldErrors.phone}
-              aria-describedby={fieldErrors.phone ? "phone-error" : undefined}
-              className={`${inputClass} flex-1`}
-            />
-          </div>
-          {fieldErrors.phone && (
-            <p id="phone-error" className={errorClass} role="alert">
-              {fieldErrors.phone}
-            </p>
-          )}
-        </div>
-
-        {/* Organisation */}
-        <div>
-          <label htmlFor="organisation" className={labelClass}>
-            {t("organisation")}
-          </label>
-          <input id="organisation" name="organisation" type="text" className={inputClass} />
-        </div>
-
-        {/* Role */}
-        <div>
-          <label htmlFor="role" className={labelClass}>
-            {t("role")}
-          </label>
-          <input id="role" name="role" type="text" className={inputClass} />
-        </div>
-
-        {/* Category */}
-        <div>
-          <label htmlFor="category" className={labelClass}>
-            {t("category")} *
+          <label htmlFor="group" className={labelClass}>
+            {t("group")} *
           </label>
           <select
-            id="category"
-            name="category"
+            id="group"
+            name="group"
             required
             aria-required="true"
-            aria-invalid={!!fieldErrors.category}
-            aria-describedby={fieldErrors.category ? "category-error" : undefined}
+            aria-invalid={!!fieldErrors.group}
+            aria-describedby={fieldErrors.group ? "group-error" : undefined}
+            defaultValue=""
             className={inputClass}
           >
             <option value="" disabled>
-              {t("categoryOptions.placeholder")}
+              {t("groupPlaceholder")}
             </option>
-            {CATEGORIES.map((cat) => (
-              <option key={cat} value={cat}>
-                {t(`categoryOptions.${cat}`)}
+            {GROUPS.map((key) => (
+              <option key={key} value={key}>
+                {t(`groupOptions.${key}`)}
               </option>
             ))}
           </select>
-          {fieldErrors.category && (
-            <p id="category-error" className={errorClass} role="alert">
-              {fieldErrors.category}
+          {fieldErrors.group && (
+            <p id="group-error" className={errorClass} role="alert">
+              {fieldErrors.group}
             </p>
           )}
         </div>
@@ -309,36 +275,14 @@ export function RegisterForm({ token }: { token: string }) {
             ))}
           </select>
         </div>
-
-        {/* GDPR consent */}
-        <div className="md:col-span-2">
-          <label className="flex items-center gap-3 cursor-pointer min-h-[44px]">
-            <input
-              type="checkbox"
-              name="gdprConsent"
-              value="true"
-              required
-              aria-required="true"
-              aria-invalid={!!fieldErrors.gdprConsent}
-              aria-describedby={fieldErrors.gdprConsent ? "gdprConsent-error" : undefined}
-              className="h-5 w-5 rounded border-mid-grey text-orange focus:ring-2 focus:ring-orange"
-            />
-            <span className="font-body text-sm text-near-black">{t("gdprConsent")} *</span>
-          </label>
-          {fieldErrors.gdprConsent && (
-            <p id="gdprConsent-error" className={errorClass} role="alert">
-              {fieldErrors.gdprConsent}
-            </p>
-          )}
-        </div>
       </div>
 
       <button
         type="submit"
         disabled={submitting}
-        className="mt-8 w-full font-heading font-semibold text-lg text-white bg-orange hover:bg-orange/90 disabled:opacity-60 px-8 py-3 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
+        className="mt-8 w-full font-heading font-semibold text-lg text-white bg-orange hover:bg-orange/90 disabled:opacity-60 px-8 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 min-h-[48px]"
       >
-        {submitting ? "..." : t("submit")}
+        {submitting ? "…" : t("submit")}
       </button>
     </form>
   );

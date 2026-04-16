@@ -271,7 +271,7 @@
     },
     "languagePref": "Langue préférée",
     "gdprConsent": "J'accepte que mes données soient traitées conformément à la politique de confidentialité de l'OPDAD.",
-    "submit": "Soumettre l'inscription",
+    "submit": "S'inscrire",
     "success": "Inscription réussie !",
     "errorDuplicate": "Cette adresse e-mail est déjà inscrite.",
     "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
@@ -282,7 +282,35 @@
     "invalidPhone": "Numéro de téléphone invalide.",
     "consentRequired": "Vous devez accepter la politique de confidentialité.",
     "invitationOnly": "Inscription sur invitation uniquement",
-    "invitationOnlyDescription": "L'inscription à cet événement est réservée aux personnes invitées. Si vous avez reçu un QR code, veuillez le scanner pour accéder au formulaire d'inscription."
+    "invitationOnlyDescription": "L'inscription à cet événement est réservée aux personnes invitées. Si vous avez reçu un QR code, veuillez le scanner pour accéder au formulaire d'inscription.",
+    "titleOptions": {
+      "mr": "Monsieur",
+      "mrs": "Madame",
+      "hem": "S.E.M.",
+      "hon": "Honorable",
+      "prof": "Pr.",
+      "dr": "Dr",
+      "ven": "Vénérable"
+    },
+    "groupOptions": {
+      "firstLadies": "Premières Dames",
+      "government": "Membres du Gouvernement",
+      "senate": "Sénat",
+      "nationalAssembly": "Assemblée Nationale",
+      "constitutionalCourt": "Cour Constitutionnelle",
+      "highCourts": "Hautes Cours",
+      "cesec": "CESEC",
+      "diplomaticCorps": "Corps Diplomatique",
+      "internationalOrgs": "Organisations et Organismes Internationaux",
+      "presidency": "Présidence de la République",
+      "associations": "Associations",
+      "other": "Autres"
+    },
+    "titleLabel": "Titre",
+    "titlePlaceholder": "Sélectionner un titre",
+    "fullName": "Nom et prénom",
+    "group": "Groupe",
+    "groupPlaceholder": "Sélectionner un groupe"
   },
   "confirmation": {
     "title": "Inscription confirmée",
@@ -873,15 +901,26 @@
       "organisation": "Organisation",
       "category": "Catégorie",
       "language": "Langue",
-      "date": "Date"
+      "date": "Date",
+      "title": "Titre"
     },
     "categories": {
+      "firstLadies": "Premières Dames",
+      "government": "Membres du Gouvernement",
+      "senate": "Sénat",
+      "nationalAssembly": "Assemblée Nationale",
+      "constitutionalCourt": "Cour Constitutionnelle",
+      "highCourts": "Hautes Cours",
+      "cesec": "CESEC",
+      "diplomaticCorps": "Corps Diplomatique",
+      "internationalOrgs": "Organisations Internationales",
+      "presidency": "Présidence de la République",
+      "associations": "Associations",
+      "other": "Autres",
       "opdad": "OPDAD",
-      "government": "Gouvernement",
       "partner": "Partenaire",
       "civilSociety": "Société civile",
-      "community": "Communauté",
-      "other": "Autre"
+      "community": "Communauté"
     }
   }
 }

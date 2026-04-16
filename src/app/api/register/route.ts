@@ -15,15 +15,12 @@ export async function POST(request: Request) {
     const body = await request.json();
 
     const {
+      title,
       first_name,
       last_name,
       email,
-      phone,
-      organisation,
-      role,
       category,
       language_pref,
-      gdpr_consent,
     } = body;
 
     const tokenValid = await validateRegistrationToken(body.token || null);
@@ -34,7 +31,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!first_name || !last_name || !email || !category || !gdpr_consent) {
+    if (!first_name || !last_name || !email || !category) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -54,15 +51,13 @@ export async function POST(request: Request) {
     const email_hash = await hashEmail(email);
 
     const { error } = await supabase.from("registrations").insert({
+      title: title || null,
       first_name,
       last_name,
       email: email.toLowerCase().trim(),
-      phone: phone || null,
-      organisation: organisation || null,
-      role: role || null,
       category,
       language_pref: language_pref || "fr",
-      gdpr_consent,
+      gdpr_consent: true,
       consent_timestamp: new Date().toISOString(),
       email_hash,
     });

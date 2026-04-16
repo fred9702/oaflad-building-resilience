@@ -4,6 +4,7 @@ import { useState } from "react";
 
 type Registration = {
   id: string;
+  title?: string | null;
   first_name: string;
   last_name: string;
   email: string;
@@ -11,6 +12,16 @@ type Registration = {
   category: string;
   language_pref: string;
   created_at: string;
+};
+
+const TITLE_LABELS: Record<string, string> = {
+  mr: "M.",
+  mrs: "Mme",
+  hem: "S.E.M.",
+  hon: "Hon.",
+  prof: "Pr.",
+  dr: "Dr",
+  ven: "Vén.",
 };
 
 type Props = {
@@ -85,7 +96,7 @@ export function AdminDashboardClient({ registrations, labels, categoryLabels }: 
               filtered.map((r) => (
                 <tr key={r.id} className="border-b border-brown/5 hover:bg-warm-cream/50 transition-colors">
                   <td className="px-4 py-3 font-body text-sm text-near-black font-medium">
-                    {r.first_name} {r.last_name}
+                    {r.title && TITLE_LABELS[r.title] ? `${TITLE_LABELS[r.title]} ` : ""}{r.first_name} {r.last_name}
                   </td>
                   <td className="px-4 py-3 font-body text-sm text-near-black/70">{r.email}</td>
                   <td className="px-4 py-3 font-body text-sm text-near-black/70 hidden md:table-cell">{r.organisation || "—"}</td>

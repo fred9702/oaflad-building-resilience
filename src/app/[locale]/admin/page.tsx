@@ -14,7 +14,7 @@ export default async function AdminPage({ params }: Props) {
   const supabase = createServerClient();
   const { data: registrations } = await supabase
     .from("registrations")
-    .select("id, first_name, last_name, email, organisation, category, language_pref, created_at")
+    .select("id, title, first_name, last_name, email, organisation, category, language_pref, created_at")
     .order("created_at", { ascending: false });
 
   const rows = registrations ?? [];
@@ -22,6 +22,22 @@ export default async function AdminPage({ params }: Props) {
   const categoryBreakdown: Record<string, number> = {};
   for (const r of rows) {
     categoryBreakdown[r.category] = (categoryBreakdown[r.category] || 0) + 1;
+  }
+
+  // Build label lookup including all known keys (new groups + legacy categories)
+  const ALL_KEYS = [
+    "firstLadies", "government", "senate", "nationalAssembly",
+    "constitutionalCourt", "highCourts", "cesec", "diplomaticCorps",
+    "internationalOrgs", "presidency", "associations", "other",
+    "opdad", "partner", "civilSociety", "community",
+  ] as const;
+  const categoryLabels: Record<string, string> = {};
+  for (const key of ALL_KEYS) {
+    try {
+      categoryLabels[key] = t(`categories.${key}`);
+    } catch {
+      categoryLabels[key] = key;
+    }
   }
 
   return (
@@ -67,14 +83,7 @@ export default async function AdminPage({ params }: Props) {
           language: t("tableHeaders.language"),
           date: t("tableHeaders.date"),
         }}
-        categoryLabels={{
-          opdad: t("categories.opdad"),
-          government: t("categories.government"),
-          partner: t("categories.partner"),
-          civilSociety: t("categories.civilSociety"),
-          community: t("categories.community"),
-          other: t("categories.other"),
-        }}
+        categoryLabels={categoryLabels}
       />
     </div>
   );

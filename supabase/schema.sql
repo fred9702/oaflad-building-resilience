@@ -5,6 +5,7 @@
 create table if not exists registrations (
   id uuid primary key default gen_random_uuid(),
   created_at timestamptz default now(),
+  title text,
   first_name text not null,
   last_name text not null,
   email text unique not null,
@@ -12,9 +13,9 @@ create table if not exists registrations (
   email_hash text,
   organisation text,
   role text,
-  category text not null,
+  category text not null, -- stores the group (Premières Dames, Gouvernement, etc.)
   language_pref text not null default 'fr',
-  gdpr_consent boolean not null default false,
+  gdpr_consent boolean not null default true,
   consent_timestamp timestamptz
 );
 
