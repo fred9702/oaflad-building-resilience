@@ -30,7 +30,6 @@
     "minutes": "Minutes",
     "seconds": "Seconds",
     "live": "The event is live",
-    "liveSubtitle": "Libreville, April 17, 2026",
     "ended": "Thank you for following the event",
     "endedSubtitle": "Together, we are #BuildingResilience"
   },
@@ -666,9 +665,6 @@
     "title": "Patronage & Dignitaries",
     "badge": "Patronage & Dignitaries",
     "intro": "The #BuildingResilience conference is placed under the High Patronage of the President of the Republic of Gabon, His Excellency Mr Brice Clotaire Oligui Nguema.",
-    "content": "Moderator profiles will be announced soon.",
-    "comingSoonBadge": "Moderators",
-    "comingSoonTitle": "Panel Moderators",
     "firstLadiesBadge": "First Ladies",
     "firstLadiesTitle": "Attending the Conference",
     "keynoteBadge": "Keynote Speakers",

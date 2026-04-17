@@ -206,19 +206,14 @@ export function HeroSection() {
           )}
 
           {phase === "live" && (
-            <div className="inline-flex flex-col items-center gap-2 bg-crimson text-white px-6 py-4 rounded-xl shadow-lg">
-              <div className="flex items-center gap-2">
-                <span className="relative inline-flex" style={{ width: 12, height: 12 }} aria-hidden="true">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-warm-cream opacity-75" />
-                  <span className="relative inline-flex rounded-full bg-warm-cream" style={{ width: 12, height: 12 }} />
-                </span>
-                <span className="font-heading text-lg md:text-xl font-bold uppercase tracking-wide">
-                  {tCountdown("live")}
-                </span>
-              </div>
-              <p className="font-body text-sm text-warm-cream/90">
-                {tCountdown("liveSubtitle")}
-              </p>
+            <div className="inline-flex items-center gap-2 bg-crimson text-white px-6 py-4 rounded-xl shadow-lg">
+              <span className="relative inline-flex" style={{ width: 12, height: 12 }} aria-hidden="true">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-warm-cream opacity-75" />
+                <span className="relative inline-flex rounded-full bg-warm-cream" style={{ width: 12, height: 12 }} />
+              </span>
+              <span className="font-heading text-lg md:text-xl font-bold uppercase tracking-wide">
+                {tCountdown("live")}
+              </span>
             </div>
           )}
 

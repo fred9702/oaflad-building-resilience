@@ -30,7 +30,6 @@
     "minutes": "Minutes",
     "seconds": "Secondes",
     "live": "L'événement est en cours",
-    "liveSubtitle": "Libreville, 17 avril 2026",
     "ended": "Merci d'avoir suivi l'événement",
     "endedSubtitle": "Ensemble, nous #RenforcerLaRésilience"
   },
@@ -666,9 +665,6 @@
     "title": "Patronage & Dignitaires",
     "badge": "Patronage & Dignitaires",
     "intro": "La conférence #RenforcerLaRésilience est placée sous le Haut Patronage du Président de la République du Gabon, Son Excellence Monsieur Brice Clotaire Oligui Nguema.",
-    "content": "Les profils des modérateurs seront annoncés prochainement.",
-    "comingSoonBadge": "Modérateurs",
-    "comingSoonTitle": "Modérateurs des panels",
     "firstLadiesBadge": "Premières Dames",
     "firstLadiesTitle": "Présent(e)s à la conférence",
     "keynoteBadge": "Intervenantes principales",
